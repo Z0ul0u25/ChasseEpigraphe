@@ -1,0 +1,10 @@
+# MacOS garbage
+.DS_Store
+__MACOSX/
+
+# IDE
+.vscode/
+.idea/
+
+# VScode specifique
+.history/
