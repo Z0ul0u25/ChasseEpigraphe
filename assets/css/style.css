@@ -39,8 +39,9 @@
 @import url(grille.css);
 
 /* Mise en page du DÉMO
-   ========================================================================== */
-body {
+   ========================================================================== 
+
+   body {
     color: var(--couleur-texte);
 }
 
@@ -79,7 +80,7 @@ header {
     border-image: linear-gradient(var(--couleur-secondaire), var(--couleur-dominante)) 27;
 }
 
-/*** Contenus principal et complémentaire ***/
+ Contenus principal et complémentaire 
 
 aside {
     padding: 0 1rem 0;
@@ -117,7 +118,8 @@ aside h2 {
     }
 }
 
-/*** Architecture des CSS ***/
+ Architecture des CSS 
+ 
 dl {
     padding: 1rem 0;
     background-color: rgba(145, 0, 145, 0.06);
@@ -185,4 +187,4 @@ strong.purple {
 footer {
     padding: 1px 0;
     text-align: center;
-}
+}*/
