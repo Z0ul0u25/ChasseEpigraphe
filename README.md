@@ -2,7 +2,7 @@
 ## Dans la ville de Québec
 \- Projet réalisé par l'équipe "Boucles Formidables"
 
-###Objectifs du projet
+### Objectifs du projet
 
 - Mettre en action les notions acquises en session 1 et en session 2
 - Concevoir un site Web qui :
