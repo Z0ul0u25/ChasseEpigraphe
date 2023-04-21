@@ -2,3 +2,36 @@
  * @title Mandat C : Chasse au épigraphes
  * @author Philippe Gourdeau
  ************/
+
+@import url(./style.css);
+
+
+#description {
+    background-color: #F1EC77;
+}
+
+#top__images{
+    position:relative;
+}
+
+#trombone{
+    position: absolute;
+    width: 100px;
+    rotate: -50deg;
+
+    right: 10px;
+}
+
+#contenu-principal {
+    border: 2px solid #000;
+}
+
+#contenu-principal svg{
+    margin: auto;
+}
+
+#contenu-principal>div:nth-of-type(2) {
+    border-bottom: 2px solid #000;
+    border-top   : 2px solid #000;
+    text-align: center;
+}
