@@ -8,16 +8,17 @@
 
 #description {
     background-color: #F1EC77;
+    padding         : 20px;
 }
 
-#top__images{
-    position:relative;
+#top__images {
+    position: relative;
 }
 
-#trombone{
+#trombone {
     position: absolute;
-    width: 100px;
-    rotate: -50deg;
+    width   : 100px;
+    rotate  : -50deg;
 
     right: 10px;
 }
@@ -26,12 +27,34 @@
     border: 2px solid #000;
 }
 
-#contenu-principal svg{
+#contenu-principal svg {
     margin: auto;
 }
 
 #contenu-principal>div:nth-of-type(2) {
     border-bottom: 2px solid #000;
     border-top   : 2px solid #000;
+    text-align   : center;
+}
+
+
+#indices>div {
+    display: flex;
+    border   : 2px solid red;
+    max-width: 83%;
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+#indices>div>div{
+    flex-grow: 1;
+}
+
+#indices>div:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+
+#boutons{
     text-align: center;
 }
