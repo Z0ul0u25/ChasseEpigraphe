@@ -1,2 +1,6 @@
-/* Author @kateundercoffler */
-@charset "UTF-8";
+/* Author @kateundercoffler */ /* Pas besoin d'utiliser le charset ;) avec le import de style.css
+@charset "UTF-8";   */
+
+/* Style
+   ========================================================================== */
+@import url(style.css);

@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
 /* Importation des polices au tout début! */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Roboto:wght@400;500&display=swap');
+
+/* Titres et sous-titres*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Courant */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 
 /**
  * @author COLLECTIF - @TIMCSF
@@ -189,9 +196,18 @@ footer {
 }
 ===========================================================================*/
 
+
+
 @media (min-width:1000px) {
-    body{
+    main{
         max-width: 1000px;
         margin: auto;
     }
+}
+
+/* HEADER & FOOTER TEXTURE */
+
+header,
+footer {
+    background-image: url('/assets/images/_autres/texture-bricks.jpg');
 }
