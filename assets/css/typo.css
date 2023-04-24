@@ -27,8 +27,18 @@ h1,
 .h1,
 h2,
 h3,
-h4 {
+h4,
+.entete-site_titre {
     font-family: Bebas Neue, sans-serif;
+}
+
+
+h1,
+.h1,
+.entete-site_titre,
+.entete-site_sousTitre,
+nav {
+    color: white;
 }
 
 body {
