@@ -8,3 +8,35 @@
 @import url(typo.css);
 @import url(utilitaires.css);
 
+
+/* CONTENU */
+
+body {
+   margin-bottom: 75px;
+   background-color: rgb(255, 255, 255);
+}
+
+/* ENTETE */
+.entete-site {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.entete-site_accueil {
+   text-decoration: none;
+}
+
+/* NAVIGATION */
+.navigation-principale {
+   display: flex;
+   flex-direction: row;
+}
+/* ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+   
+} */
