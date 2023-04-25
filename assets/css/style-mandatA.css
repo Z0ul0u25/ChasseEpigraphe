@@ -27,6 +27,9 @@ body {
    color: white;
 }
 
+.placeholder {
+   position: relative;
+}
 
 .entete-site_accueil {
    text-decoration: none;
@@ -40,8 +43,9 @@ body {
    background-color: #DC2062;
    list-style: none;
    align-self: flex-end;
-   
+
 }
+
 .navigation-principale_bouton {
    display: block;
    margin-left: auto;
@@ -51,7 +55,7 @@ body {
    color: white;
    padding: 10px 22px 10px 22px;
    border: 2px solid #2E2D2D;
-   
+
 }
 
 /*
@@ -67,4 +71,53 @@ body {
  */
 .menu-fermer {
    display: none;
+}
+
+/* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+/* Style the navigation menu */
+.navigation-mobile {
+   position: absolute;
+   width: 95%;
+   top: 75%;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.navigation-mobile #navigation-mobile_liens {
+   display: none;
+   background-color: #DC2062;
+   margin-top: 50px
+}
+
+/* Style navigation menu links */
+.navigation-mobile a {
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+   display: block;
+   align-self: flex-end;
+}
+
+/* Style the hamburger menu */
+.navigation-mobile a.icon {
+   background: #DC2062;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: -16px;
+}
+
+/* Add a grey background color on mouse-over */
+.navigation-mobile a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.navigation-mobile a i {
+   display: block;
+   text-align: center;
 }

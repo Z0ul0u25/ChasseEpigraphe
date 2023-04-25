@@ -10,47 +10,69 @@
     <meta name="author" content="Kate Undercoffler, Lorie-Anne Côté, Philippe Gourdeau">
     <title>Chasse aux épigraphes - Accueil</title>
     <link rel="stylesheet" href="assets/css/style-mandatA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="entete-site">
-        <a href="#contenu" class="lienrapide screen-reader-only focusable">Allez au contenu
-        </a>
-        <a href="./index.html" class="entete-site_accueil">
-            <picture>
-                <img src="./assets/images/logo.svg" alt="" class="entete-site_logo" width="50" height="50">
-                <!-- Width et height est pour que le contenu du page soit visible lorsque l'intégration en cours -->
-            </picture>
-            <h1 class="titre-principal">Chasse aux épigraphes</h1> 
-            <div class="sous-titre">dans la ville de Québec</div>
-        </a>
-        <nav class="navigation-principale">
-            <button id="btnMenu" class="navigation-principale_bouton">
-                <span class="nav-principale_span">Menu</span>
-            </button>
-            <ul class="navigation-principale_liste menu-fermer">
-                <li class="navigation-principale_item"><a href="./index.html"
-                        class="navigation-principal_lien">Accueil</a></li>
-                <li class="navigation-principale_item"><a href="./chasse/index.html"
-                        class="navigation-principal_lien">Chasse aux épigraphes</a></li>
-                <li class="navigation-principale_item"><a href="./galerie/galerie.html"
-                        class="navigation-principal_lien">Galerie de personnages</a></li>
-                <li class="navigation-principale_item"><a href="./carte/index.html"
-                        class="navigation-principal_lien">Carte</a></li>
-            </ul>
-            <div class="menu-hamburger"> <!-- Code de https://codepen.io/satvikpopli/pen/ExEZqaz -->
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+    <header class="placeholder">
+        <div class="entete-site">
+            <a href="#contenu" class="lienrapide screen-reader-only focusable">Allez au contenu
+            </a>
+            <a href="./index.html" class="entete-site_accueil">
+                <picture>
+                    <img src="./assets/images/logo.svg" alt="" class="entete-site_logo" width="50" height="50">
+                    <!-- Width et height est pour que le contenu du page soit visible lorsque l'intégration en cours -->
+                </picture>
+                <h1 class="titre-principal">Chasse aux épigraphes</h1>
+                <div class="sous-titre">dans la ville de Québec</div>
+            </a>
+            <nav class="navigation-principale menu-fermer">
+                <button id="btnMenu" class="navigation-principale_bouton">
+                    <span class="nav-principale_span">Menu</span>
+                </button>
+                <ul class="navigation-principale_liste menu-fermer">
+                    <li class="navigation-principale_item"><a href="./index.html"
+                            class="navigation-principal_lien">Accueil</a></li>
+                    <li class="navigation-principale_item"><a href="./chasse/index.html"
+                            class="navigation-principal_lien">Chasse aux épigraphes</a></li>
+                    <li class="navigation-principale_item"><a href="./galerie/galerie.html"
+                            class="navigation-principal_lien">Galerie de personnages</a></li>
+                    <li class="navigation-principale_item"><a href="./carte/index.html"
+                            class="navigation-principal_lien">Carte</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- HAMBURGER MENU CODE DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+        <!-- Top Navigation Menu -->
+        <nav class="navigation-mobile">
+      
+            <!-- Navigation links (hidden by default) -->
+            <div id="navigation-mobile_liens">
+                <a href="./index.html" class="navigation-principal_lien">Accueil</a>
+                <a href="./chasse/index.html" class="navigation-principal_lien">Chasse aux épigraphes</a>
+                <a href="./galerie/galerie.html" class="navigation-principal_lien">Galerie de personnages</a>
+                <a href="./carte/index.html" class="navigation-principal_lien">Carte</a>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             
+                <i class="fa fa-bars"></i>
+                <div class="nav-principale_span">Menu</div>
+            </a>
         </nav>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
     </header>
+
+
+
+
     <main class="main">
         <div class="main-video">
-            
-                <!-- <video width="320" height="240" autoplay muted>
+
+            <!-- <video width="320" height="240" autoplay muted>
                     <source src="#" type="video/mp4">  À METTRE HORS COMMENTAIRE QUAND ON EST PRÊTS -->
-            
+
         </div>
         <div class="main-section">
             <p>Les 135 plaques « Ici vécut » présentes sur le territoire de la ville de Québec permettent de rappeler de
@@ -68,7 +90,7 @@
         </div>
         <div class="ctnBouton">
             <button type="button" class="bouton">Jouer!
-                
+
             </button>
         </div>
     </main>
@@ -89,24 +111,40 @@
             <ul class="rappel-nav_liste">
                 <li class="rappel-nav_item"><a href="./index.html" class="rappel-nav_lien">Accueil</a>
                 </li>
-                <li class="rappel-nav_item"><a href="./chasse/index.html" class="rappel-nav_lien">Chasse aux épigraphes</a>
+                <li class="rappel-nav_item"><a href="./chasse/index.html" class="rappel-nav_lien">Chasse aux
+                        épigraphes</a>
                 </li>
-                <li class="rappel-nav_item"><a href="./galerie/galerie.html" class="rappel-nav_lien">Galerie de personnages</a>
+                <li class="rappel-nav_item"><a href="./galerie/galerie.html" class="rappel-nav_lien">Galerie de
+                        personnages</a>
                 </li>
                 <li class="rappel-nav_item"><a href="./carte/index.html" class="rappel-nav_lien">Carte</a>
                 </li>
             </ul>
         </div>
         <div class="footer-information">
-            <p class="footer-paragraphe">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
-            <p class="footer-paragraphe">Merci à l'équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY.</p>
-            <p class="footer-paragraphe">Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».</p>
+            <p class="footer-paragraphe">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec.
+                418-654-9823</p>
+            <p class="footer-paragraphe">Merci à l'équipe des données ouvertes de la Ville de Québec qui a rendu
+                disponibles le jeu de données « Épigraphes historiques » sous licence CC BY.</p>
+            <p class="footer-paragraphe">Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et
+                servir de prétexte à la « Chasse aux épigraphes ».</p>
         </div>
         <div class="footer-copyright">
-            <small class="copyright">Une réalisation de Lorie-Anne Côté, Kate Undercoffler et Philippe Gourdeau  &copy; Tous droits réservés 2023.</small> 
-            <small class="copyright">Travail scolaire réalisé dans le cadre du programme Techniques d'intégration multimédia. Cégep de Sainte-Foy</small>
+            <small class="copyright">Une réalisation de Lorie-Anne Côté, Kate Undercoffler et Philippe Gourdeau &copy;
+                Tous droits réservés 2023.</small>
+            <small class="copyright">Travail scolaire réalisé dans le cadre du programme Techniques d'intégration
+                multimédia. Cégep de Sainte-Foy</small>
         </div>
     </footer>
+    <!-- JAVASCRIPT POUR METTRE DANS DOSSIER JS QUAND C'EST PRÊT -->
+    <script>function myFunction() {
+            var x = document.getElementById("navigation-mobile_liens");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }</script>
 </body>
 
 </html>

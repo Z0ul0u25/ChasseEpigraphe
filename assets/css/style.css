@@ -207,7 +207,7 @@ footer {
 
 /* HEADER & FOOTER TEXTURE */
 
-header,
+.entete-site,
 footer {
     background-image: url('/assets/images/_autres/texture-bricks.jpg');
 }
