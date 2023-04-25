@@ -95,11 +95,12 @@ body {
 /* Style navigation menu links */
 .navigation-mobile a {
    color: white;
-   padding: 14px 16px;
+   padding: 25px 20px;
    text-decoration: none;
    font-size: 17px;
-   display: block;
-   align-self: flex-end;
+   display: flex;
+   justify-content: center;
+   
 }
 
 /* Style the hamburger menu */
