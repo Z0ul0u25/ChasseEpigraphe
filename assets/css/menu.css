@@ -21,14 +21,16 @@
     padding: 10px;
     min-width: 40px;
 }
+
 @media (min-width: 600px) {
     .nav__control {
         display: none;
     }
 }
+
 .nav__control:hover,
 .nav__control:active {
-    color:#fff;
+    color: #fff;
     background-color: darkmagenta;
 }
 
@@ -55,6 +57,7 @@
     list-style: none;
     max-height: none;
 }
+
 @media (min-width: 600px) {
     .nav__list-item {
         display: inline-block;
@@ -76,12 +79,12 @@
 }
 
 .nav__link:hover {
-    color:#fff;
+    color: #fff;
     background-color: darkmagenta;
 }
 
 .nav__link:active {
-    color:#fff;
+    color: #fff;
     background-color: magenta;
 }
 
@@ -90,9 +93,10 @@
     outline-offset: -5px;
     outline: darkmagenta auto 5px;
 }
+
 @media (min-width: 600px) {
     .nav__link:focus {
-        outline-offset: 0; 
+        outline-offset: 0;
     }
 }
 
@@ -103,18 +107,19 @@
 .nav__link--active {
     border-left: 5px solid rgba(101, 68, 180, 1);
 }
+
 @media (min-width: 600px) {
     .nav__link--active {
-        border-left:none;
-        border-bottom:5px solid rgba(101, 68, 180, 1);
+        border-left: none;
+        border-bottom: 5px solid rgba(101, 68, 180, 1);
     }
 }
 
 .menu-fermer {
     display: none;
- }
+}
 
- /* NAVIGATION PRINCIPALE DE MANDAT-A  */
+/* NAVIGATION PRINCIPALE DE MANDAT-A  */
 
 .navigation-principale {
     display: flex;
@@ -123,10 +128,10 @@
     background-color: #DC2062;
     list-style: none;
     align-self: flex-end;
- 
- }
 
- /*
+}
+
+/*
  @media (min-width: 768px) {
     ul {
     display: flex;
@@ -137,64 +142,65 @@
    } 
  }
   */
- 
- 
- /* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
- /* Style the navigation menu */
- .navigation-mobile {
+
+
+/* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+/* Style the navigation menu */
+.navigation-mobile {
     position: absolute;
     width: 95%;
-    top: 75%;
+    top: 80.5%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
- }
- .nav-principale_span {
+}
+
+.nav-principale_span {
     text-transform: uppercase;
     font-weight: 600;
- }
- 
- /* Hide the links inside the navigation menu (except for logo/home) */
- .navigation-mobile #navigation-mobile_liens {
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.navigation-mobile #navigation-mobile_liens {
     display: none;
     background-color: #DC2062;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 50px
- }
- 
- /* Style navigation menu links */
- .navigation-mobile a {
+}
+
+/* Style navigation menu links */
+.navigation-mobile a {
     color: white;
     padding: 25px 20px;
     text-decoration: none;
     font-size: 17px;
     display: flex;
     justify-content: center;
-    
- }
- 
- /* Style the hamburger menu */
- .navigation-mobile a.icon {
+
+}
+
+/* Style the hamburger menu */
+.navigation-mobile a.icon {
     background: #DC2062;
     display: block;
     position: absolute;
     right: 0;
     top: -16px;
- }
- 
- /* Add a grey background color on mouse-over */
- .navigation-mobile a:hover {
+}
+
+/* Add a grey background color on mouse-over */
+.navigation-mobile a:hover {
     background-color: #ddd;
     color: black;
- }
- 
- .navigation-mobile a i {
+}
+
+.navigation-mobile a i {
     display: block;
     text-align: center;
- }
- 
+}
+
 
 
 /** 
@@ -211,6 +217,7 @@
         overflow: hidden;
         transition: max-height 2s;
     }
+
     .js .nav--closed .nav__list {
         max-height: 0;
         transition: max-height 0.5s;
