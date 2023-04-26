@@ -6,3 +6,30 @@ Mandat B - Galerie de personnages
 /* Style
    ========================================================================== */
 @import url(style.css);
+
+.liste-filtre {
+
+   list-style: circle;
+
+}
+
+.filtre-indice,
+.filtre-activite {
+
+   background-color: var(--couleur-secondaire);
+
+}
+
+.personnages {
+
+   border: 2px solid var(--couleur-dominante);
+   background-color: var(--couleur-tertiaire);
+
+}
+
+a {
+
+   color: white;
+   text-decoration: none;
+
+}
