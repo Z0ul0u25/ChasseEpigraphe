@@ -16,6 +16,10 @@ body {
    margin-bottom: 75px;
    background-color: rgb(255, 255, 255);
 }
+.main {
+   margin-left: 20px;
+   margin-right: 20px;
+}
 
 /* ENTETE */
 .entete-site,
@@ -67,3 +71,8 @@ body {
    border: 3px solid black; 
    margin-top: 20px;
 }
+
+/* FOOTER */
+/* .footer {
+  
+} */
