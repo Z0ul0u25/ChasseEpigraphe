@@ -58,3 +58,13 @@ body {
    /* align-items: center; */
    padding-left: 102px;
 }
+
+/* VIDEO - BORDER EST POUR QU'ON AIT UN PLACEHOLDER */
+.main-video {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 3px solid black; 
+   margin-top: 20px;
+}
