@@ -1,6 +1,6 @@
 
 /*** Classe conteneur pour le centrage et l'affichage de la grille en arrière-plan ***/
-@media (min-width: 600px) {
+@media (min-width: 834px) {
     .conteneur {
         margin: 0 auto;
         max-width: 1000px;
@@ -18,7 +18,7 @@
 }
 
 /*** Classes pour dimensionner les blocs sur l'écran large ***/
-@media (min-width: 600px) {
+@media (min-width: 834px) {
 
     /*** Classe de base pour l'intégration en flexbox ***/
     .rangee{
@@ -62,5 +62,5 @@
     }
     .cols_12_de_12 {
         flex-basis: 100%;
-    } 
+    }
 }
