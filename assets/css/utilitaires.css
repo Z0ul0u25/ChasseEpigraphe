@@ -3,10 +3,10 @@
 
 /****** VARIABLES À ÉDITER (peuvent être utilisées dans tous les fichiers) *******/
 :root {
-    --couleur-texte: #022b50;
-    --couleur-titres-h1-h3: darkmagenta;
-    --couleur-dominante: darkmagenta;
-    --couleur-secondaire: #418cff;
+    --couleur-texte: #2E2D2D;
+    --couleur-dominante: #DC2062;
+    --couleur-secondaire: #F1EC77;
+    --couleur-tertiaire: #5B5656;
     --bg-couleur-contraste: #efefef;
     --box-shadow: 5px 5px 5px;
 }
