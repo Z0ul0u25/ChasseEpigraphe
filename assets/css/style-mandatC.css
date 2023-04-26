@@ -3,16 +3,54 @@
  * @author Philippe Gourdeau
  ************/
 
-@import url(./style.css);
+@import url(style.css);
 
-
-#description {
-    background-color: #F1EC77;
-    padding         : 20px;
+#top__h2 {
+    grid-area: h;
+    text-align: center;
 }
 
-#top__images {
+#top__description {
+    grid-area: d;
+}
+
+#top__image {
+    display: none;
     position: relative;
+    grid-area: i;
+}
+
+#top {
+    display: grid;
+    grid-template-areas:
+        "h"
+        "d";
+        /* "i"; */
+}
+
+@media (min-width: 600px) {
+    #top {
+        grid-template-areas:
+            "h h"
+            "d i";
+    }
+
+    #top__image{
+        display: block;
+    }
+}
+
+@media (min-width: 834px) {
+    #top {
+        grid-template-areas:
+            "h . i"
+            "d . i";
+    }
+}
+
+#top__description {
+    background-color: #F1EC77;
+    padding         : 20px;
 }
 
 #trombone {
@@ -39,22 +77,31 @@
 
 
 #indices>div {
-    display: flex;
+    display  : flex;
     border   : 2px solid red;
     max-width: 83%;
-    margin: 20px auto;
+    margin   : 20px auto;
 
     text-align: center;
 }
 
-#indices>div>div{
-    flex-grow: 1;
+#indices img{
+    flex-shrink: 80%;
 }
 
-#indices>div:nth-of-type(2){
+#indices>div>div {
+    flex-grow: 1;
+    background-color: var(--couleur-secondaire);
+}
+
+.flex-reverse {
     flex-direction: row-reverse;
 }
 
-#boutons{
+#indices>div:nth-of-type(2)>div{
+    background-color: var(--couleur-dominante);
+}
+
+#boutons {
     text-align: center;
 }

@@ -24,9 +24,6 @@
                 <div class="sous-titre">dans la ville de Québec</div>
             </a>
             <nav class="navigation-principale menu-fermer">
-                <button id="btnMenu" class="navigation-principale_bouton">
-                    <span class="nav-principale_span">Menu</span>
-                </button>
                 <ul class="navigation-principale_liste menu-fermer">
                     <li class="navigation-principale_item"><a href="../index.html"
                             class="navigation-principal_lien">Accueil</a></li>
@@ -61,31 +58,28 @@
 
     </header>
     <main>
-        <section id="top" class="conteneur rangee">
-            <div class="cols_6_de_12">
-                <h2>Chasse aux épigraphe</h2>
-                <div id="description">
-                    <p>
-                        La chasse est composée de 12 épigraphes qui ont été
-                        sélectionnées pour leur intérêt historique ou anecdotique.
-                    </p>
-                    <ul>
-                        <li>
-                            Pigez l’une des 64 combinaisons possibles.
-                        </li>
-                        <li>
-                            Parcourez les fiches de la <strong>Galerie de personnages</strong> pour
-                            retracer chaque indice. S'agit-il du personnage, de
-                            l'objet ou du lieu?
-                        </li>
-                        <li>
-                            Complétez la chasse et participez au concours.
-                        </li>
-                    </ul>
-                </div>
+        <section id="top" class="">
+            <h2 id="top__h2">Chasse aux épigraphe</h2>
+            <div id="top__description">
+                <p>
+                    La chasse est composée de 12 épigraphes qui ont été
+                    sélectionnées pour leur intérêt historique ou anecdotique.
+                </p>
+                <ul>
+                    <li>
+                        Pigez l’une des 64 combinaisons possibles.
+                    </li>
+                    <li>
+                        Parcourez les fiches de la <strong>Galerie de personnages</strong> pour
+                        retracer chaque indice. S'agit-il du personnage, de
+                        l'objet ou du lieu?
+                    </li>
+                    <li>
+                        Complétez la chasse et participez au concours.
+                    </li>
+                </ul>
             </div>
-            <div class="cols_1_de_12"></div>
-            <div id="top__images" class="cols_5_de_12">
+            <div id="top__image">
                 <img id="ruelle" src="../assets/images/_autres/chasseInit_table_w405.jpg"
                     alt="Ruelle de la ville de Québec">
                 <img id="trombone" src="../assets/images/_autres/paperclip.webp" alt="trombone pour papier">
@@ -118,7 +112,7 @@
                         <p id="nom-personnage">--placeholder--</p>
                     </div>
                 </div>
-                <div id="carte-objet">
+                <div id="carte-objet" class="flex-reverse">
                     <img src="//via.placeholder.com/405x280" alt="placeholder">
                     <div>
                         <p>Objet</p>
