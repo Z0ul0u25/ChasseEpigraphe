@@ -115,34 +115,24 @@
     }
 }
 
+
 .menu-fermer {
     display: none;
 }
 
+
 /* NAVIGATION PRINCIPALE DE MANDAT-A  */
 
-.navigation-principale {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    background-color: #DC2062;
-    list-style: none;
-    align-self: flex-end;
-
+@media (min-width: 768px) {
+    .navigation-principale {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        background-color: #DC2062;
+        list-style: none;
+        align-self: flex-end;
+    }
 }
-
-/*
- @media (min-width: 768px) {
-    ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-   } 
- }
-  */
-
 
 /* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 /* Style the navigation menu */
