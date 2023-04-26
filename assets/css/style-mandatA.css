@@ -26,6 +26,11 @@ body {
    align-items: center;
    color: white;
 }
+.sous-titre {
+   font-size: 2rem;
+   padding-right: 42px;
+   margin-bottom: 20px;
+}
 
 .placeholder {
    position: relative;
@@ -51,5 +56,5 @@ body {
    font-size: 7rem;
    /* justify-content: center; */
    /* align-items: center; */
-   padding-left: 81px;
+   padding-left: 102px;
 }
