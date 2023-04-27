@@ -7,6 +7,14 @@ Mandat B - Galerie de personnages
    ========================================================================== */
 @import url(style.css);
 
+h1 {
+
+   padding: 50px 0;
+   background-color: var(--couleur-tertiaire);
+   z-index: -1;
+
+}
+
 .liste-filtre {
 
    list-style: circle;
@@ -17,19 +25,61 @@ Mandat B - Galerie de personnages
 .filtre-activite {
 
    background-color: var(--couleur-secondaire);
+   padding: 0 0 20px 20px;
+   font-weight: 700;
+
+}
+
+.liste-personnages {
+
+   padding: 0;
 
 }
 
 .personnages {
 
-   border: 2px solid var(--couleur-dominante);
+   border: 4px solid var(--couleur-dominante);
+   list-style: none;
    background-color: var(--couleur-tertiaire);
 
 }
 
 a {
 
+   text-align: center;
    color: white;
    text-decoration: none;
+
+}
+
+h3 {
+
+   margin: 0;
+
+}
+
+
+.wrapperPerso {
+
+   display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+
+    "p1 p2 p3 p4"
+    "p5 p6 p7 p8"
+    "p9 p10 p11 p12"
+
+}
+
+.wrapperFiltre {
+
+   display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+
+    "filtre-indice filtre-activite"
 
 }
