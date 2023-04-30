@@ -21,6 +21,8 @@
 }
 
 #top {
+    margin-top: 65px;
+    margin-bottom: 65px;
     display: grid;
     grid-template-areas:
         "h"
@@ -42,6 +44,7 @@
 
 @media (min-width: 834px) {
     #top {
+        grid-template-columns: auto 65px auto;
         grid-template-areas:
             "h . i"
             "d . i";
@@ -104,6 +107,23 @@
     background-color: var(--couleur-tertiaire);
 }
 
+.carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carte>*{
+    min-width: 247px;
+    flex-grow: 0 !important;
+}
+
+@media (min-width:600px){
+    .carte{
+        display: block;
+    }
+}
+
 .flex-reverse {
     flex-direction: row-reverse;
 }
@@ -111,6 +131,7 @@
 #indices>div:nth-of-type(2)>div{
     background-color: var(--couleur-dominante);
 }
+
 
 #boutons {
     text-align: center;
