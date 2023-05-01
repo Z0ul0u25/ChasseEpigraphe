@@ -14,6 +14,57 @@
 
 /****** Base commune *******/
 
+.navigation-principale ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+
+/* ENTETE */
+.entete-site,
+.sous-titre {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+.sous-titre {
+   font-size: 2rem;
+   padding-right: 42px;
+   margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+
+}
+
+.placeholder {
+   position: relative;
+}
+
+.entete-site_accueil {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-decoration: none;
+}
+
+.entete-site_logo {
+   width: 30rem;
+   height: 30rem;
+   padding-bottom: 10px;
+}
+
+.titre-principal {
+   display: flex;
+   flex-direction: column;
+   font-size: 7rem;
+   /* justify-content: center; */
+   /* align-items: center; */
+   padding-left: 102px;
+}
+
 /* Bouton du menu */
 .nav__control {
     background-color: rgba(145, 0, 145, 0.2);
@@ -116,24 +167,29 @@
 }
 
 
-.menu-fermer {
-    display: none;
-}
 
 
 /* NAVIGATION PRINCIPALE DE MANDAT-A  */
-
-@media (min-width: 768px) {
     .navigation-principale {
-        display: flex;
+        width: 100%;
+    }
+    .navigation-principale_liste {
+        display: none;
         flex-direction: row;
         font-size: 1.5rem;
+        color: white;
+        text-transform: uppercase;
         background-color: #DC2062;
         list-style: none;
-        align-self: flex-end;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
     }
+@media (min-width: 768px) {
+    .navigation-principale_liste {
+        display: flex;
 }
-
+}
 /* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 /* Style the navigation menu */
 .navigation-mobile {
@@ -168,6 +224,11 @@
     display: flex;
     justify-content: center;
 
+}
+@media (min-width: 768px) {
+    .navigation-mobile {
+        display: none;
+    }
 }
 
 /* Style the hamburger menu */

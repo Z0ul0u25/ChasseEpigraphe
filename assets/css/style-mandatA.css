@@ -21,46 +21,7 @@ body {
    margin-right: 20px;
 }
 
-/* ENTETE */
-.entete-site,
-.sous-titre {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   color: white;
-}
-.sous-titre {
-   font-size: 2rem;
-   padding-right: 42px;
-   margin-bottom: 20px;
-}
 
-.placeholder {
-   position: relative;
-}
-
-.entete-site_accueil {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   text-decoration: none;
-}
-
-.entete-site_logo {
-   width: 30rem;
-   height: 30rem;
-   padding-bottom: 10px;
-}
-
-.titre-principal {
-   display: flex;
-   flex-direction: column;
-   font-size: 7rem;
-   /* justify-content: center; */
-   /* align-items: center; */
-   padding-left: 102px;
-}
 
 /* VIDEO - BORDER EST POUR QU'ON AIT UN PLACEHOLDER */
 .main-video {
