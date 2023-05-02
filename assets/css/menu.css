@@ -277,6 +277,108 @@ ul {
     text-align: center;
 }
 
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ /* MENU SOCIAUX */
+ .menu-sociaux_liste {
+    margin: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ 
+ .menu-sociaux_lien:link,
+ .menu-sociaux_lien:visited {
+     font-size: 0;
+     display: block;
+     width: 60px;
+     height: 60px;
+     margin-right: 1rem;
+     background-image: url(../images/_autres/social_sprites_.png);
+     background-repeat: no-repeat;
+     transition: transform .3s ease-in-out;
+ }
+ 
+ .menu-sociaux_item:first-child .menu-sociaux_lien {
+     background-position: 0 0;
+ }
+ 
+ .menu-sociaux_item:nth-child(2) .menu-sociaux_lien {
+     background-position: -60px 0;
+ }
+ 
+ .menu-sociaux_item:nth-child(4) .menu-sociaux_lien {
+     background-position: -120px 0;
+ }
+ 
+ .menu-sociaux_item:nth-child(3) .menu-sociaux_lien {
+     background-position: -180px 0;
+ }
+ 
+ /* .menu-sociaux__item:nth-child(5) .menu-sociaux__lien {
+     background-position: -100px 0;
+ } */
+ 
+ .menu-sociaux_item .menu-sociaux_lien:hover,
+ .menu-sociaux_item .menu-sociaux_lien:active {
+     background-position-y: -60px;
+     transform: rotate(10deg);
+ }
+ 
+ 
+ .rappel-nav_liste li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+ 
+ }
+ 
+ .rappel-nav_liste {
+    list-style: none;
+ }
+ 
+ .footer-rappel_nav {
+    background-color: #DC2062;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 265px;
+ }
+ 
+ .footer-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #F1EC77;
+    border: 3px solid #000000;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: 15px 15px -32px 15px;
+ }
+ 
+ .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 17px;
+    transform: translateY(77px);
+ }
+
 
 
 /** 
