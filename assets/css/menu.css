@@ -24,45 +24,55 @@
 /* ENTETE */
 .entete-site,
 .sous-titre {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-.sous-titre {
-   font-size: 2rem;
-   padding-right: 42px;
-   margin-bottom: 20px;
-}
-@media (min-width: 768px) {
 
+.sous-titre {
+    font-size: 2rem;
+    padding-right: 42px;
+    margin-bottom: 20px;
 }
+@media (min-width: 1000px) {
+    .sous-titre {
+        font-size: 2.25rem;
+        margin-left: 98px;
+    }
+}
+
 
 .placeholder {
-   position: relative;
+    position: relative;
 }
 
 .entete-site_accueil {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .entete-site_logo {
-   width: 30rem;
-   height: 30rem;
-   padding-bottom: 10px;
+    width: 30rem;
+    height: 30rem;
+    padding-bottom: 10px;
 }
 
 .titre-principal {
-   display: flex;
-   flex-direction: column;
-   font-size: 7rem;
-   /* justify-content: center; */
-   /* align-items: center; */
-   padding-left: 102px;
+    display: flex;
+    flex-direction: column;
+    font-size: 7rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 102px;
+}
+@media (min-width: 1000px) {
+    .titre-principal {
+        padding-top: 30px;
+    }
 }
 
 /* Bouton du menu */
@@ -170,26 +180,41 @@
 
 
 /* NAVIGATION PRINCIPALE DE MANDAT-A  */
-    .navigation-principale {
-        width: 100%;
-    }
-    .navigation-principale_liste {
-        display: none;
-        flex-direction: row;
-        font-size: 1.5rem;
-        color: white;
-        text-transform: uppercase;
-        background-color: #DC2062;
-        list-style: none;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
+.navigation-principale {
+    width: 100%;
+}
+
+.navigation-principale_liste {
+    display: none;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    background-color: #DC2062;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.navigation-principale_liste li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+ .navigation-principale_liste li a:hover {
+    font-size: 1.8rem;
+    text-decoration: underline;
+ }
+
 @media (min-width: 768px) {
     .navigation-principale_liste {
         display: flex;
+
+    }
 }
-}
+
 /* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 /* Style the navigation menu */
 .navigation-mobile {
@@ -225,6 +250,7 @@
     justify-content: center;
 
 }
+
 @media (min-width: 768px) {
     .navigation-mobile {
         display: none;
