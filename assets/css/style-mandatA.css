@@ -16,6 +16,7 @@ body {
    margin-bottom: 75px;
    background-color: rgb(255, 255, 255);
 }
+
 .main {
    margin-left: 20px;
    margin-right: 20px;
@@ -29,12 +30,59 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border: 3px solid black; 
+   border: 3px solid black;
    margin-top: 20px;
 }
 
-/* FOOTER */
-/* .footer {
-  
-} */
+/* BOUTON */
 
+.ctnBouton {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 53px;
+}
+
+.bouton {
+   background-color: #DC2062;
+   padding: 15px;
+   border: 5px solid #2E2D2D;
+   border-radius: 5px;
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+   width: 320px;
+}
+
+
+/* FOOTER */
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.rappel-nav_liste li a {
+   display: block;
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align: center;
+   padding: 25px;
+   
+}
+
+.rappel-nav_liste {
+   list-style: none;
+}
+.footer-rappel_nav {
+   background-color: #DC2062;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 570px;
+   height: 265px;
+}
