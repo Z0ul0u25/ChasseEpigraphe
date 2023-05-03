@@ -22,12 +22,13 @@ ul {
 
 
 /* ENTETE */
-.entete-site,
+.titre-principal,
 .sous-titre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Bebas Neue';
     color: white;
 }
 
@@ -35,6 +36,7 @@ ul {
     font-size: 2rem;
     padding-right: 42px;
     margin-bottom: 20px;
+    font-family: 'Montserrat';
 }
 @media (min-width: 1000px) {
     .sous-titre {
