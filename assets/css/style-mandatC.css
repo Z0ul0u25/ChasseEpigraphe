@@ -5,9 +5,10 @@
 
 @import url(style.css);
 
-#top__h2 {
+#top__h1 {
     grid-area : h;
     text-align: center;
+    color:#000;
 }
 
 #top__description {
