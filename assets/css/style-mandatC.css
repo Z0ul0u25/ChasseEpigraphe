@@ -145,6 +145,14 @@
     flex-wrap : wrap;
 }
 
+#boutons a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+}
+
 #boutons button {
     min-height: 45px;
     margin    : 10px auto;
