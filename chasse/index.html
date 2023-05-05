@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<!-- @author Philippe Gourdeau -->
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style-mandatC.css">
     <title>Chasse aux épigraphes - La chasse</title>
+    <script src="../assets/js/chasse.js" deffer="deffer"></script>
 </head>
 
 <body>
@@ -20,8 +22,10 @@
                     <img src="../assets/images/logo.svg" alt="" class="entete-site_logo" width="50" height="50">
                     <!-- Width et height est pour que le contenu du page soit visible lorsque l'intégration en cours -->
                 </picture>
-                <h1 class="titre-principal">Chasse aux épigraphes</h1>
-                <div class="sous-titre">dans la ville de Québec</div>
+                <div>
+                    <p class="titre-principal entete-site_titre">Chasse aux épigraphes</p>
+                    <p class="sous-titre">dans la ville de Québec</p>
+                </div>
             </a>
             <nav class="navigation-principale menu-fermer">
                 <ul class="navigation-principale_liste menu-fermer">
@@ -59,7 +63,7 @@
     </header>
     <main>
         <section id="top" class="">
-            <h2 id="top__h2">Chasse aux épigraphe</h2>
+            <h1 id="top__h1">Chasse aux épigraphe</h1>
             <div id="top__description">
                 <p>
                     La chasse est composée de 12 épigraphes qui ont été
@@ -101,7 +105,7 @@
 
             </div>
             <div>
-                <p>indices trouvés 1 sur 3</p>
+                <p>indices trouvés 0 sur 3</p>
             </div>
             <div id="indices">
                 <div id="carte-personnage" class="carte">
@@ -130,9 +134,9 @@
                 </div>
             </div>
             <div id="boutons" class="rangee">
-                <button class="cols_4_de_12 cols_4_de_8">Galerie des personnages</button>
-                <button class="cols_3_de_12 cols_3_de_8">Piger une nouvelle chasse</button>
-                <button class="cols_3_de_12 cols_3_de_8">Consulter la carte</button>
+                <button class="cols_4_de_12 cols_4_de_8"><a href="../galerie/galerie.html">Galerie des personnages</a></button>
+                <button class="cols_3_de_12 cols_3_de_8"><a>Piger une nouvelle chasse</a></button>
+                <button class="cols_3_de_12 cols_3_de_8"><a href="#">Consulter la carte</a></button>
             </div>
         </section>
     </main>
@@ -173,10 +177,12 @@
                 servir de prétexte à la « Chasse aux épigraphes ».</p>
         </div>
         <div class="footer-copyright">
-            <small class="copyright">Une réalisation de Lorie-Anne Côté, Kate Undercoffler et Philippe Gourdeau &copy;
-                Tous droits réservés 2023.</small>
-            <small class="copyright">Travail scolaire réalisé dans le cadre du programme Techniques d'intégration
-                multimédia. Cégep de Sainte-Foy</small>
+            <div class="footer-small">
+                <small class="copyright">Une réalisation de Lorie-Anne Côté, Kate Undercoffler et Philippe Gourdeau &copy;
+                    Tous droits réservés 2023.</small>
+                <small class="copyright">Travail scolaire réalisé dans le cadre du programme Techniques d'intégration
+                    multimédia. Cégep de Sainte-Foy</small>
+            </div>
         </div>
     </footer>
     <!-- JAVASCRIPT POUR METTRE DANS DOSSIER JS QUAND C'EST PRÊT -->

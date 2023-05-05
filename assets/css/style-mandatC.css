@@ -5,9 +5,10 @@
 
 @import url(style.css);
 
-#top__h2 {
+#top__h1 {
     grid-area : h;
     text-align: center;
+    color:#000;
 }
 
 #top__description {
@@ -142,6 +143,14 @@
 #boutons {
     text-align: center;
     flex-wrap : wrap;
+}
+
+#boutons a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
 }
 
 #boutons button {
