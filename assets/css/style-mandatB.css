@@ -10,14 +10,13 @@ Mandat B - Galerie de personnages
 h1 {
 
    padding: 50px 0;
-   background-color: var(--couleur-tertiaire);
    z-index: -1;
 
 }
 
 .liste-filtre {
 
-   list-style: circle;
+   list-style: none;
 
 }
 
