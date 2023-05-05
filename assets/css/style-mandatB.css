@@ -10,7 +10,14 @@ Mandat B - Galerie de personnages
 h1 {
 
    padding: 50px 0;
-   z-index: -1;
+   background-image: url('/assets/images/_autres/banniereTitreH1.jpg');
+
+}
+
+
+.filtre {
+
+   padding-bottom: 50px;
 
 }
 
@@ -29,9 +36,15 @@ h1 {
 
 }
 
+.ctnPersonnages {
+
+   padding-bottom: 45px
+
+}
+
 .liste-personnages {
 
-   padding: 0;
+   width: 100%;
 
 }
 
@@ -53,6 +66,9 @@ a {
 
 h3 {
 
+   padding: 5px;
+   font-size: 1.8rem;
+   font-family: 'Montserrat', sans-serif;;
    margin: 0;
 
 }
