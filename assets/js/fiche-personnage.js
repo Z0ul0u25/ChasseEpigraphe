@@ -44,7 +44,7 @@ const objFichePersonnage = {
         document.getElementById("quartier").innerText = this.objSelection.QUARTIER;
         document.getElementById("adresse").innerText = this.objSelection.ADRESSE;
         // Épigraphe
-        document.getElementById("url_plaque").src = `../assets/images/Epigraphes/${this.id}.svg`;
+        document.getElementById("url_plaque").src = `../assets/images/Epigraphes/epigraphe_${this.id}.svg`;
         document.getElementById("url_plaque").alt = `Épigraphe de ${this.objSelection.PRENOM} ${this.objSelection.NOM}`;
         document.getElementById("transcript").innerText = this.objSelection.PLAQUE_TRANSCRIPTION;
         // Audio
