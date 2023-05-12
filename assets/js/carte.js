@@ -52,8 +52,8 @@ const objCarte = {
 				`<div class="infobulle">
 				<div class="image"><img width="150" src="${this.strFichierImgPersonnages}${strIdEpigraphe}_chasse_153.jpg"/></div>
 				<div class="titre">${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</div>
-				<div class="adresse">Adresse : 85, rue Wilfrid-Laurier</div>
-				<a class="btn" href="../fiches/fiche-personnage.html?id=${strIdEpigraphe}">Consulter la fiche de Edmund Alleyn</a>
+				<div class="adresse">Adresse : ${objEpigrapheCourant.ADRESSE}</div>
+				<a class="btn" href="../fiches/fiche-personnage.html?id=${strIdEpigraphe}">Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</a>
 			</div>`;
 
 			// console.log(strGabaritContenuInfobulle);

@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style-mandatC.css">
     <title>Chasse aux épigraphes - La chasse</title>
-    <script src="../assets/js/chasse.js" deffer="deffer"></script>
+    <script src="../assets/js/epigraphes.js" defer="defer"></script>
+    <script src="../assets/js/chasse.js" defer="defer"></script>
 </head>
 
 <body>
@@ -105,9 +106,10 @@
 
             </div>
             <div>
-                <p>indices trouvés 0 sur 3</p>
+                <p id="aucuneChasse">Aucune chasse en cours. Pigez une nouvelle chasse pour commencer!</p>
+                <p id="chasseEnCours" hidden>indices trouvés <span id="nbIndiceTrouve">0</span> sur 3</p>
             </div>
-            <div id="indices">
+            <section id="indices" hidden="hidden">
                 <div id="carte-personnage" class="carte">
                     <img src="/assets/images/_autres/personnage.svg" alt="personnage">
                     <div>
@@ -132,11 +134,11 @@
                         <p id="nom-lieu">--placeholder--</p>
                     </div>
                 </div>
-            </div>
+            </>
             <div id="boutons" class="rangee">
                 <button class="cols_4_de_12 cols_4_de_8"><a href="../galerie/galerie.html">Galerie des personnages</a></button>
-                <button class="cols_3_de_12 cols_3_de_8"><a>Piger une nouvelle chasse</a></button>
-                <button class="cols_3_de_12 cols_3_de_8"><a href="#">Consulter la carte</a></button>
+                <button class="cols_3_de_12 cols_3_de_8" id="btnNouvelleChasse"><span>Piger une nouvelle chasse</span></button>
+                <button class="cols_3_de_12 cols_3_de_8"><a href="../carte/index.html">Consulter la carte</a></button>
             </div>
         </section>
     </main>
