@@ -117,6 +117,7 @@
 
 .carte>* {
     min-width: 247px;
+    max-width: 50%;
     flex-grow: 0;
 }
 
