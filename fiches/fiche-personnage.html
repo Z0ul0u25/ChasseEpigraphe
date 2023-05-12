@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span id="title"></span> - Chasse au épigraphes</title>
+    <script defer src="../assets/js/epigraphes.js"></script>
+    <script defer src="../assets/js/fiche-personnage.js"></script>
+</head>
+<body>
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+            historiques :
+            <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+    <header>
+        <p class="titre">Chasse aux épigraphes</p>
+    </header>
+    <main>
+        <section>
+            <h1><span id="prenom">PRENOM</span> <span id="nom">NOM</span></h1>
+            <p id="domaine">Arts visuels</p>
+            <figure>
+                <img src="" alt=" " id="url_image">
+                <figcaption>
+                    <span id="titre_image">TITRE_IMAGE</span> <br>
+                    &copy;<span id="credit_image">CREDIT_IMAGE</span>
+                </figcaption>
+            </figure>
+            <h2>Notes biographiques</h2>
+            <div id="notes_biographiques">
+                <p>
+                    BIOGRAPHIE
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Localisation</h2>
+            <figure>
+                <img src="../images/zoomgooglemap_alleyn.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
+                    id="carteZoom">
+                <figcaption>
+                    <h3>Arrondissement:
+                        <span id="arrondissement">ARRONDISSEMENT</span>
+                    </h3>
+                    <h3>Quartier:
+                        <span id="quartier">QUARTIER</span>
+                    </h3>
+                    <h3>Adresse:
+                        <span id="adresse">ADRESSE</span>
+                    </h3>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Plaque commémorative</h2>
+            <figure>
+                <img src="../images/plaque_alleyn.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+                <figcaption id="transcript">TRANSCRIPTION_PLAQUE
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Capsule sonore</h2>
+            <p id="audio_desc"></p>
+            <audio controls id="audio_url">
+                <source src="" type="audio/mpeg"/>
+                Votre navigateur ne propose pas de lecteur audio.
+                Consultez la transcription textuelle qui suit.
+            </audio>
+            <h3>Transcription textuelle</h3>
+            <p id="audio_preambule">PRÉAMBULE_AUDIO</p>
+            <p id="audio_transcription">TRANSCRIPTION_AUDIO</p>
+            <h3>Crédits de la narration</h3>
+            <p id="audio_credit">CREDIT_AUDIO</p>
+        </section>
+    </main>
+    <aside role="complementary">
+        <!-- Si l’utilisateur n’a pas débuté une enquête -->
+        <div id="zoneAuncunechasseEnCours">
+            <h2>Soumettre cette fiche comme pièce à conviction</h2>
+            <p><span id="statusChasse">Aucune enquête en cours. Si vous désirez débuter une enquête, visitez la page <a
+                    href="../chasse/index.html">Chasse</a>.</span></p>
+        </div>
+
+        <!-- Si une enquête est en cours -->
+        <div id="zoneChasseEnCours" hidden>
+            <form action="../chasse/index.html">
+                <fieldset>
+                    <legend>
+                        <h2>Soumettre cette fiche comme pièce à conviction <span id="progrssionEnquete">(0 indice trouvé sur 3)</span></h2>
+                    </legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
+                                required>
+                            <label for="personnage">Personnage</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
+                            <label for="objet">Objet</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
+                            <label for="lieu">Lieu</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p id="message"></p>
+                <p>
+                    <button id="btnSoumettre">Soumettre</button>
+                </p>
+            </form>
+            <ul>
+                <li>
+                    <a href="../chasse/index.html">Vérifier votre progression dans la résolution du mystère</a>
+                </li>
+                <li>
+                    <a href="../carte/index.html">Poursuivre l’enquête </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+</body>
+</html>
