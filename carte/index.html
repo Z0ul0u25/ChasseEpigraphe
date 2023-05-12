@@ -5,9 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte</title>
+
+    <!-- relier d'abord l'objet JSON des épigraphes -->
+    <script defer src="../assets/js/epigraphes.js"></script>
+
+    <!-- importation de l'API de Google Maps avec une clé d'authentification valide -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCDvhlpyatxeG_IAbGnSKwJEv22YMtBA"></script>
+
+    <!-- relier ensuite le script de la carte -->
+    <script defer src="../assets/js/carte.js"></script>
+    <style>
+        #carte {
+            min-height: 400px;
+        }
+
+        #repere {
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 <body>
-    <p>Cette page n'à pas été réalisé puisque nous sommes une équipe de trois personnes et le mandat D nous est facultatif.</p>
-    <a href="/">Retour à l'accueil</a>
+    <p>Cette page n'à pas été complété visuellement puisque nous sommes une équipe de trois personnes et le mandat D nous est facultatif.</p>
+    <a href="../index.html">Retour à l'accueil</a> |
+    <a href="../chasse/index.html">Retour à la chasse</a>
+
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le
+            cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les
+            épigraphes
+            historiques :
+            <a
+                href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+
+    <header role="banner">
+        <p class="titre">Chasse aux épigraphes</p>
+    </header>
+
+    <main>
+        <h2>Carte - Démo Google Maps</h2>
+
+        <div id="carte">
+            <!-- Le Google Maps s'intégrera ici -->
+        </div>
+
+    </main>
 </body>
 </html>

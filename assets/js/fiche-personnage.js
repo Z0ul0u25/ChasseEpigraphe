@@ -21,6 +21,11 @@ const objFichePersonnage = {
         this.id = new URLSearchParams(window.location.search).get("id");
         this.objSelection = objJSONepigraphes[this.id];
 
+        // Assignation de la visite
+        let visite = JSON.parse(localStorage.visite);
+        visite[this.id] = true;
+        localStorage.visite = JSON.stringify(visite);
+
         // Titre
         document.getElementsByTagName("title")[0].innerText =
             this.objSelection.PRENOM + " " +
