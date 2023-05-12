@@ -60,10 +60,11 @@ body {
    margin-top: 20px;
 }
 @media (min-width: 1000px) {
-   .main-video {
+   .main-video_video {
       width: 1024px;
-      height: 500px;
-      padding-bottom: 30px;
+      height: 600px;
+      /* padding-bottom: 20px;
+      padding-top: 20px; */
    }
 }
 
