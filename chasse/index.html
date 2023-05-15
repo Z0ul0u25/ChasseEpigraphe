@@ -111,27 +111,36 @@
             </div>
             <section id="indices" hidden="hidden">
                 <div id="carte-personnage" class="carte">
-                    <img src="/assets/images/_autres/personnage.svg" alt="personnage">
+                    <picture id="photo-personnage">
+                        <source media="(min-width: 600px)" srcset="/assets/images/_autres/personnage.svg">
+                        <img src="/assets/images/_autres/personnage.svg" alt="personnage à trouver">
+                    </picture>
                     <div>
                         <p>Personnage</p>
                         <p id="indice-personnage">--placeholder--</p>
-                        <p id="nom-personnage">--placeholder--</p>
+                        <p id="retroaction-personnage">--placeholder--</p>
                     </div>
                 </div>
                 <div id="carte-objet" class="flex-reverse carte">
-                    <img src="/assets/images/_autres/objet.svg" alt="objet">
+                    <picture id="photo-objet">
+                        <source media="(min-width: 600px)" srcset="/assets/images/_autres/objet.svg">
+                        <img src="/assets/images/_autres/objet.svg" alt="objet à trouver">
+                    </picture>
                     <div>
                         <p>Objet</p>
                         <p id="indice-objet">--placeholder--</p>
-                        <p id="nom-objet">--placeholder--</p>
+                        <p id="retroaction-objet">--placeholder--</p>
                     </div>
                 </div>
                 <div id="carte-lieu" class="carte">
-                    <img src="/assets/images/_autres/lieu.svg" alt="lieu">
+                    <picture id="photo-lieu">
+                        <source media="(min-width: 600px)" srcset="/assets/images/_autres/lieu.svg">
+                        <img src="/assets/images/_autres/lieu.svg" alt="lieu à trouver">
+                    </picture>
                     <div>
                         <p>Lieu</p>
                         <p id="indice-leu">--placeholder--</p>
-                        <p id="nom-lieu">--placeholder--</p>
+                        <p id="retroaction-lieu">--placeholder--</p>
                     </div>
                 </div>
             </>

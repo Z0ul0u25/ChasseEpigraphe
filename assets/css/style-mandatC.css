@@ -89,9 +89,9 @@
     text-align: center;
 }
 
-#indices img {
-    max-width   : 49.231%;
-    aspect-ratio: 81 / 56;
+#indices picture {
+    max-width   : 49.231% /* 405px au max, mois si il faut*/
+    /* aspect-ratio: 81 / 56; */
     /*405x280*/
 }
 

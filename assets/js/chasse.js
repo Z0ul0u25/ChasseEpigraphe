@@ -33,10 +33,29 @@ function obtenirNombreEntierAleatoire(intMin, intMax) {
  * Ràfraichit la phrase de l'énoncé de l'incide selon les valeurs trouvées
  */
 function rafraichirIndice() {
+    // Rafraichissement de l'indice
     document.getElementById("indice-personnage").innerHTML = objJSONepigraphes[localStorage.id_personnage].CHASSE[(localStorage.personnage_est_trouve == 1) ? `REPONSE` : `INDICE`];
     document.getElementById("indice-objet").innerHTML = objJSONepigraphes[localStorage.id_objet].CHASSE[(localStorage.objet_est_trouve == 1) ? `REPONSE` : `INDICE`];
     document.getElementById("indice-leu").innerHTML = objJSONepigraphes[localStorage.id_lieu].CHASSE[(localStorage.lieu_est_trouve == 1) ? `REPONSE` : `INDICE`];
+    // Rafraichissement de la rétroaction
+    document.getElementById("retroaction-personnage").innerHTML = (localStorage.personnage_est_trouve == 1)?"Trouvé!":"???";
+    document.getElementById("retroaction-objet").innerHTML = (localStorage.objet_est_trouve == 1)?"Trouvé!":"???";
+    document.getElementById("retroaction-lieu").innerHTML = (localStorage.lieu_est_trouve == 1)?"Trouvé!":"???";
+    // Rafraichissement de la photo
+    if (localStorage.personnage_est_trouve == 1){
+        document.querySelector("#photo-personnage source").srcset = `/assets/images/Personnages/405x280_chasseTableX1/${localStorage.id_personnage}_chasse_405.jpg`;
+        document.querySelector("#photo-personnage img").src = `/assets/images/Personnages/235x165_chasseTabletteMobileX1/${localStorage.id_personnage}_chasse_235.jpg`;
+    }
+    if (localStorage.objet_est_trouve == 1){
+        document.querySelector("#photo-objet source").srcset = `/assets/images/Objets/405/${localStorage.id_objet}_chasse_w405.jpg`;
+        document.querySelector("#photo-objet img").src = `/assets/images/Objets/235/${localStorage.id_objet}_chasse_w235.jpg`;
+    }
+    if (localStorage.lieu_est_trouve == 1){
+        document.querySelector("#photo-lieu source").srcset = `/assets/images/Lieux/405x280/${localStorage.id_lieu}_lieu_405.jpg`;
+        document.querySelector("#photo-lieu img").src = `/assets/images/Lieux/235x165/${localStorage.id_lieu}_lieu_235.jpg`;
+    }
 
+    // Raffraichissement du nombre d'indice trouvé
     document.getElementById("nbIndiceTrouve").innerText =
         Number(localStorage.personnage_est_trouve) +
         Number(localStorage.objet_est_trouve) +
