@@ -7,13 +7,6 @@ Mandat B - Galerie de personnages
    ========================================================================== */
 @import url(style.css);
 
-
-.personnages:focus {
-
-   border: 4px solid #237BFF;
-
-}
-
 main {
    margin: 0 3%;
 }
