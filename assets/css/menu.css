@@ -219,11 +219,14 @@ ul {
 
     }
 }
+.entete-site_titres {
+    margin-bottom: 35px;
+}
 
 /* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 /* Style the navigation menu */
 .navigation-mobile {
-    position: absolute;
+    position: relative;
     width: 95%;
     top: 81.5%;
     margin-left: auto;
@@ -242,7 +245,8 @@ ul {
     background-color: #DC2062;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 50px
+    margin-top: 50px;
+    margin-right: 18px;
 }
 
 /* Style navigation menu links */
@@ -262,13 +266,17 @@ ul {
     }
 }
 
-/* Style the hamburger menu */
+/* Style du menu hamburger */
 .navigation-mobile a.icon {
     background: #DC2062;
     display: block;
     position: absolute;
     right: 0;
-    top: -16px;
+    top: -88px;
+    height: 88px;
+    padding: 19px 11px 8px 13px;
+    width: 79px;
+    margin-right: 18px;
 }
 
 /* Add a grey background color on mouse-over */
