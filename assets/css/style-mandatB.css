@@ -8,7 +8,7 @@ Mandat B - Galerie de personnages
 @import url(style.css);
 
 
-li:focus {
+.personnages:focus {
 
    border: 4px solid #237BFF;
 
@@ -140,6 +140,13 @@ h2 {
    border: 4px solid var(--couleur-dominante);
    list-style: none;
    background-color: var(--couleur-tertiaire);
+
+}
+
+.personnages:hover {
+
+   filter: brightness(1.13);
+   border: 4px solid #237BFF;
 
 }
 
