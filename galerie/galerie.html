@@ -71,15 +71,15 @@
                 <h2>Filtrer par type d'incide</h2>
                 <ul class="liste-filtre">
                     <li>
-                        <input type="checkbox" name="indice" id="personnages">
+                        <input type="checkbox" name="indice" id="personnages" data-critere="per">
                         <label for="personnages">Personnages</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="objets">
+                        <input type="checkbox" name="indice" id="objets" data-critere="obj">
                         <label for="objets">Objets</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="lieux">
+                        <input type="checkbox" name="indice" id="lieux" data-critere="lie">
                         <label for="lieux">Lieux</label>
                     </li>
                 </ul>
@@ -108,7 +108,7 @@
         </div>
         <div class="ctnPersonnages">
             <ul class="liste-personnages wrapperPerso">
-                <li class="personnages p1">
+                <li class="personnages p1" data-critere="per">
                     <a href="../fiches/fiche-personnage.html?id=e0001">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0001_chasse_235.jpg" media="(min-width:800px)">
