@@ -51,13 +51,14 @@ body {
 
 
 /* VIDEO - BORDER EST POUR QU'ON AIT UN PLACEHOLDER */
-.main-video {
+.main-video_video {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border: 3px solid black;
-   margin-top: 20px;
+   width: 100%;
+   /* margin-top: 10px; */
+
 }
 @media (min-width: 1000px) {
    .main-video_video {
@@ -84,6 +85,10 @@ body {
       padding-top: 40px;
       
    }
+}
+
+.main-background {
+   background-color: #12e63c;
 }
 
 
