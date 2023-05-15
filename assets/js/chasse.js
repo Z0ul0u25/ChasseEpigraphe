@@ -90,7 +90,7 @@ function demarrerChasse() {
     localStorage.personnage_est_trouve = 0;
     localStorage.objet_est_trouve = 0;
     localStorage.lieu_est_trouve = 0;
-    localStorage.visite = JSON.stringify({});
+    localStorage.visite = JSON.stringify(new Object);
     afficherChasse();
     // }
 }
