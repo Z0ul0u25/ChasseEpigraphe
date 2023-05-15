@@ -38,34 +38,41 @@ function rafraichirIndice() {
     document.getElementById("indice-objet").innerHTML = objJSONepigraphes[localStorage.id_objet].CHASSE[(localStorage.objet_est_trouve == 1) ? `REPONSE` : `INDICE`];
     document.getElementById("indice-leu").innerHTML = objJSONepigraphes[localStorage.id_lieu].CHASSE[(localStorage.lieu_est_trouve == 1) ? `REPONSE` : `INDICE`];
     // Rafraichissement de la rétroaction
-    document.getElementById("retroaction-personnage").innerHTML = (localStorage.personnage_est_trouve == 1)?"Trouvé!":"???";
-    document.getElementById("retroaction-objet").innerHTML = (localStorage.objet_est_trouve == 1)?"Trouvé!":"???";
-    document.getElementById("retroaction-lieu").innerHTML = (localStorage.lieu_est_trouve == 1)?"Trouvé!":"???";
+    document.getElementById("retroaction-personnage").innerHTML = (localStorage.personnage_est_trouve == 1) ? "Trouvé!" : "???";
+    document.getElementById("retroaction-objet").innerHTML = (localStorage.objet_est_trouve == 1) ? "Trouvé!" : "???";
+    document.getElementById("retroaction-lieu").innerHTML = (localStorage.lieu_est_trouve == 1) ? "Trouvé!" : "???";
     // Rafraichissement de la photo
-    if (localStorage.personnage_est_trouve == 1){
+    if (localStorage.personnage_est_trouve == 1) {
         document.querySelector("#photo-personnage source").srcset = `/assets/images/Personnages/405x280_chasseTableX1/${localStorage.id_personnage}_chasse_405.jpg`;
         document.querySelector("#photo-personnage img").src = `/assets/images/Personnages/235x165_chasseTabletteMobileX1/${localStorage.id_personnage}_chasse_235.jpg`;
     }
-    if (localStorage.objet_est_trouve == 1){
+    if (localStorage.objet_est_trouve == 1) {
         document.querySelector("#photo-objet source").srcset = `/assets/images/Objets/405/${localStorage.id_objet}_chasse_w405.jpg`;
         document.querySelector("#photo-objet img").src = `/assets/images/Objets/235/${localStorage.id_objet}_chasse_w235.jpg`;
     }
-    if (localStorage.lieu_est_trouve == 1){
+    if (localStorage.lieu_est_trouve == 1) {
         document.querySelector("#photo-lieu source").srcset = `/assets/images/Lieux/405x280/${localStorage.id_lieu}_lieu_405.jpg`;
         document.querySelector("#photo-lieu img").src = `/assets/images/Lieux/235x165/${localStorage.id_lieu}_lieu_235.jpg`;
     }
 
+    const refNbIndice = document.getElementById("nbIndiceTrouve");
     // Raffraichissement du nombre d'indice trouvé
-    document.getElementById("nbIndiceTrouve").innerText =
+    refNbIndice.innerText =
         Number(localStorage.personnage_est_trouve) +
         Number(localStorage.objet_est_trouve) +
         Number(localStorage.lieu_est_trouve);
+
+    if (refNbIndice.innerText == "3") {
+        const btnCarte = document.getElementById("boutons").lastElementChild.firstElementChild;
+        btnCarte.href = "../concours/index.html";
+        btnCarte.innerText = "Participer au concours!";
+    }
 }
 /**
  * Affichage dépendant de si la chasse est en cours ou non.
  */
 function afficherChasse() {
-    document.getElementById("aucuneChasse").setAttribute("hidden","hidden");
+    document.getElementById("aucuneChasse").setAttribute("hidden", "hidden");
     document.getElementById("chasseEnCours").removeAttribute("hidden");
     refSectionIndices.removeAttribute("hidden");
     rafraichirIndice();
@@ -74,7 +81,7 @@ function afficherChasse() {
 /**
  * Démarre une nouvelle chasse avec des valeurs aléatoires
  */
-function demarrerChasse () {
+function demarrerChasse() {
     // if (localStorage.id_personnage == undefined) {
     localStorage.dernierChoix = null;
     localStorage.id_personnage = arrIds[0][obtenirNombreEntierAleatoire(0, arrIds[0].length - 1)];
@@ -125,7 +132,7 @@ function vefifierDernierChoix() {
 function initialisation() {
     refBtnNouvelleChasse.addEventListener("click", confirmationNouvelleChasse, false);
     if (localStorage.dernierChoix != undefined) {
-        (localStorage.dernierChoix != "null")?vefifierDernierChoix():null;
+        (localStorage.dernierChoix != "null") ? vefifierDernierChoix() : null;
         afficherChasse();
     }
 }
