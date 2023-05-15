@@ -95,6 +95,10 @@
     /*405x280*/
 }
 
+#indices picture img {
+    height: 100%;
+}
+
 .carte>div {
     background-color: var(--couleur-dominante);
     color           : #fff;
@@ -116,6 +120,7 @@
 }
 
 .carte>* {
+    max-height: 280px;
     min-width: 247px;
     max-width: 50%;
     flex-grow: 0;
