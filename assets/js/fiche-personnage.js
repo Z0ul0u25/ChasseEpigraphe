@@ -22,6 +22,10 @@ const objFichePersonnage = {
         this.objSelection = objJSONepigraphes[this.id];
 
         // Assignation de la visite
+        if (!localStorage.visite){
+            localStorage.visite = JSON.stringify(new Object);
+        }
+
         let visite = JSON.parse(localStorage.visite);
         visite[this.id] = true;
         localStorage.visite = JSON.stringify(visite);
