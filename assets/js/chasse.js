@@ -103,6 +103,7 @@ function confirmationNouvelleChasse() {
     // e.preventDefault();
     if (refSectionIndices.getAttribute("hidden") == "hidden" || confirm("Voulez vous vraiment piger une nouvelle chasse?\nToute la progression sera perdu")) {
         demarrerChasse();
+        location.reload();
     }
 }
 
