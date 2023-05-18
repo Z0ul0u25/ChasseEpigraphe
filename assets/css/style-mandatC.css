@@ -5,6 +5,10 @@
 
 @import url(style.css);
 
+main{
+    padding-bottom: 100px;
+}
+
 #top__h1 {
     grid-area : h;
     text-align: center;
