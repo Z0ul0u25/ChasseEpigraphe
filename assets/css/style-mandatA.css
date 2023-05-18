@@ -104,6 +104,7 @@ body {
    margin: 53px;
 }
 
+
 .bouton {
    background-color: #DC2062;
    padding: 15px;
@@ -113,4 +114,12 @@ body {
    text-transform: uppercase;
    font-weight: bold;
    width: 320px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 2rem;
+}
+.bouton:hover {
+   background-color: #FF75A5;
+    color: black;
+    box-shadow: 10px 5px 5px #FF75A5;
 }
