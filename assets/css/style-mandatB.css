@@ -143,6 +143,12 @@ h2 {
 
 }
 
+.selection {
+
+   filter: blur(10);
+
+}
+
 a {
 
    text-align: center;
