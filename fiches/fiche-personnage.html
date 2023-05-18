@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><span id="title"></span> - Chasse au épigraphes</title>
+    <link rel="stylesheet" href="../assets/css/style-mandatB.css">
+    <link rel="icon" href="../assets/images/_autres/logo-flaticon.png">
     <script defer src="../assets/js/epigraphes.js"></script>
     <script defer src="../assets/js/fiche-personnage.js"></script>
 </head>
@@ -16,20 +18,79 @@
             <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
         </p>
     </noscript>
-    <header>
-        <p class="titre">Chasse aux épigraphes</p>
+    <header class="placeholder">
+         <div class="entete-site">
+             <a href="#contenu" class="lienrapide screen-reader-only focusable">Allez au contenu
+             </a>
+              <a href="../index.html" class="entete-site_accueil">
+                 <picture>
+                     <img src="../assets/images/logo.svg" alt="" class="entete-site_logo">
+                      <!-- Width et height est pour que le contenu du page soit visible lorsque l'intégration en cours -->
+                </picture>
+                 <div class="entete-site_titres">
+                    <div class="titre-principal">Chasse aux épigraphes</div>
+                    <div class="sous-titre">dans la ville de Québec</div>
+                   </div>
+            </a>
+               <nav class="navigation-principale menu-fermer">
+                <ul class="navigation-principale_liste menu-fermer">
+                    <li class="navigation-principale_item"><a href="../index.html"
+                            class="navigation-principal_lien">Accueil</a></li>
+                    <li class="navigation-principale_item"><a href="../chasse/index.html"
+                            class="navigation-principal_lien">Chasse aux épigraphes</a></li>
+                     <li class="navigation-principale_item"><a href="../galerie/galerie.html"
+                            class="navigation-principal_lien">Galerie de personnages</a></li>
+                       <li class="navigation-principale_item"><a href="../carte/index.html"
+                            class="navigation-principal_lien">Carte</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- HAMBURGER MENU CODE DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+         <!-- Top Navigation Menu -->
+        <nav class="navigation-mobile">
+
+            <!-- Navigation links (hidden by default) -->
+               <div id="navigation-mobile_liens">
+                   <a href="../index.html" class="navigation-principal_lien">Accueil</a>
+                <a href="../chasse/index.html" class="navigation-principal_lien">Chasse aux épigraphes</a>
+                   <a href="../galerie/galerie.html" class="navigation-principal_lien">Galerie de personnages</a>
+                <a href="../carte/index.html" class="navigation-principal_lien">Carte</a>
+            </div>
+               <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+               <a href="javascript:void(0);" class="icon" onclick="afficherMenu()">
+
+                   <i class="fa fa-2x fa-bars fa-window-close"></i>
+                <div class="nav-principale_span">Menu</div>
+               </a>
+           </nav>
+          <!-- Load an icon library to show a hamburger menu (bars) on small screens -->    
+
     </header>
+
     <main>
-        <section>
-            <h1><span id="prenom">PRENOM</span> <span id="nom">NOM</span></h1>
-            <p id="domaine">Arts visuels</p>
-            <figure>
+        <section class="ctnTitre">
+            <h1 class="titreFiche"><span id="prenom">PRENOM</span> <span id="nom">NOM</span> - <span id="domaine">Arts visuels</span></h1>    
+        </section>
+
+        <div class="wrapper1">
+        <section class="ctnImg"> 
+            <figure class="imgPerso">
                 <img src="" alt=" " id="url_image">
-                <figcaption>
+                <figcaption class="figPerso">
                     <span id="titre_image">TITRE_IMAGE</span> <br>
                     &copy;<span id="credit_image">CREDIT_IMAGE</span>
                 </figcaption>
+            </figure>        
+        </section>
+        <section class="ctnPlaque">
+            <h2>Plaque commémorative</h2>
+            <figure>
+                <img src="../images/plaque_alleyn.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+                <figcaption class="figPlaque" id="transcript">TRANSCRIPTION_PLAQUE
+                </figcaption>
             </figure>
+        </section>
+        <section class="ctnBio">
             <h2>Notes biographiques</h2>
             <div id="notes_biographiques">
                 <p>
@@ -37,12 +98,14 @@
                 </p>
             </div>
         </section>
-        <section>
+        </div>
+
+        <section class="ctnLocal">
             <h2>Localisation</h2>
             <figure>
                 <img src="../images/zoomgooglemap_alleyn.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
                     id="carteZoom">
-                <figcaption>
+                <figcaption class="figLocalisation">
                     <h3>Arrondissement:
                         <span id="arrondissement">ARRONDISSEMENT</span>
                     </h3>
@@ -55,15 +118,7 @@
                 </figcaption>
             </figure>
         </section>
-        <section>
-            <h2>Plaque commémorative</h2>
-            <figure>
-                <img src="../images/plaque_alleyn.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
-                <figcaption id="transcript">TRANSCRIPTION_PLAQUE
-                </figcaption>
-            </figure>
-        </section>
-        <section>
+        <section class="ctnAudio">
             <h2>Capsule sonore</h2>
             <p id="audio_desc"></p>
             <audio controls id="audio_url">
@@ -77,6 +132,7 @@
             <h3>Crédits de la narration</h3>
             <p id="audio_credit">CREDIT_AUDIO</p>
         </section>
+
     </main>
     <aside role="complementary">
         <!-- Si l’utilisateur n’a pas débuté une enquête -->

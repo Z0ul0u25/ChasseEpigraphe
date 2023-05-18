@@ -34,7 +34,7 @@ const objFichePersonnage = {
         document.getElementsByTagName("title")[0].innerText =
             this.objSelection.PRENOM + " " +
             this.objSelection.NOM +
-            " -Chasse aux épigraphes";
+            " - Chasse aux épigraphes";
         // Prénom et nom
         document.getElementById("prenom").innerText = this.objSelection.PRENOM;
         document.getElementById("nom").innerText = this.objSelection.NOM;
@@ -47,7 +47,7 @@ const objFichePersonnage = {
         // Notes biographiques
         document.getElementById("notes_biographiques").innerHTML = `<p>${this.objSelection.BIOGRAPHIE}`;
         // Image de Google Maps
-        document.getElementById("carteZoom").src = `../assets/images/zoomGoogle_maps/${this.id}-zoom-google-maps.png`;
+        document.getElementById("carteZoom").src = `../assets/images/googleMaps/${this.id}-zoom-google-maps.png`;
         // Adresse civique
         document.getElementById("arrondissement").innerText = this.objSelection.ARRONDISSEMENT;
         document.getElementById("quartier").innerText = this.objSelection.QUARTIER;
