@@ -33,12 +33,14 @@ body {
       margin: 10px 20px 10px 20px;
    }
 }
+
 @media (min-width: 1000px) {
    .main-section {
       display: flex;
       flex-direction: row-reverse;
       align-items: flex-start;
    }
+
    .main-section_paragraphes {
       flex-wrap: wrap;
       padding: 10px 30px 10px 20px;
@@ -60,6 +62,7 @@ body {
    /* margin-top: 10px; */
 
 }
+
 @media (min-width: 1000px) {
    .main-video_video {
       width: 1024px;
@@ -78,12 +81,13 @@ body {
    max-width: 80%;
    width: 100%;
 }
+
 @media (min-width: 1000px) {
    .main-section_epigraphe {
       margin-left: 80px;
       width: 500px;
       padding-top: 40px;
-      
+
    }
 }
 
@@ -118,8 +122,13 @@ body {
    text-decoration: none;
    font-size: 2rem;
 }
+
 .bouton:hover {
    background-color: #FF75A5;
-    color: black;
-    box-shadow: 10px 5px 5px #FF75A5;
+   color: black;
+   box-shadow: 10px 5px 5px #FF75A5;
+}
+
+.bouton:focus {
+   border: 5px solid #9b9b9b; 
 }
