@@ -164,15 +164,19 @@ input[type=radio]+label {
 }
 
 /*** Interactivité ***/
-[type=radio]:hover+label {
+[type=radio]:hover:not(:disabled)+label {
     cursor: pointer;
 }
 
-[type=radio]:hover+label,
-[type=radio]:focus+label {
+[type=radio]:hover:not(:disabled)+label,
+[type=radio]:focus:not(:disabled)+label {
     border: 2px solid #09c231;
 }
 
-[type=radio]:checked+label {
+[type=radio]:checked:not(:disabled)+label {
     border: 2px solid #068221;
+}
+
+[type=radio]:disabled+label svg rect{
+    fill: #b9b9b9 !important;
 }

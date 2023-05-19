@@ -77,6 +77,16 @@ const objFichePersonnage = {
                 Number(localStorage.objet_est_trouve) +
                 Number(localStorage.lieu_est_trouve);
 
+            if(localStorage.personnage_est_trouve == "1"){
+                document.getElementById("personnage").disabled = "disabled";
+            }
+            if(localStorage.objet_est_trouve == "1"){
+                document.getElementById("objet").disabled = "disabled";
+            }
+            if(localStorage.lieu_est_trouve == "1"){
+                document.getElementById("lieu").disabled = "disabled";
+            }
+
         }
 
     }
