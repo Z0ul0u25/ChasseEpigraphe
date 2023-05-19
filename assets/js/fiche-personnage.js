@@ -30,6 +30,13 @@ const objFichePersonnage = {
         visite[this.id] = true;
         localStorage.visite = JSON.stringify(visite);
 
+        console.log(this.objSelection.DOMAINE);
+        switch(this.objSelection.TYPE){
+            case "Sciences et Lettres":// vérifier le nom enregistré dans l’objet pour correspondre
+            //code pour ajouter le bon icône
+            break;
+        // faire les différents cas
+
         // Titre
         document.getElementsByTagName("title")[0].innerText =
             this.objSelection.PRENOM + " " +
@@ -45,7 +52,10 @@ const objFichePersonnage = {
         document.getElementById("titre_image").innerText = this.objSelection.IMAGE.TITRE;
         document.getElementById("credit_image").innerText = this.objSelection.IMAGE.CREDIT;
         // Notes biographiques
-        document.getElementById("notes_biographiques").innerHTML = `<p>${this.objSelection.BIOGRAPHIE}`;
+        document.getElementById("notes_biographiques").innerHTML = `<p>${this.objSelection.BIOGRAPHIE}</p>
+        <div id="icone_secteur">
+        <img src="../assets/images/_autres/${strType}.png" alt="" class="placeholder" width="300">
+    </div>`;
         // Image de Google Maps
         document.getElementById("carteZoom").src = `../assets/images/googleMaps/${this.id}-zoom-google-maps.png`;
         // Adresse civique
@@ -93,3 +103,4 @@ const objFichePersonnage = {
 };
 
 objFichePersonnage.initialiser();
+
