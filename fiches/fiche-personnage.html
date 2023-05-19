@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><span id="title"></span> - Chasse au épigraphes</title>
-    <link rel="stylesheet" href="../assets/css/style-mandatB.css">
+    <link rel="stylesheet" href="../assets/css/fiche.css">
     <link rel="icon" href="../assets/images/_autres/logo-flaticon.png">
     <script defer src="../assets/js/epigraphes.js"></script>
     <script defer src="../assets/js/fiche-personnage.js"></script>
@@ -147,20 +147,23 @@
             <form action="../chasse/index.html">
                 <fieldset>
                     <legend>
-                        <h2>Soumettre cette fiche comme pièce à conviction <span id="progrssionEnquete">(0 indice trouvé sur 3)</span></h2>
+                        <h2>Soumettre cette fiche comme pièce à conviction (<span id="progressionEnquete">0</span> indice trouvé sur 3)</h2>
                     </legend>
                     <ul>
                         <li>
-                            <input type="radio" name="formChasse" value="personnage" id="personnage" class=""
+                            <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
                                 required>
-                            <label for="personnage">Personnage</label>
+                            <label for="personnage">
+                                <img src="../assets/images/_autres/personnage.svg" alt="icone personnage">
+                                <span>Personnage</span>
+                            </label>
                         </li>
                         <li>
-                            <input type="radio" name="formChasse" value="objet" id="objet" class="">
+                            <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
                             <label for="objet">Objet</label>
                         </li>
                         <li>
-                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="">
+                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
                             <label for="lieu">Lieu</label>
                         </li>
                     </ul>
