@@ -10,6 +10,7 @@
 
 const refBtnNouvelleChasse = document.getElementById("btnNouvelleChasse");
 const refSectionIndices = document.getElementById("indices");
+const refRetroaction = document.getElementById("retroaction");
 
 /* --- Variables --- */
 let arrIds = [
@@ -66,6 +67,8 @@ function rafraichirIndice() {
         const btnCarte = document.getElementById("boutons").lastElementChild.firstElementChild;
         btnCarte.href = "../concours/index.html";
         btnCarte.innerText = "Participer au concours!";
+        refRetroaction.removeAttribute("hidden");
+        refRetroaction.innerHTML = 'Bravo! Vous avez trouvé tous les indices et complété la chasse! Vous pouvez désormais <a href="../concours/index.html">participer au concours.</a>';
     }
 }
 /**
@@ -113,16 +116,16 @@ function confirmationNouvelleChasse() {
  */
 function vefifierDernierChoix() {
     const dernierChoix = JSON.parse(localStorage.dernierChoix);
-    // const refRetroaction = document.getElementById("retroaction");
-    console.log(dernierChoix);
+    refRetroaction.removeAttribute("hidden");
     if (dernierChoix != null && localStorage[`id_${dernierChoix.TYPE}`] == dernierChoix.ID) {
         localStorage[`${dernierChoix.TYPE}_est_trouve`] = 1;
-        // refRetroaction.innerHTML = `Bravo! Vous avez trouvé « ${objJSONepigraphes[dernierChoix.ID].CHASSE.REPONSE} »`;
+        refRetroaction.innerHTML = `Bravo! Vous avez trouvé ${(dernierChoix.TYPE == 'objet')? 'l\'':'le '}${dernierChoix.TYPE}« ${objJSONepigraphes[dernierChoix.ID].CHASSE.REPONSE} »`;
 
         rafraichirIndice();
-    } /*else {
-        refRetroaction.innerHTML = "Désolé. Ce n’est pas le bon élément.";
-    }*/
+    }else {
+        refRetroaction.innerHTML = `Désolé, ${objJSONepigraphes[dernierChoix.ID].PRENOM} ${objJSONepigraphes[dernierChoix.ID].NOM} n'est pas ${(dernierChoix.TYPE == 'objet')? 'l\'':'le '}${dernierChoix.TYPE} recherché.`;
+    }
+
     localStorage.dernierChoix = null;
 }
 
@@ -132,8 +135,9 @@ function vefifierDernierChoix() {
  */
 function initialisation() {
     refBtnNouvelleChasse.addEventListener("click", confirmationNouvelleChasse, false);
+
     if (localStorage.dernierChoix != undefined) {
-        (localStorage.dernierChoix != "null") ? vefifierDernierChoix() : null;
+        (localStorage.dernierChoix != "null") ? vefifierDernierChoix() : refRetroaction.setAttribute("hidden", "hidden");;
         afficherChasse();
     }
 }

@@ -21,7 +21,7 @@ const objFichePersonnage = {
         this.id = new URLSearchParams(window.location.search).get("id");
         this.objSelection = objJSONepigraphes[this.id];
 
-        // Assignation de la visite
+        // Assignation de la visite pour la carte
         if (!localStorage.visite){
             localStorage.visite = JSON.stringify(new Object);
         }
@@ -70,7 +70,7 @@ const objFichePersonnage = {
         if (localStorage.id_personnage != null) {
             document.getElementById("statusChasse").setAttribute("hidden", "hidden");
             document.getElementById("zoneChasseEnCours").removeAttribute("hidden");
-
+            document.getElementById("zoneAuncunechasseEnCours").setAttribute("hidden", "hidden");
         }
 
     }

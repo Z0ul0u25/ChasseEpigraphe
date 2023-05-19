@@ -7,13 +7,13 @@ Mandat B - Galerie de personnages
    ========================================================================== */
 @import url(style.css);
 
-main {
+main, aside {
    margin: 0 3%;
 }
 
 @media (min-width: 500px) {
 
-   main {
+   main, aside {
 
       margin: 0 5%;
 
@@ -23,7 +23,7 @@ main {
 
 @media (min-width: 1100px) {
 
-   main {
+   main, aside {
 
       max-width: 1000px;
       margin: 0 auto;
@@ -168,7 +168,7 @@ h2 {
 
 }
 
-a {
+header a, footer a {
 
    text-align: center;
    color: white;
@@ -188,7 +188,7 @@ h3 {
 @media (min-width: 500px) {
 
    h3 {
- 
+
       padding: 5px;
       font-size: 1.5rem;
 
@@ -204,7 +204,7 @@ h3 {
       font-size: 1.3rem;
 
    }
-   
+
 }
 
 @media (min-width: 950px) {
@@ -215,7 +215,7 @@ h3 {
       font-size: 1.5rem;
 
    }
-   
+
 }
 
 img {
@@ -243,9 +243,9 @@ svg {
 
    "p1 p2"
    "p3 p4"
-   "p5 p6" 
+   "p5 p6"
    "p7 p8"
-   "p9 p10" 
+   "p9 p10"
    "p11 p12"*/
 
 }
@@ -261,7 +261,7 @@ svg {
       "p1 p2 p3 p4"
       "p5 p6 p7 p8"
       "p9 p10 p11 p12"*/
-  
+
 
    }
 
@@ -278,7 +278,7 @@ svg {
       "p1 p2 p3 p4"
       "p5 p6 p7 p8"
       "p9 p10 p11 p12"*/
-  
+
 
    }
 
@@ -296,7 +296,7 @@ svg {
 }
 
 @media (min-width: 800px) {
-   
+
    .wrapperFiltre {
 
    display: grid;
@@ -367,7 +367,7 @@ audio#audio_url {
 
 p#audio_transcription{
 
-   border: 3px solid rgb(22, 22, 22); 
+   border: 3px solid rgb(22, 22, 22);
    border-radius: 5px;
    padding: 10px;
 
@@ -375,15 +375,15 @@ p#audio_transcription{
 
 .wrapper1 {
 
-   
+
    display: grid;
    grid-gap: 20px;
    grid-template-columns: 49% 49%;
-   grid-template-areas: 
+   grid-template-areas:
 
    "ctnImg ctnPlaque"
    "ctnBio ctnBio"
-   
+
 
 
 
