@@ -67,6 +67,8 @@ function rafraichirIndice() {
         const btnCarte = document.getElementById("boutons").lastElementChild.firstElementChild;
         btnCarte.href = "../concours/index.html";
         btnCarte.innerText = "Participer au concours!";
+        refRetroaction.removeAttribute("hidden");
+        refRetroaction.innerHTML = 'Bravo! Vous avez trouvé tous les indices et complété la chasse! Vous pouvez désormais <a href="../concours/index.html">participer au concours.</a>';
     }
 }
 /**
