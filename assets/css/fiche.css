@@ -126,3 +126,53 @@ p#audio_transcription {
         "ctnBio ctnBio"
 
 }
+
+/* Formulaire de chasse */
+
+ul{
+    list-style-type: none;
+}
+
+#zoneChasseEnCours svg{
+    width: 100%;
+    height: inherit;
+}
+
+#zoneChasseEnCours svg rect {
+    fill: var(--couleur-secondaire);
+}
+
+#zoneChasseEnCours ul.rangee li {
+    text-align: center;
+    flex      : 0 1 calc(33.333333% - 10px);
+    /* flex   : 0 1 32%; */
+}
+
+#zoneChasseEnCours label span{
+    display: block;
+}
+
+#btnSoumettre{
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type=radio]+label {
+    display   : inline-block;
+    text-align: center;
+    border    : 2px solid transparent;
+}
+
+/*** Interactivité ***/
+[type=radio]:hover+label {
+    cursor: pointer;
+}
+
+[type=radio]:hover+label,
+[type=radio]:focus+label {
+    border: 2px solid #09c231;
+}
+
+[type=radio]:checked+label {
+    border: 2px solid #068221;
+}
