@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../assets/images/_autres/logo-flaticon.png">
     
-    <!--<script src="../assets/js/galerie.js" defer></script>--> 
+    <script src="../assets/js/galerie.js" defer></script>
     <script defer src="../assets/js/menu.js"></script>
 
 </head>
@@ -73,16 +73,16 @@
                 <h2>Filtrer par type d'incide</h2>
                 <ul class="liste-filtre">
                     <li>
-                        <input type="checkbox" name="indice" id="personnages" data-critere="per">
-                        <label for="personnages">Personnages</label>
+                        <button class="filtre_type" type="button" id="personnages" data-type="per">Personnages</button>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="objets" data-critere="obj">
-                        <label for="objets">Objets</label>
+                        <button class="filtre_type" type="button" id="objets" data-type="obj">Objets</button>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="lieux" data-critere="lie">
-                        <label for="lieux">Lieux</label>
+                        <button class="filtre_type" type="button" id="lieux" data-type="lie">Lieux</button>
+                    </li>
+                    <li>
+                        <button class="filtre_type" type="button" id="lieux" data-type="lie"></button>
                     </li>
                 </ul>
             </div>
@@ -90,28 +90,24 @@
                 <h2>Filtrer par secteur d'activité</h2>
                 <ul class="liste-filtre">
                     <li>
-                        <input type="checkbox" name="indice" id="sports">
-                        <label for="sports">Sports et spectacles</label>
+                        <button class="filtre_secteur" type="button" id="sports" data-secteur="spo">Sports et spectacles</button>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="sciences">
-                        <label for="sciences">Sciences et lettre</label>
+                        <button class="filtre_secteur" type="button" id="sciences" data-secteur="sci">Sciences et lettre</button>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="economie">
-                        <label for="economie">Économie et politique</label>
+                        <button class="filtre_secteur" type="button" id="economie" data-secteur="eco">Économie et politique</button>
                     </li>
                     <li>
-                        <input type="checkbox" name="indice" id="arts">
-                        <label for="arts">Arts visuels</label>
+                        <button class="filtre_secteur" type="button" id="arts" data-secteur="art">Arts visuels</button>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="ctnPersonnages">
             <ul class="liste-personnages wrapperPerso">
-                <li class="personnages p1" data-critere="per">
-                    <a href="../fiches/fiche-personnage.html?id=e0001" data-critere="per">
+                <li class="personnages p1" data-type="per" data-secteur="art">
+                    <a href="../fiches/fiche-personnage.html?id=e0001">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0001_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0001_chasse_153.jpg" alt="Edmund Alleyn">
@@ -119,8 +115,8 @@
                         <h3>Consulter la fiche d'Edmund Alleyn</h3>
                     </a>
                 </li>
-                <li class="personnages p2">
-                    <a href="../fiches/fiche-personnage.html?id=e0002" data-critere="obj">
+                <li class="personnages p2" data-type="obj" data-secteur="sci">
+                    <a href="../fiches/fiche-personnage.html?id=e0002">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0002_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0002_chasse_153.jpg" alt="Philippe-Joseph Aubert de Gaspé">
@@ -128,8 +124,8 @@
                         <h3>Consulter la fiche de Philippe-Joseph Aubert de Gaspé</h3>
                     </a>
                 </li>
-                <li class="personnages p3">
-                    <a href="../fiches/fiche-personnage.html?id=e0004" data-critere="obj">
+                <li class="personnages p3" data-type="obj" data-secteur="spo">
+                    <a href="../fiches/fiche-personnage.html?id=e0004">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0004_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0004_chasse_153.jpg" alt="Henriette Belley">
@@ -137,8 +133,8 @@
                         <h3>Consulter la fiche d'Henriette Belley</h4>
                     </a>
                 </li>
-                <li class="personnages p4">
-                    <a href="../fiches/fiche-personnage.html?id=e0008" data-critere="per">
+                <li class="personnages p4" data-type="per" data-secteur="eco">
+                    <a href="../fiches/fiche-personnage.html?id=e0008">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0008_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0008_chasse_153.jpg" alt="Marthe Caillaud-Simard">
@@ -146,8 +142,8 @@
                         <h3>Consulter la fiche de Marthe Caillaud-Simard</h3>
                     </a>
                 </li>
-                <li class="personnages p5">
-                    <a href="../fiches/fiche-personnage.html?id=e0005" data-critere="lie">
+                <li class="personnages p5" data-type="lie" data-secteur="sci">
+                    <a href="../fiches/fiche-personnage.html?id=e0005">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0005_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0005_chasse_153.jpg" alt="Robert Blatter">
@@ -155,8 +151,8 @@
                         <h3>Consulter la fiche de Robert Blatter</h3>
                     </a>
                 </li>
-                <li class="personnages p6">
-                    <a href="../fiches/fiche-personnage.html?id=e0015" data-critere="per">
+                <li class="personnages p6" data-type="per" data-secteur="spo">
+                    <a href="../fiches/fiche-personnage.html?id=e0015">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0015_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0015_chasse_153.jpg" alt="Camille Henry">
@@ -164,8 +160,8 @@
                         <h3>Consulter la fiche de Camille Henry</h3>
                     </a>
                 </li>
-                <li class="personnages p7">
-                    <a href="../fiches/fiche-personnage.html?id=e0012" data-critere="lie">
+                <li class="personnages p7" data-type="lie" data-secteur="spo">
+                    <a href="../fiches/fiche-personnage.html?id=e0012">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0012_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0012_chasse_153.jpg" alt="Johnny Farago">
@@ -173,8 +169,8 @@
                         <h3>Consulter la fiche de Johnny Farago</h3>
                     </a>
                 </li>
-                <li class="personnages p8">
-                    <a href="../fiches/fiche-personnage.html?id=e0007" data-critere="obj">
+                <li class="personnages p8" data-type="obj" data-secteur="eco">
+                    <a href="../fiches/fiche-personnage.html?id=e0007">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0007_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0007_chasse_153.jpg" alt="Joseph Knight Boswell">
@@ -182,8 +178,8 @@
                         <h3>Consulter la fiche de Joseph Knight Boswell</h3>
                     </a>
                 </li>
-                <li class="personnages p9">
-                    <a href="../fiches/fiche-personnage.html?id=e0016" data-critere="lie">
+                <li class="personnages p9" data-type="lie" data-secteur="art">
+                    <a href="../fiches/fiche-personnage.html?id=e0016">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0016_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0016_chasse_153.jpg" alt="Louis Jobin">
@@ -191,8 +187,8 @@
                         <h3>Consulter la fiche de Louis Jobin</h3>
                     </a>
                 </li>
-                <li class="personnages p10">
-                    <a href="../fiches/fiche-personnage.html?id=e0021" data-critere="obj">
+                <li class="personnages p10" data-type="obj" data-secteur="art">
+                    <a href="../fiches/fiche-personnage.html?id=e0021">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0021_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0021_chasse_153.jpg" alt="Alfred Pellerin">
@@ -200,8 +196,8 @@
                         <h3>Consulter la fiche d'Alfred Pellan</h3>
                     </a>
                 </li>
-                <li class="personnages p11">
-                   <a href="../fiches/fiche-personnage.html?id=e0019" data-critere="per">
+                <li class="personnages p11" data-type="per" data-secteur="sci">
+                   <a href="../fiches/fiche-personnage.html?id=e0019">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0019_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0019_chasse_153.jpg" alt="Sigismund Morh">
@@ -209,8 +205,8 @@
                         <h3>Consulter la fiche de Sigismund Mohr</h3>
                     </a>
                 </li>
-                <li class="personnages p12">
-                    <a href="../fiches/fiche-personnage.html?id=e0022" data-critere="lie">
+                <li class="personnages p12" data-type="lie" data-secteur="eco">
+                    <a href="../fiches/fiche-personnage.html?id=e0022">
                         <picture>
                             <source srcset="../assets/images/Personnages/235x320_ficheGalerieTabletteX1/e0022_chasse_235.jpg" media="(min-width:800px)">
                             <img src="../assets/images/Personnages/153x153_galerieTabletteMobileX1/e0022_chasse_153.jpg" alt="Maurice Pollack">
