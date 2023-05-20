@@ -129,6 +129,20 @@ body {
    box-shadow: 10px 5px 5px #FF75A5;
 }
 
+/* modif de Lorie - J'ai mis le contour un peu plus clair */
+
 .bouton:focus {
-   border: 5px solid #9b9b9b; 
+   border: 5px solid #c8c8c8; 
+}
+
+/* ajouts de Lorie - Juste pour que le lien/texte soit un peu plus visible (même si c'est juste pour le screen reader)*/
+
+.lienrapide {
+
+   color: white;
+}
+
+.lienrapide:focus {
+
+   padding: 5px;
 }

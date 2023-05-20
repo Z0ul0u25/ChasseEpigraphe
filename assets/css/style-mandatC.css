@@ -212,3 +212,21 @@ main{
 footer a:hover{
     text-decoration: underline;
 }
+
+/* ajouts de Lorie - Juste pour que le lien/texte soit un peu plus visible (même si c'est juste pour le screen reader)*/
+
+.lienrapide {
+
+    color: white;
+ }
+ 
+ .lienrapide:focus {
+ 
+    padding: 5px;
+ }
+
+ /* ajout de Lorie - État focus des boutons */
+
+ #boutons button:focus {
+   border: 6px solid #c8c8c8; 
+}
