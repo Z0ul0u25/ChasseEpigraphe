@@ -22,13 +22,25 @@ const objFichePersonnage = {
         this.objSelection = objJSONepigraphes[this.id];
 
         // Assignation de la visite pour la carte
-        if (!localStorage.visite){
+        if (!localStorage.visite) {
             localStorage.visite = JSON.stringify(new Object);
         }
 
         let visite = JSON.parse(localStorage.visite);
         visite[this.id] = true;
         localStorage.visite = JSON.stringify(visite);
+        
+        // vérifier le nom enregistré dans l’objet pour correspondre
+            //code pour ajouter le bon icône
+        console.log(this.objSelection.DOMAINE);
+        let strType = document.getElementById('#icone_secteur');
+        switch(this.objSelection.DOMAINE){
+            case "Sciences et Lettres":
+              strType = "icone_secteur0";
+            break;
+
+        // faire les différents cas
+        };
 
         // Titre
         document.getElementsByTagName("title")[0].innerText =
@@ -45,7 +57,10 @@ const objFichePersonnage = {
         document.getElementById("titre_image").innerText = this.objSelection.IMAGE.TITRE;
         document.getElementById("credit_image").innerText = this.objSelection.IMAGE.CREDIT;
         // Notes biographiques
-        document.getElementById("notes_biographiques").innerHTML = `<p>${this.objSelection.BIOGRAPHIE}`;
+        document.getElementById("notes_biographiques").innerHTML = `<p>${this.objSelection.BIOGRAPHIE}</p>
+        <div id="icone_secteur">
+        <img src="../assets/images/_autres/${strType}.png" alt="" class="placeholder" width="300">
+    </div>`;
         // Image de Google Maps
         document.getElementById("carteZoom").src = `../assets/images/googleMaps/${this.id}-zoom-google-maps.png`;
         // Adresse civique
@@ -71,9 +86,26 @@ const objFichePersonnage = {
             document.getElementById("statusChasse").setAttribute("hidden", "hidden");
             document.getElementById("zoneChasseEnCours").removeAttribute("hidden");
             document.getElementById("zoneAuncunechasseEnCours").setAttribute("hidden", "hidden");
+
+            document.getElementById("progressionEnquete").innerText =
+                Number(localStorage.personnage_est_trouve) +
+                Number(localStorage.objet_est_trouve) +
+                Number(localStorage.lieu_est_trouve);
+
+            if(localStorage.personnage_est_trouve == "1"){
+                document.getElementById("personnage").disabled = "disabled";
+            }
+            if(localStorage.objet_est_trouve == "1"){
+                document.getElementById("objet").disabled = "disabled";
+            }
+            if(localStorage.lieu_est_trouve == "1"){
+                document.getElementById("lieu").disabled = "disabled";
+            }
+
         }
 
     }
 };
 
 objFichePersonnage.initialiser();
+
