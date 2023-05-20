@@ -30,6 +30,7 @@ ul {
     align-items: center;
     font-family: 'Bebas Neue';
     color: white;
+    padding: 0px 32px 0px 11px;
 }
 
 .sous-titre {
@@ -68,9 +69,6 @@ ul {
     display: flex;
     flex-direction: column;
     font-size: 7rem;
-    /* justify-content: center; */
-    /* align-items: center; */
-    padding-left: 155px;
     margin: 0;
 }
 
@@ -300,6 +298,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    padding-top: 28px;
 }
 
 
