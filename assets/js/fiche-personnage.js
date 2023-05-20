@@ -29,13 +29,18 @@ const objFichePersonnage = {
         let visite = JSON.parse(localStorage.visite);
         visite[this.id] = true;
         localStorage.visite = JSON.stringify(visite);
-
-        console.log(this.objSelection.DOMAINE);
-        switch(this.objSelection.TYPE){
-            case "Sciences et Lettres":// vérifier le nom enregistré dans l’objet pour correspondre
+        
+        // vérifier le nom enregistré dans l’objet pour correspondre
             //code pour ajouter le bon icône
+        console.log(this.objSelection.DOMAINE);
+        let strType = document.getElementById('#icone_secteur');
+        switch(this.objSelection.DOMAINE){
+            case "Sciences et Lettres":
+              strType = "icone_secteur0";
             break;
+
         // faire les différents cas
+        };
 
         // Titre
         document.getElementsByTagName("title")[0].innerText =
