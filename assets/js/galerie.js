@@ -3,9 +3,10 @@
 */
 
 /* Variables globales */
-const fiches = document.querySelectorAll('.personnages');
+const refFiches = document.querySelectorAll('.personnages');
 const arrBtnType = document.querySelectorAll('.filtre_type'); 
-const arrBtnSecteur = document.querySelectorAll('.filtre_secteur'); 
+const arrBtnSecteur = document.querySelectorAll('.filtre_secteur');
+const refBtnReset = document.getElementById('reset');
 
 /* Écouteurs d'événement */
 arrBtnType.forEach(function (btnType) {
@@ -16,9 +17,14 @@ arrBtnSecteur.forEach(function (btnType) {
     btnType.addEventListener('click', filtrer);
 });
 
-/* Fonctions */
-function filtrer() {
+refBtnReset.addEventListener('click', resetFiltres);
 
+/* Fonctions */
+
+/**
+ * Filtre les personnages selons leur critères (type d'indice et secteur d'activité)
+ */
+function filtrer() {
 
     let strFiltreType = this.dataset.type;
     //console.log("Filtre par type d'indice " + strFiltreType);
@@ -26,7 +32,7 @@ function filtrer() {
     let strFiltreSecteur = this.dataset.secteur;
     //console.log("Filtre par secteur d'activité " + strFiltreSecteur);
 
-    fiches.forEach(function (fiche) {
+    refFiches.forEach(function (fiche) {
         fiche.classList.add('selection');
         console.log(fiche.dataset.type);
         if (fiche.dataset.type == strFiltreType) {
@@ -37,6 +43,15 @@ function filtrer() {
         }
     });
 
-    
+}
+
+/**
+ * 
+ */
+function resetFiltres() {
+
+    refFiches.forEach(function (fiche) {
+        fiche.classList.remove('selection');
+    });
 
 }
