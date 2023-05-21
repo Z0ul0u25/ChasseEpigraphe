@@ -1,5 +1,6 @@
 /**
- * JS pour la page de chasse
+ * @file JS - Chasse aux épigraphe
+ * @description Fonctions nécessaire pour démarrer et participer à une chasse
  * @author Philippe Gourdeau <2266603@csfoy.ca>
  * @version 1.1
 */
@@ -36,33 +37,33 @@ function obtenirNombreEntierAleatoire(intMin, intMax) {
  */
 function rafraichirIndice() {
     // Rafraichissement de l'indice
-    document.getElementById("indice-personnage").innerHTML = objJSONepigraphes[localStorage.id_personnage].CHASSE[(localStorage.personnage_est_trouve == 1) ? `REPONSE` : `INDICE`];
-    document.getElementById("indice-objet").innerHTML = objJSONepigraphes[localStorage.id_objet].CHASSE[(localStorage.objet_est_trouve == 1) ? `REPONSE` : `INDICE`];
-    document.getElementById("indice-leu").innerHTML = objJSONepigraphes[localStorage.id_lieu].CHASSE[(localStorage.lieu_est_trouve == 1) ? `REPONSE` : `INDICE`];
+    document.getElementById("indice-personnage").innerHTML = objJSONepigraphes[localStorage.idPersonnage].CHASSE[(localStorage.personnageEstTrouve == 1) ? `REPONSE` : `INDICE`];
+    document.getElementById("indice-objet").innerHTML = objJSONepigraphes[localStorage.idObjet].CHASSE[(localStorage.objetEstTrouve == 1) ? `REPONSE` : `INDICE`];
+    document.getElementById("indice-leu").innerHTML = objJSONepigraphes[localStorage.idLieu].CHASSE[(localStorage.lieuEstTrouve == 1) ? `REPONSE` : `INDICE`];
     // Rafraichissement de la rétroaction
-    document.getElementById("retroaction-personnage").innerHTML = (localStorage.personnage_est_trouve == 1) ? "Trouvé!" : "???";
-    document.getElementById("retroaction-objet").innerHTML = (localStorage.objet_est_trouve == 1) ? "Trouvé!" : "???";
-    document.getElementById("retroaction-lieu").innerHTML = (localStorage.lieu_est_trouve == 1) ? "Trouvé!" : "???";
+    document.getElementById("retroaction-personnage").innerHTML = (localStorage.personnageEstTrouve == 1) ? "Trouvé!" : "???";
+    document.getElementById("retroaction-objet").innerHTML = (localStorage.objetEstTrouve == 1) ? "Trouvé!" : "???";
+    document.getElementById("retroaction-lieu").innerHTML = (localStorage.lieuEstTrouve == 1) ? "Trouvé!" : "???";
     // Rafraichissement de la photo
-    if (localStorage.personnage_est_trouve == 1) {
-        document.querySelector("#photo-personnage source").srcset = `/assets/images/Personnages/405x280_chasseTableX1/${localStorage.id_personnage}_chasse_405.jpg`;
-        document.querySelector("#photo-personnage img").src = `/assets/images/Personnages/235x165_chasseTabletteMobileX1/${localStorage.id_personnage}_chasse_235.jpg`;
+    if (localStorage.personnageEstTrouve == 1) {
+        document.querySelector("#photo-personnage source").srcset = `/assets/images/Personnages/405x280_chasseTableX1/${localStorage.idPersonnage}_chasse_405.jpg`;
+        document.querySelector("#photo-personnage img").src = `/assets/images/Personnages/235x165_chasseTabletteMobileX1/${localStorage.idPersonnage}_chasse_235.jpg`;
     }
-    if (localStorage.objet_est_trouve == 1) {
-        document.querySelector("#photo-objet source").srcset = `/assets/images/Objets/405/${localStorage.id_objet}_chasse_w405.jpg`;
-        document.querySelector("#photo-objet img").src = `/assets/images/Objets/235/${localStorage.id_objet}_chasse_w235.jpg`;
+    if (localStorage.objetEstTrouve == 1) {
+        document.querySelector("#photo-objet source").srcset = `/assets/images/Objets/405/${localStorage.idObjet}_chasse_w405.jpg`;
+        document.querySelector("#photo-objet img").src = `/assets/images/Objets/235/${localStorage.idObjet}_chasse_w235.jpg`;
     }
-    if (localStorage.lieu_est_trouve == 1) {
-        document.querySelector("#photo-lieu source").srcset = `/assets/images/Lieux/405x280/${localStorage.id_lieu}_lieu_405.jpg`;
-        document.querySelector("#photo-lieu img").src = `/assets/images/Lieux/235x165/${localStorage.id_lieu}_lieu_235.jpg`;
+    if (localStorage.lieuEstTrouve == 1) {
+        document.querySelector("#photo-lieu source").srcset = `/assets/images/Lieux/405x280/${localStorage.idLieu}_lieu_405.jpg`;
+        document.querySelector("#photo-lieu img").src = `/assets/images/Lieux/235x165/${localStorage.idLieu}_lieu_235.jpg`;
     }
 
     const refNbIndice = document.getElementById("nbIndiceTrouve");
     // Raffraichissement du nombre d'indice trouvé
     refNbIndice.innerText =
-        Number(localStorage.personnage_est_trouve) +
-        Number(localStorage.objet_est_trouve) +
-        Number(localStorage.lieu_est_trouve);
+        Number(localStorage.personnageEstTrouve) +
+        Number(localStorage.objetEstTrouve) +
+        Number(localStorage.lieuEstTrouve);
 
     if (refNbIndice.innerText == "3") {
         const btnCarte = document.getElementById("boutons").lastElementChild.firstElementChild;
@@ -86,15 +87,15 @@ function afficherChasse() {
  * Démarre une nouvelle chasse avec des valeurs aléatoires
  */
 function demarrerChasse() {
-    // if (localStorage.id_personnage == undefined) {
+    // if (localStorage.idPersonnage == undefined) {
     localStorage.dernierChoix = null;
-    localStorage.id_personnage = arrIds[0][obtenirNombreEntierAleatoire(0, arrIds[0].length - 1)];
-    localStorage.id_objet = arrIds[1][obtenirNombreEntierAleatoire(0, arrIds[1].length - 1)];
-    localStorage.id_lieu = arrIds[2][obtenirNombreEntierAleatoire(0, arrIds[2].length - 1)];
-    localStorage.personnage_est_trouve = 0;
-    localStorage.objet_est_trouve = 0;
-    localStorage.lieu_est_trouve = 0;
-    localStorage.visite = JSON.stringify(new Object);
+    localStorage.idPersonnage = arrIds[0][obtenirNombreEntierAleatoire(0, arrIds[0].length - 1)];
+    localStorage.idObjet = arrIds[1][obtenirNombreEntierAleatoire(0, arrIds[1].length - 1)];
+    localStorage.idLieu = arrIds[2][obtenirNombreEntierAleatoire(0, arrIds[2].length - 1)];
+    localStorage.personnageEstTrouve = 0;
+    localStorage.objetEstTrouve = 0;
+    localStorage.lieuEstTrouve = 0;
+    localStorage.objVisite = JSON.stringify(new Object);
     afficherChasse();
     // }
 }
@@ -118,8 +119,8 @@ function confirmationNouvelleChasse() {
 function vefifierDernierChoix() {
     const dernierChoix = JSON.parse(localStorage.dernierChoix);
     refRetroaction.removeAttribute("hidden");
-    if (dernierChoix != null && localStorage[`id_${dernierChoix.TYPE}`] == dernierChoix.ID) {
-        localStorage[`${dernierChoix.TYPE}_est_trouve`] = 1;
+    if (dernierChoix != null && localStorage[`id${dernierChoix.TYPE[0].toUpperCase() + dernierChoix.TYPE.substring(1)}`] == dernierChoix.ID) {
+        localStorage[`${dernierChoix.TYPE}EstTrouve`] = 1;
         refRetroaction.innerHTML = `Bravo! Vous avez trouvé ${(dernierChoix.TYPE == 'objet')? 'l\'':'le '}${dernierChoix.TYPE}« ${objJSONepigraphes[dernierChoix.ID].CHASSE.REPONSE} »`;
 
         rafraichirIndice();
