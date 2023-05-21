@@ -120,7 +120,7 @@ const objFichePersonnage = {
         document.querySelector("#zoneChasseEnCours>form").addEventListener("submit", this.envoiChoix, false);
 
         // Affichage du formulaire de chasse si une chasse est en cours
-        if (localStorage.id_personnage != null) {
+        if (localStorage.idPersonnage != null) {
             document.getElementById("statusChasse").setAttribute("hidden", "hidden");
             document.getElementById("zoneChasseEnCours").removeAttribute("hidden");
             document.getElementById("zoneAuncunechasseEnCours").setAttribute("hidden", "hidden");
