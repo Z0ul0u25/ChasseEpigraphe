@@ -1,23 +1,27 @@
-/** 
+/**
  *  JS pour la visionneuse des vidéo sur la page d'accueil
  * @author Kate Undercoffler
+ * @reviewer Philippe Gourdeau <2266603@csfoy.ca>
+ * @version 1.1
 */
+
+/* --- ESLINT --- */
+"use strict";
 
 // Code de https://stackoverflow.com/questions/5235145/changing-source-on-html5-video-tag
 
 
 const objVisionneuse = {
 
-    //Méthode : 
+    //Méthode :
     /**
-     * Choisir au hasard une vidéo quand la page initialise 
+     * Choisir au hasard une vidéo quand la page initialise
      */
     jouerVideo: function () {
         console.log("hello");
 
-        // Choisir un numéro au hasard entre 1-3 
+        // Choisir un numéro au hasard entre 1-3
         let intVideoHasard = Math.floor(Math.random() * 3 + 1);
-        console.log(intVideoHasard);
 
         // Variable qui contiene le lien des videos
         let strUrlVideo = "./assets/videos/video_" + intVideoHasard + ".mp4";
@@ -39,6 +43,5 @@ const objVisionneuse = {
 
 objVisionneuse.jouerVideo();
 
-// Assignation des écouteurs d'événements : 
-document.getElementById('video')
-    .addEventListener('load', objVisionneuse.jouerVideo);
+// Assignation des écouteurs d'événements :
+document.getElementById('video').addEventListener('load', objVisionneuse.jouerVideo);
