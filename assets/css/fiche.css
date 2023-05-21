@@ -5,7 +5,7 @@
 
 main,
 aside {
-    margin: 0 3%;
+    margin: 0 4%;
 }
 
 
@@ -20,7 +20,7 @@ aside {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
 
     main,
     aside {
@@ -178,10 +178,10 @@ p#audio_transcription {
 
 .wrapper1 {
 
-
+    margin: 0 2%;
     display              : grid;
     grid-gap             : 20px;
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
     grid-template-areas  :
 
         "ctn1"
@@ -281,9 +281,10 @@ p#audio_transcription {
 
 .ctnAudio {
 
+    margin: 0 2%;
     display: grid;
     grid-gap             : 30px;
-    grid-template-columns: 80%;
+    grid-template-columns: 100%;
     grid-template-areas  :
 
         "ctn4" 
@@ -294,7 +295,6 @@ p#audio_transcription {
 }
 
 @media (min-width: 700px) {
-
 
     .ctnAudio {
 
@@ -311,24 +311,59 @@ p#audio_transcription {
 
 }
 
-
 /* Formulaire de chasse */
 
 fieldset {
 
     border: 4px solid #000;
-    padding: 10px;
+    padding: 0;
+    margin: 20px 0 0;
 
 }
+
+@media (min-width: 1100px) {
+
+    fieldset {
+
+        margin: 20px 8% 0;
+    
+    }
+
+}
+
 
 legend {
 
     padding: 0 10px;
+    margin: 0;
+
+}
+
+fieldset h2 {
+
+    margin: 0;
+
+}
+
+fieldset p {
+
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #000;
+    padding-left: 10px;
 
 }
 
 ul{
     list-style-type: none;
+    padding: 20px;
+}
+
+.rangee li {
+
+    padding-bottom: 15px;
+
 }
 
 #zoneChasseEnCours svg{
@@ -351,9 +386,25 @@ ul{
 }
 
 #btnSoumettre{
-    margin: 0 auto;
+    margin: 25px auto 0;
+    padding: 10px 30px;
     text-align: center;
+    min-height: 45px;
+    display   : block;
+    background-color: var(--couleur-dominante);
+    border: 3px #000 solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
 }
+
+#btnSoumettre:hover{
+    background-color: #FF75A5;
+    color: black;
+    box-shadow: 10px 5px 5px #FF75A5;
+
+}
+
 
 input[type=radio]+label {
     display   : inline-block;
@@ -368,13 +419,72 @@ input[type=radio]+label {
 
 [type=radio]:hover:not(:disabled)+label,
 [type=radio]:focus:not(:disabled)+label {
-    border: 2px solid #09c231;
+    border: 5px solid #237BFF;
 }
 
 [type=radio]:checked:not(:disabled)+label {
-    border: 2px solid #068221;
+    border: 5px solid #be1d55;
 }
 
 [type=radio]:disabled+label svg rect{
     fill: #b9b9b9 !important;
 }
+
+
+/* Liens en bas de page */
+
+.liens-fiche {
+
+    display: flex;
+    flex-direction: column;
+    padding: 29px 0;
+    margin: 0 2%;
+
+}
+
+@media (min-width: 700px) {
+
+
+    .liens-fiche {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+    
+    }
+    
+
+}
+
+.liens-fiche a {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.liens-fiche li {
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+    text-align: center;
+    min-height: 45px;
+    display   : block;
+    background-color: var(--couleur-secondaire);
+    border: 3px #000 solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+
+}
+
+.liens-fiche li:hover {
+
+    background-color: #C59909;
+    color: white;
+    box-shadow: 10px 5px 5px #C59909;
+
+}
+
