@@ -1,7 +1,8 @@
 /**
- * JS pour la page de personnage
+ * @file JS - Fiche personnage
+ * @description Fonctions pour la page de personnage
  * @author Philippe Gourdeau <2266603@csfoy.ca>
- * @version 1.2
+ * @version 1.3
 */
 
 /* --- ESLINT --- */
@@ -13,21 +14,34 @@ const objFichePersonnage = {
     "id": null,
     "objSelection": null,
 
+    /**
+     * Redirection à la page de chasse avec le choix sauvegardé dans le localStorage
+     * @param {Event} e Évenement d'envoi du fomulaire `submit`
+     */
     envoiChoix: function (e) {
-        // Empeche l'envoi pour ne pas avoir le querry dans l'URL
+        // Empeche l'envoi par défaut du formulaire car on à pas de traitement serveur
         e.preventDefault();
-        console.log("click");
+
+        // Enregistrement du choix dans le localStorage
         localStorage.setItem("dernierChoix", JSON.stringify({ "ID": objFichePersonnage.id, "TYPE": document.querySelector('input[name="formChasse"]:checked').value }));
+
+        // Redirection
         window.location.replace("../chasse/index.html");
     },
     /**
      * Modification des éléments dynamique selon la query de L'URL
      */
     initialiser: function () {
-        // Assignation variables
+
+        // Assignation du ID dans la querry dans une variable
         this.id = new URLSearchParams(window.location.search).get("id");
 
-        // Redirection à la galerie si la page est visité sans querry dans l'URL
+        /**
+         * Si Aucun querry dans URL
+         *     Redirection à la galerie
+         * Sinon
+         *     enregistrement des information du personnage dans un variable.
+         */
         (this.id == null) ? window.location.assign("../../galerie/galerie.html") : this.objSelection = objJSONepigraphes[this.id];
 
         // Assignation de la visite pour la carte
@@ -54,6 +68,7 @@ const objFichePersonnage = {
                 intTypeDomaine = 3;
                 break;
             default:
+                // Valeur déja configuré à la création de la variable
                 break;
             // faire les différents cas
         }
@@ -111,17 +126,17 @@ const objFichePersonnage = {
             document.getElementById("zoneAuncunechasseEnCours").setAttribute("hidden", "hidden");
 
             document.getElementById("progressionEnquete").innerText =
-                Number(localStorage.personnage_est_trouve) +
-                Number(localStorage.objet_est_trouve) +
-                Number(localStorage.lieu_est_trouve);
+                Number(localStorage.personnageEstTrouve) +
+                Number(localStorage.objetEstTrouve) +
+                Number(localStorage.lieuEstTrouve);
 
-            if (localStorage.personnage_est_trouve == "1") {
+            if (localStorage.personnageEstTrouve == "1") {
                 document.getElementById("personnage").disabled = "disabled";
             }
-            if (localStorage.objet_est_trouve == "1") {
+            if (localStorage.objetEstTrouve == "1") {
                 document.getElementById("objet").disabled = "disabled";
             }
-            if (localStorage.lieu_est_trouve == "1") {
+            if (localStorage.lieuEstTrouve == "1") {
                 document.getElementById("lieu").disabled = "disabled";
             }
 
