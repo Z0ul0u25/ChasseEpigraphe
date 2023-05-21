@@ -1,23 +1,19 @@
 /**
+ * @file JS - Galerie
+ * @description fonction pour la page galerie.html
  * @author Lorie-Anne Côté
+ * @reviewer Philippe Gourdeau <2266603@csfoy.ca>
+ * @version 1.1
 */
 
-/* Variables globales */
+/* --- ESLINT --- */
+"use strict";
+
+/*Constantes globales */
 const refFiches = document.querySelectorAll('.personnages');
-const arrBtnType = document.querySelectorAll('.filtre_type'); 
+const arrBtnType = document.querySelectorAll('.filtre_type');
 const arrBtnSecteur = document.querySelectorAll('.filtre_secteur');
 const refBtnReset = document.getElementById('reset');
-
-/* Écouteurs d'événement */
-arrBtnType.forEach(function (btnType) {
-    btnType.addEventListener('click', filtrer);
-});
-
-arrBtnSecteur.forEach(function (btnType) {
-    btnType.addEventListener('click', filtrer);
-});
-
-refBtnReset.addEventListener('click', resetFiltres);
 
 /* Fonctions */
 
@@ -46,7 +42,7 @@ function filtrer() {
 }
 
 /**
- * 
+ *  Réinitialise les filtres
  */
 function resetFiltres() {
 
@@ -55,3 +51,15 @@ function resetFiltres() {
     });
 
 }
+
+
+/* Écouteurs d'événement */
+arrBtnType.forEach(function (btnType) {
+    btnType.addEventListener('click', filtrer);
+});
+
+arrBtnSecteur.forEach(function (btnSecteur) {
+    btnSecteur.addEventListener('click', filtrer);
+});
+
+refBtnReset.addEventListener('click', resetFiltres);
