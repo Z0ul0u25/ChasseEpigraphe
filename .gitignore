@@ -8,3 +8,6 @@ __MACOSX/
 
 # VScode specifique
 .history/
+
+
+dart-sass
