@@ -3,7 +3,7 @@
  * @description JS utilisé dans toutes les pages pour le menu
  * @author Kate Undercoffler
  * @reviewer Philippe Gourdeau <2266603@csfoy.ca>
- *
+ * @version 1.2
 */
 
 /* --- ESLINT --- */
@@ -28,3 +28,5 @@ function afficherMenu() {
         refIconeMenu.classList.add("fa-window-close");
     }
 }
+
+document.querySelector(".navigation-mobile button").addEventListener("click", afficherMenu, false);
