@@ -8,6 +8,7 @@ aside {
     margin: 0 3%;
 }
 
+
 @media (min-width: 500px) {
 
     main,
@@ -18,6 +19,18 @@ aside {
     }
 
 }
+
+@media (min-width: 1000px) {
+
+    main,
+    aside {
+
+        margin: 0 auto;
+
+    }
+
+}
+
 
 
 h1 {
@@ -52,6 +65,20 @@ h2 {
     }
 
 }
+
+h3 {
+
+    font-size: 2.3rem;
+
+}
+
+section {
+
+    padding-bottom: 20px;
+
+}
+
+
 
 figure>img,
 .imgPerso {
@@ -110,8 +137,43 @@ p#audio_transcription {
 
     border       : 3px solid rgb(22, 22, 22);
     border-radius: 5px;
-    padding      : 10px;
+    padding      : 25px 10px;
 
+}
+
+.ctnImg {
+
+    grid-area: ctn1;
+
+}
+
+.ctnPlaque{
+
+    grid-area: ctn2;
+
+}
+
+.ctnBio {
+
+    grid-area: ctn3;
+
+}
+
+#icone_secteur {
+
+    float: none;
+    
+    
+}
+
+@media (min-width: 600px) {
+
+    #icone_secteur {
+    
+        float: right;
+    
+    }
+    
 }
 
 .wrapper1 {
@@ -119,15 +181,151 @@ p#audio_transcription {
 
     display              : grid;
     grid-gap             : 20px;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 80%;
     grid-template-areas  :
 
-        "ctnImg ctnPlaque"
-        "ctnBio ctnBio"
+        "ctn1"
+        "ctn2"
+        "ctn3"
 
 }
 
+@media (min-width: 785px) {
+
+    .wrapper1 {
+    
+    
+        display              : grid;
+        grid-gap             : 20px;
+        grid-template-columns: 49% 49%;
+        grid-template-areas  :
+    
+            "ctn1 ctn2"
+            "ctn3 ctn3"
+    
+    }
+
+}
+
+
+.figureLocal {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (min-width: 700px) {
+
+    .figureLocal {
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    
+    }
+
+}
+
+/*img#carteZoom {
+
+    border: 4px solid var(--couleur-dominante);
+
+}*/
+
+.figLocalisation {
+
+    padding-right: 3%;
+    text-align: right;
+
+}
+
+.figLocalisation h3 {
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+
+}
+
+.ctnCapsule {
+
+    grid-area: ctn4;
+
+}
+
+.ctnTranscript {
+
+    grid-area: ctn5;
+
+}
+
+.ctnCredit {
+
+    padding-bottom: 0px;
+    grid-area: ctn6;
+
+}
+
+@media (min-width: 700px) {
+
+    .ctnCredit {
+
+        padding-top: 50px;
+        grid-area: ctn6;
+    
+    }
+
+}
+
+.ctnAudio {
+
+    display: grid;
+    grid-gap             : 30px;
+    grid-template-columns: 80%;
+    grid-template-areas  :
+
+        "ctn4" 
+        "ctn5"
+        "ctn6"
+
+
+}
+
+@media (min-width: 700px) {
+
+
+    .ctnAudio {
+
+        display: grid;
+        grid-gap             : 30px;
+        grid-template-columns: 49% 49%;
+        grid-template-areas  :
+    
+            "ctn4 ctn6"
+            "ctn5 ctn6"
+    
+    
+    }
+
+}
+
+
 /* Formulaire de chasse */
+
+fieldset {
+
+    border: 4px solid #000;
+    padding: 10px;
+
+}
+
+legend {
+
+    padding: 0 10px;
+
+}
 
 ul{
     list-style-type: none;

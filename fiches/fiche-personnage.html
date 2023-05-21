@@ -102,21 +102,18 @@
             </section>
             <section class="ctnBio">
                 <h2>Notes biographiques</h2>
-                <div id="notes_biographiques">
-                    <p>
+                <div >
+                    <img id="icone_secteur" src="../assets/images/_autres/icone_secteur0.png" width="300">
+                    <p id="notes_biographiques">
                         BIOGRAPHIE
                     </p>
-                    <div id="icone_secteur">
-                        <img src="../assets/images/_autres/icone_secteur0.png" alt="" class="placeholder" width="300">
-                    </div>
-                </div>
-
+                 </div>
             </section>
         </div>
 
         <section class="ctnLocal">
             <h2>Localisation</h2>
-            <figure>
+            <figure class="figureLocal">
                 <img src="../images/zoomgooglemap_alleyn.png"
                     alt="Plan rapproché de l'emplacement sur la carte géographique" id="carteZoom">
                 <figcaption class="figLocalisation">
@@ -132,7 +129,9 @@
                 </figcaption>
             </figure>
         </section>
+
         <section class="ctnAudio">
+            <div class="ctnCapsule">
             <h2>Capsule sonore</h2>
             <p id="audio_desc"></p>
             <audio controls id="audio_url">
@@ -140,11 +139,16 @@
                 Votre navigateur ne propose pas de lecteur audio.
                 Consultez la transcription textuelle qui suit.
             </audio>
+            </div>
+            <div class="ctnTranscript">
             <h3>Transcription textuelle</h3>
             <p id="audio_preambule">PRÉAMBULE_AUDIO</p>
-            <p id="audio_transcription">TRANSCRIPTION_AUDIO</p>
+            </div>
+            <div class="ctnCredit">
+            <p id="audio_transcription">TRANSCRIPTION_AUDIO</p>        
             <h3>Crédits de la narration</h3>
             <p id="audio_credit">CREDIT_AUDIO</p>
+            </div>
         </section>
 
     </main>
@@ -198,7 +202,6 @@
                         <li>
                             <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
                             <label for="lieu">
-                                </span>
                                 <svg width="405" height="280" viewBox="0 0 405 280" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="405" height="280" fill="#D9D9D9" />

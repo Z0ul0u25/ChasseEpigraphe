@@ -72,7 +72,7 @@ const objFichePersonnage = {
                 break;
             // faire les différents cas
         }
-        document.getElementById('icone_secteur').firstElementChild.src = `../assets/images/_autres/icone_secteur${intTypeDomaine}.png`;
+        document.getElementById('icone_secteur').src = `../assets/images/_autres/icone_secteur${intTypeDomaine}.png`;
 
         // Titre
         document.getElementsByTagName("title")[0].innerText =
@@ -93,7 +93,7 @@ const objFichePersonnage = {
         document.getElementById("credit_image").innerText = this.objSelection.IMAGE.CREDIT;
 
         // Notes biographiques
-        document.getElementById("notes_biographiques").firstElementChild.innerHTML = `${this.objSelection.BIOGRAPHIE}`;
+        document.getElementById("notes_biographiques").innerHTML = `${this.objSelection.BIOGRAPHIE}`;
 
         // Image de Google Maps
         document.getElementById("carteZoom").src = `../assets/images/googleMaps/${this.id}-zoom-google-maps.png`;
