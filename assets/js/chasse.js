@@ -1,10 +1,12 @@
-"use strict";
-/*global objJSONepigraphes */
 /**
  * JS pour la page de chasse
  * @author Philippe Gourdeau <2266603@csfoy.ca>
- * @version 0.1
- */
+ * @version 1.1
+*/
+
+/* --- ESLINT --- */
+"use strict";
+/*global objJSONepigraphes */
 
 /* --- Constantes --- */
 
@@ -17,7 +19,6 @@ let arrIds = [
     ['e0001', 'e0008', 'e0015', 'e0019'], // Personnage à piger
     ['e0002', 'e0004', 'e0007', 'e0021'], // Objets à piger
     ['e0005', 'e0012', 'e0016', 'e0022']];// Lieux à piger
-
 
 
 /**
@@ -137,7 +138,7 @@ function initialisation() {
     refBtnNouvelleChasse.addEventListener("click", confirmationNouvelleChasse, false);
 
     if (localStorage.dernierChoix != undefined) {
-        (localStorage.dernierChoix != "null") ? vefifierDernierChoix() : refRetroaction.setAttribute("hidden", "hidden");;
+        (localStorage.dernierChoix != "null") ? vefifierDernierChoix() : refRetroaction.setAttribute("hidden", "hidden");
         afficherChasse();
     }
 }

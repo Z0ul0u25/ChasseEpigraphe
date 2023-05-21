@@ -1,12 +1,14 @@
-"use strict";
-/* global objJSONepigraphes */
 /**
  * @file Démo Google Maps - Création de marqueurs et d'infobulles
  * @description Code adapté pour le travail de l'équipe Boucles For-midable
  * @author Yves Helie <yves.helie@cegep-ste-foy.qc.ca>
  * @author Philippe Gourdeau <2266603@csfoy.ca>
  * @version 1.1.5
- */
+*/
+
+/* --- ESLINT --- */
+"use strict";
+/* global objJSONepigraphes */
 
 // Déclaration d'objet(s)
 const objCarte = {
@@ -67,7 +69,7 @@ const objCarte = {
 				position: new google.maps.LatLng(objEpigrapheCourant.LATITUDE, objEpigrapheCourant.LONGITUDE),
 				title: objEpigrapheCourant.IMAGE.TITRE,
 				map: this.objMap,
-				icon: `${this.strUrlImages}marqueurs/landmark-` + `${(JSON.parse(localStorage.visite)[strIdEpigraphe])?"navy.svg":"orchid.svg"}`,
+				icon: `${this.strUrlImages}marqueurs/landmark-` + `${(JSON.parse(localStorage.objVisite)[strIdEpigraphe])?"navy.svg":"orchid.svg"}`,
 				infowindow: objInfobulle
 			});
 
