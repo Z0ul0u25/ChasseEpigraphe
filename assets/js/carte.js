@@ -3,12 +3,12 @@
  * @description Code adapté pour le travail de l'équipe Boucles For-midable
  * @author Yves Helie <yves.helie@cegep-ste-foy.qc.ca>
  * @author Philippe Gourdeau <2266603@csfoy.ca>
- * @version 1.1.5
+ * @version 1.2.0
 */
 
 /* --- ESLINT --- */
 "use strict";
-/* global objJSONepigraphes */
+/* global objJSONepigraphes google */
 
 // Déclaration d'objet(s)
 const objCarte = {
@@ -24,6 +24,7 @@ const objCarte = {
 
 	/**
 	 * Permet de créer la carte Google Maps avec des marqueurs
+	 * @param {String} strIdCarte id de la div qui contien la carte dans le HTML
 	 */
 	initialiser: function (strIdCarte) {
 		// Création de la carte à l'aide de l'api Google Maps
@@ -49,7 +50,7 @@ const objCarte = {
 		for (let strIdEpigraphe in objJSONepigraphes) {
 			const objEpigrapheCourant = objJSONepigraphes[strIdEpigraphe];
 
-			//à compléter en remplaçant toutes les valeurs fixes par celles du json de la fiche actuelle! :
+			// Création du modèle des infobules
 			const strGabaritContenuInfobulle =
 				`<div class="infobulle">
 				<div class="image"><img width="150" src="${this.strFichierImgPersonnages}${strIdEpigraphe}_chasse_153.jpg"/></div>
