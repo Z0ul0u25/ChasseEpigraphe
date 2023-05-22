@@ -518,3 +518,13 @@ input[type=radio]+label {
     box-shadow: 10px 5px 5px #C59909;
 
 }
+
+.lienrapide {
+
+    color: white;
+}
+
+.lienrapide:focus {
+
+    padding: 5px;
+}
