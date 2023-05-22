@@ -9,11 +9,11 @@ const objJSONepigraphes = {
       "PRENOM": "Edmund",
       "NOM": "Alleyn",
       "ARRONDISSEMENT": "La Cité-Limoilou",
-      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline parlementaire",
+      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline Parlementaire",
       "ADRESSE": "85, rue Wilfrid-Laurier",
       "SUFFIXE_IMAGES": "edmund_alleyn",
-      "PLAQUE_TRANSCRIPTION": "Ici vécut Edmund Alleyn (1931-2004). Peintre et artiste polyvalent, créateur d'une oeuvre originale et en constante mutation.",
-      "BIOGRAPHIE": "Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre avant-gardiste. Edmund Alleyn a étudié à l’école des beaux-arts de Québec, auprès de Jean-Paul Lemieux et Jean Dallaire. Il séjourne en France de 1955 à 1970. De retour au Québec, Alleyn est frappé par le changement que les années ont opéré sur son pays et le devenir sociopolitique du territoire entre dans ses préoccupations artistiques.Parallèlement, il obtient un poste de professeur au département d’arts visuels de l’Université d'Ottawa, où il enseignera durant plus de 15 ans. Aujourd’hui, les oeuvres de Alleyn sont exposés régulièrement dans les Musées et les galeries, tant au Québec qu’en Ontario, et à New York.",
+      "PLAQUE_TRANSCRIPTION": "Ici vécut Edmund Alleyn (1931-2004). Peintre et artiste polyvalent, créateur d'une œuvre originale et en constante mutation.",
+      "BIOGRAPHIE": "Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre avant-gardiste. Edmund Alleyn a étudié à l’école des beaux-arts de Québec, auprès de Jean-Paul Lemieux et Jean Dallaire. Il séjourne en France de 1955 à 1970. De retour au Québec, Alleyn est frappé par le changement que les années ont opéré sur son pays et le devenir sociopolitique du territoire entre dans ses préoccupations artistiques.Parallèlement, il obtient un poste de professeur au département d’arts visuels de l’Université d'Ottawa, où il enseignera durant plus de 15 ans. Aujourd’hui, les œuvres de Alleyn sont exposées régulièrement dans les Musées et les galeries, tant au Québec qu’en Ontario, et à New York.",
       "LONGITUDE": -71.221539,
       "LATITUDE": 46.802136,
       "AUDIO": {
@@ -37,7 +37,7 @@ const objJSONepigraphes = {
       "PRENOM": "Philippe-Joseph",
       "NOM": "Aubert de Gaspé",
       "ARRONDISSEMENT": "La Cité-Limoilou",
-      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline parlementaire",
+      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline Parlementaire",
       "ADRESSE": "1, rue Ferland",
       "SUFFIXE_IMAGES": "aubert_degaspe",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Philippe-Joseph Aubert de Gaspé (1786-1871), auteur du roman Les Anciens Canadiens.",
@@ -69,7 +69,7 @@ const objJSONepigraphes = {
       "ADRESSE": "559, rue Saint-Gabriel",
       "SUFFIXE_IMAGES": "henriette_belley",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Henriette Belley (1905-1980), cartomancienne et couturière, célèbre pour ses extravagances vestimentaires et ses apparitions théâtrales dans les salles de spectacle.",
-      "BIOGRAPHIE": "Henriette Belley née en 1905 est un personnage très coloré de la petite histoire de la ville de Québec. Dans les années 50, Henriette Belley conçoit ses premiers costumes qui deviennent rapidement rapidement très extravagants. Elle parade ainsi vêtue à toutes les premières de spectacles au Capitole, au Palais Montcalm ou au Grand théâtre de Québec. Elle gagne sa vie en tirant les cartes et en lisant dans les lignes de la main; elle passe souvent pour une folle. Dans les années 70 et 80, elle devient une institution grâce à sa grande collection de vêtements. En 1971, le Musée du Québec organise une exposition sur sa collection et sa personnalité.  Dans les 80 elle expose ses vêtements dans un musée dans la côte de la Fabrique, l’Empire de Madame Belley.",
+      "BIOGRAPHIE": "Henriette Belley née en 1905 est un personnage très coloré de la petite histoire de la ville de Québec. Dans les années 50, Henriette Belley conçoit ses premiers costumes qui deviennent rapidement rapidement très extravagants. Elle parade ainsi vêtue toutes les premières de spectacles au Capitole, au Palais Montcalm ou au Grand théâtre de Québec. Elle gagne sa vie en tirant les cartes et en lisant dans les lignes de la main; elle passe souvent pour une folle. Dans les années 70 et 80, elle devient une institution grâce à sa grande collection de vêtements. En 1971, le Musée du Québec organise une exposition sur sa collection et sa personnalité.  Dans les 80 elle expose ses vêtements dans un musée dans la côte de la Fabrique, l’Empire de Madame Belley.",
       "LONGITUDE": -71.220024,
       "LATITUDE": 46.809415,
       "AUDIO": {
@@ -97,7 +97,7 @@ const objJSONepigraphes = {
       "ADRESSE": "49, rue Aberdeen",
       "SUFFIXE_IMAGES": "robert_blatter",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Robert Blatter (1899-1998). Figure marquante de l'architecture québécoise. Il fut renommé pour la conception de résidences avant-gardistes.",
-      "BIOGRAPHIE": "Robert Blatter est né en Suisse en1899. Il est architecte. L'architecte Robert Blatter a eu beaucoup plus d'influence à Québec où il arrivé en 1926 pour participer à la reconstruction basilique de Sainte-Anne-de-Beaupré qui avait brulé. La ville lui doit en effet le Colisée et la première résidence de style international au Canada, la maison Kerhulu du docteur Bourdon. Construite en 1934 sur le chemin Saint-Louis près de l'avenue Maguire, à Sillery, la maison du docteur Bourdon était «révolutionnaire». Robert Blatter a signé d’autres nombreux bâtiments de la ville de Québec : l’Hôpital Saint-François d'Assise, le Monastère des religieuses de l'Hôtel-Dieu de Gaspé, l’Église Saint-Louis-de-France, à Sainte-Foy et bien d’autres encore. ",
+      "BIOGRAPHIE": "Robert Blatter est né en Suisse en1899. Il est architecte. L'architecte Robert Blatter a eu beaucoup plus d'influence à Québec où il est arrivé en 1926 pour participer à la reconstruction basilique de Sainte-Anne-de-Beaupré qui avait brulé. La ville lui doit en effet le Colisée et la première résidence de style international au Canada, la maison Kerhulu du docteur Bourdon. Construite en 1934 sur le chemin Saint-Louis près de l'avenue Maguire, à Sillery, la maison du docteur Bourdon était «révolutionnaire». Robert Blatter a signé d’autres nombreux bâtiments de la ville de Québec : l’Hôpital Saint-François d'Assise, le Monastère des religieuses de l'Hôtel-Dieu de Gaspé, l’Église Saint-Louis-de-France, à Sainte-Foy et bien d’autres encore. ",
       "LONGITUDE": -71.224451,
       "LATITUDE": 46.803404,
       "AUDIO": {
@@ -114,14 +114,14 @@ const objJSONepigraphes = {
       "CHASSE": {
           "CATEGORIE": "lieu",
           "INDICE": " à la maison Kerhulu.",
-          "REPONSE": " à la maison Kerhulu, oeuvre de l'architecte Robert Blatter. "
+          "REPONSE": " à la maison Kerhulu, œuvre de l'architecte Robert Blatter. "
       }
   },
   "e0007": {
       "PRENOM": "Joseph",
       "NOM": "Knight Boswell",
       "ARRONDISSEMENT": "La Cité-Limoilou",
-      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline parlementaire",
+      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline Parlementaire",
       "ADRESSE": "37, rue de la Porte",
       "SUFFIXE_IMAGES": "josephknight_boswell",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Joseph Knight Boswell (1812-1890), fondateur de la brasserie Boswell construite sur le site du premier palais de l’Intendant à la basse-ville.",
@@ -149,11 +149,11 @@ const objJSONepigraphes = {
       "PRENOM": "Marthe",
       "NOM": "Caillaud-Simard",
       "ARRONDISSEMENT": "La Cité-Limoilou",
-      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline parlementaire",
+      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline Parlementaire",
       "ADRESSE": "59, rue D'Auteuil",
       "SUFFIXE_IMAGES": "marthe_caillaudsimard",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Marthe Caillaud-Simard (1901-1993). Militante d'origine française, elle fonda ici, lors de la Seconde Guerre mondiale, le premier comité de résistance hors de France, point de ralliement de la France libre au Canada.",
-      "BIOGRAPHIE": "Marthe Caillaud Simard est née le 6 avril 1901 à Bordj Menaïel en Algérie. Elle est une femme politique militante franco-canadienne. Marthe Caillaud Simard est arrivé à Québec en 1932. Au cours de la 2e guerre mondiale, elle participe à la création de réseaux de la France libre, fondant et animant à Québec le premier Comité France libre d'appui au mouvement gaulliste, qui en vient à compter 1 800 membres. Par sa détermination et sa force de persuasion, elle suscite la naissance d'une trentaine d'autres comités locaux à travers le pays. Elle devient en 1943 la première femme à siéger dans une assemblée parlementaire, l'Assemblée consultative provisoire d'Alger, et est l'une des grandes défenseurs du droit de vote et d'éligibilité des femmes. En 1944, Marthe Simard se retire de la vie politique et choisit plutôt l'enseignement du français à l'Université Laval.",
+      "BIOGRAPHIE": "Marthe Caillaud Simard est née le 6 avril 1901 à Bordj Menaïel en Algérie. Elle est une femme politique militante franco-canadienne. Marthe Caillaud Simard est arrivée à Québec en 1932. Au cours de la 2e guerre mondiale, elle participe à la création de réseaux de la France libre, fondant et animant à Québec le premier Comité France libre d'appui au mouvement gaulliste, qui en vient à compter 1 800 membres. Par sa détermination et sa force de persuasion, elle suscite la naissance d'une trentaine d'autres comités locaux à travers le pays. Elle devient en 1943 la première femme à siéger dans une assemblée parlementaire, l'Assemblée consultative provisoire d'Alger, et est l'une des grandes défenseurs du droit de vote et d'éligibilité des femmes. En 1944, Marthe Simard se retire de la vie politique et choisit plutôt l'enseignement du français à l'Université Laval.",
       "LONGITUDE": -71.211095,
       "LATITUDE": 46.810982,
       "AUDIO": {
@@ -261,7 +261,7 @@ const objJSONepigraphes = {
       "PRENOM": "Sigismund",
       "NOM": "Mohr",
       "ARRONDISSEMENT": "La Cité-Limoilou",
-      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline parlementaire",
+      "QUARTIER": "Vieux-Québec/Cap-Blanc/Colline Parlementaire",
       "ADRESSE": "1, rue Sainte-Ursule",
       "SUFFIXE_IMAGES": "sigismund_mohr",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Sigismund Mohr (1827-1893). Ingénieur talentueux et inventif qui contribua notamment à l'implantation de l'électricité à Québec.",
@@ -290,10 +290,10 @@ const objJSONepigraphes = {
       "NOM": "Pellan",
       "ARRONDISSEMENT": "La Cité-Limoilou",
       "QUARTIER": "Vieux-Limoilou",
-      "ADRESSE": "583, 3e Avenue",
+      "ADRESSE": "583, 3e Avenue",
       "SUFFIXE_IMAGES": "alfred_pellan",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Alfred Pellan (1906-1988). Peintre reconnu internationalement comme l’un des pionniers de l’art moderne, il amorça sa carrière à Limoilou.",
-      "BIOGRAPHIE": "Alfred Pellan est né à Québec en 1906. Il est un peintre de renommée internationale. Pellan entre à l’École des beaux-arts de Québec en 1921 où il obtient tous les premiers prix. Au terme de ses études, il obtient une bourse pour étudier à l’École nationale supérieure des beaux-arts de Paris. En 1940, au début de la seconde Guerre mondiale, Pellan doit quitter la France. Il enseigne alors à l'École des beaux-arts de Montréal de 1943 à 1952. En 1952, Pellan reçoit une bourse de la Société royale du Canada et déménage à Paris, où il vivra jusqu'en 1955, année où il devient le premier Canadien à présenter une exposition individuelle au Musée national d'art moderne. À son retour au Canada, de nombreuses expositions ainsi que des commandes de murales établissent sa renommée dans l'ensemble du pays.",
+      "BIOGRAPHIE": "Alfred Pellan est né à Québec en 1906. Il est un peintre de renommée internationale. Pellan entre à l’École des beaux-arts de Québec en 1921 où il obtient tous les premiers prix. Au terme de ses études, il obtient une bourse pour étudier à l’École nationale supérieure des beaux-arts de Paris. En 1940, au début de la Seconde Guerre mondiale, Pellan doit quitter la France. Il enseigne alors à l'École des beaux-arts de Montréal de 1943 à 1952. En 1952, Pellan reçoit une bourse de la Société royale du Canada et déménage à Paris, où il vivra jusqu'en 1955, année où il devient le premier Canadien à présenter une exposition individuelle au Musée national d'art moderne. À son retour au Canada, de nombreuses expositions ainsi que des commandes de murales établissent sa renommée dans l'ensemble du pays.",
       "LONGITUDE": -71.227448,
       "LATITUDE": 46.823708,
       "AUDIO": {
@@ -321,7 +321,7 @@ const objJSONepigraphes = {
       "ADRESSE": "1, Grande Allée Est",
       "SUFFIXE_IMAGES": "maurice_pollack",
       "PLAQUE_TRANSCRIPTION": "Ici vécut Maurice Pollack (1885-1968). Fondateur des grands magasins Pollack, il a été un leader de la communauté juive de Québec, tout en s’illustrant par ses œuvres philanthropiques au Canada, aux États-Unis et en Israël.",
-      "BIOGRAPHIE": "Maurice Polack est né en Russie en 1885. Il a profondément marqué l’histoire économique de la ville de Québec. Maurice Polack  s’est établi au Québec en 1902 et ouvre en 1906 un magasin sur la rue Saint-Joseph. Il y innove en proposant des vêtements à prix fixe. Durant la crise des années 30, il est atteint par la vague antisémite alors que l’Église catholique lance une campagne de boycott contre son magasin proclamant que ses bénéfices servent aux communistes pour combattre le christianisme. Il passe à travers cette épreuve et en 1950, il bâtit un grand magasin au style moderne sur la rue Saint-Joseph avec au sous-sol, un premier magasin d’alimentation grande surface, l’épicerie Steingberg. En face, il fait construire un stationnement de 150 voitures avec rampes circulaires. Une fois sa fortune établie en 1955, il lance une fondation qui finance plusieurs projets à Québec, au Musée des Beaux arts, à l’hôpital Jeffrey Hale ou l’Université Laval où un pavillon porte aujourd’hui son nom.",
+      "BIOGRAPHIE": "Maurice Polack est né en Russie en 1885. Il a profondément marqué l’histoire économique de la ville de Québec. Maurice Polack  s’est établi au Québec en 1902 et ouvre en 1906 un magasin sur la rue Saint-Joseph. Il y innove en proposant des vêtements à prix fixe. Durant la crise des années 30, il est atteint par la vague antisémite alors que l’Église catholique lance une campagne de boycottage contre son magasin proclamant que ses bénéfices servent aux communistes pour combattre le christianisme. Il passe à travers cette épreuve et en 1950, il bâtit un grand magasin au style moderne sur la rue Saint-Joseph avec au sous-sol, un premier magasin d’alimentation grande surface, l’épicerie Steingberg. En face, il fait construire un stationnement de 150 voitures avec rampes circulaires. Une fois sa fortune établie en 1955, il lance une fondation qui finance plusieurs projets à Québec, au Musée des Beaux-arts, à l’hôpital Jeffrey Hale ou l’Université Laval où un pavillon porte aujourd’hui son nom.",
       "LONGITUDE": -71.223125,
       "LATITUDE": 46.802252,
       "AUDIO": {
