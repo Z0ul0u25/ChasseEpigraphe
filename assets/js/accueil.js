@@ -39,7 +39,8 @@ const objVisionneuse = {
         this.refVideo.play();
     },
     /**
-     * Quand la video termine, chargement de la video suivante
+     * Quand la video se termine, chargement de la video suivante
+     * @author Philippe Gourdeau
      */
     videoSuivante: function () {
         // this. ne fonctionne pas car fonction appelé par evenement.
