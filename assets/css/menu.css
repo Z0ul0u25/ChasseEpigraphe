@@ -15,8 +15,8 @@
 /****** Base commune *******/
 
 ul {
-    margin-block-start  : 0;
-    margin-block-end    : 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
     padding-inline-start: 0;
 }
 
@@ -24,25 +24,25 @@ ul {
 /* ENTETE */
 .titre-principal,
 .sous-titre {
-    display        : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items    : center;
-    font-family    : 'Bebas Neue';
-    color          : white;
-    padding        : 0px 32px 0px 11px;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    color: white;
+    padding: 0px 32px 0px 11px;
 }
 
 .sous-titre {
-    font-size    : 2rem;
+    font-size: 2rem;
     padding-right: 42px;
     margin-bottom: 20px;
-    font-family  : 'Montserrat';
+    font-family: 'Montserrat';
 }
 
 @media (min-width: 1000px) {
     .sous-titre {
-        font-size  : 2.25rem;
+        font-size: 2.25rem;
         margin-left: 98px;
     }
 }
@@ -53,23 +53,31 @@ ul {
 }
 
 .entete-site_accueil {
-    display        : flex;
-    flex-wrap      : wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-decoration: none;
 }
 
+.entete-site_titres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 89px 0px 125px;
+}
+
 .entete-site_logo {
-    width         : 30rem;
-    height        : 30rem;
+    width: 30rem;
+    height: 30rem;
     padding-bottom: 10px;
 }
 
 .titre-principal {
-    display       : flex;
+    display: flex;
     flex-direction: column;
-    font-size     : 7rem;
-    margin        : 0;
+    font-size: 7rem;
+    margin: 0;
 }
 
 @media (min-width: 1000px) {
@@ -81,9 +89,9 @@ ul {
 /* Bouton du menu */
 .nav__control {
     background-color: rgba(145, 0, 145, 0.2);
-    border          : none;
-    padding         : 10px;
-    min-width       : 40px;
+    border: none;
+    padding: 10px;
+    min-width: 40px;
 }
 
 @media (min-width: 600px) {
@@ -94,7 +102,7 @@ ul {
 
 .nav__control:hover,
 .nav__control:active {
-    color           : #fff;
+    color: #fff;
     background-color: darkmagenta;
 }
 
@@ -104,20 +112,20 @@ ul {
      * les remplacer par d'autres styles qui peuvent être plus
      * en accord avec la direction visuelle du projet.
      */
-    outline       : none;
+    outline: none;
     /* AUTRES STYLES EN REMPLACEMENT DU OUTLINE */
     /*
      * Les règles outline-offset et outline permettent
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
     outline-offset: -5px;
-    outline       : darkmagenta auto 5px;
+    outline: darkmagenta auto 5px;
 }
 
 /* Liste du menu */
 .nav__list {
-    margin    : 0;
-    padding   : 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
     max-height: none;
 }
@@ -131,31 +139,31 @@ ul {
 /* Liens du menu */
 .nav__link {
     background-color: rgba(145, 0, 145, 0.2);
-    display         : block;
-    padding         : 5px 10px;
-    width           : 100%;
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
 }
 
 .nav__link:link,
 .nav__link:visited {
     text-decoration: none;
-    color          : inherit;
+    color: inherit;
 }
 
 .nav__link:hover {
-    color           : #fff;
+    color: #fff;
     background-color: darkmagenta;
 }
 
 .nav__link:active {
-    color           : #fff;
+    color: #fff;
     background-color: magenta;
 }
 
 
 .nav__link:focus {
     outline-offset: -5px;
-    outline       : darkmagenta auto 5px;
+    outline: darkmagenta auto 5px;
 }
 
 @media (min-width: 600px) {
@@ -174,7 +182,7 @@ ul {
 
 @media (min-width: 600px) {
     .nav__link--active {
-        border-left  : none;
+        border-left: none;
         border-bottom: 5px solid rgba(101, 68, 180, 1);
     }
 }
@@ -188,26 +196,26 @@ ul {
 }
 
 .navigation-principale_liste {
-    display         : none;
-    flex-direction  : row;
-    font-size       : 1.5rem;
-    color           : white;
-    text-transform  : uppercase;
+    display: none;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
     background-color: #DC2062;
-    list-style      : none;
-    align-items     : center;
-    justify-content : space-evenly;
-    width           : 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .navigation-principale_liste li a {
-    color          : white;
-    font-weight    : bold;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .navigation-principale_liste li a:hover {
-    font-size      : 1.8rem;
+    font-size: 1.8rem;
     text-decoration: underline;
 }
 
@@ -225,36 +233,37 @@ ul {
 /* MENU HAMBURGER CSS DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 /* Style the navigation menu */
 .navigation-mobile {
-    position   : relative;
-    width      : 95%;
-    top        : 81.5%;
+    position: relative;
+    width: 95%;
+    top: 81.5%;
     margin-left: auto;
-    left       : 0;
-    right      : 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-principale_span {
     text-transform: uppercase;
-    font-weight   : 600;
+    font-weight: 600;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .navigation-mobile #navigation-mobile_liens {
-    display         : none;
+    display: none;
     background-color: #DC2062;
-    font-weight     : 600;
-    text-transform  : uppercase;
-    margin-top      : 50px;
-    margin-right    : 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-right: 18px;
 }
 
 /* Style navigation menu links */
-.navigation-mobile a, .navigation-mobile button {
-    color          : white;
-    padding        : 25px 20px;
+.navigation-mobile a,
+.navigation-mobile button {
+    color: white;
+    padding: 25px 20px;
     text-decoration: none;
-    font-size      : 17px;
-    display        : flex;
+    font-size: 17px;
+    display: flex;
     justify-content: center;
 
 }
@@ -267,33 +276,33 @@ ul {
 
 /* Style du menu hamburger */
 .navigation-mobile .icon {
-    background  : #DC2062;
-    display     : block;
-    position    : absolute;
-    right       : 0;
-    top         : -88px;
-    height      : 88px;
-    padding     : 19px 11px 8px 13px;
-    width       : 79px;
+    background: #DC2062;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -88px;
+    height: 88px;
+    padding: 19px 11px 8px 13px;
+    width: 79px;
     margin-right: 18px;
 }
 
 /* Add a grey background color on mouse-over */
 .navigation-mobile a:hover {
     background-color: #FF75A5;
-    color           : black;
+    color: black;
 }
 
 .navigation-mobile a:focus {
     border: 5px solid #9b9b9b;
 }
 
-.navigation-mobile button{
+.navigation-mobile button {
     border: 0;
 }
 
 .navigation-mobile button i {
-    display   : block;
+    display: block;
     text-align: center;
 }
 
@@ -303,34 +312,34 @@ ul {
 
 /* FOOTER */
 .footer {
-    display        : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items    : center;
-    margin-top     : 10px;
-    padding-top    : 28px;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 28px;
 }
 
 
 /* MENU SOCIAUX */
 .menu-sociaux_liste {
-    margin         : 1rem;
+    margin: 1rem;
     list-style-type: none;
-    display        : flex;
-    flex-direction : row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
 .menu-sociaux_lien:link,
 .menu-sociaux_lien:visited {
-    font-size        : 0;
-    display          : block;
-    width            : 60px;
-    height           : 60px;
-    margin-right     : 1rem;
-    background-image : url(../images/_autres/social_sprites_.png);
+    font-size: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    background-image: url(../images/_autres/social_sprites_.png);
     background-repeat: no-repeat;
-    transition       : transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .menu-sociaux_item:first-child .menu-sociaux_lien {
@@ -356,18 +365,18 @@ ul {
 .menu-sociaux_item .menu-sociaux_lien:hover,
 .menu-sociaux_item .menu-sociaux_lien:active {
     background-position-y: -60px;
-    transform            : rotate(10deg);
+    transform: rotate(10deg);
 }
 
 
 .rappel-nav_liste li a {
-    display        : block;
+    display: block;
     text-decoration: none;
-    color          : white;
-    text-transform : uppercase;
-    font-weight    : bold;
-    text-align     : center;
-    padding        : 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
 }
 
 
@@ -377,38 +386,38 @@ ul {
 
 @media (min-width: 765px) {
     .rappel-nav_liste {
-        display        : flex;
-        flex-direction : row;
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        padding-bottom : -6px;
-        align-items    : center;
+        padding-bottom: -6px;
+        align-items: center;
     }
 }
 
 @media (min-width: 1000px) {
     .rappel-nav_liste {
-        display        : flex;
-        flex-direction : row;
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        padding-bottom : -6px;
-        align-items    : center;
+        padding-bottom: -6px;
+        align-items: center;
     }
 }
 
 .footer-rappel_nav {
     background-color: #DC2062;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
-    min-width       : 100%;
-    height          : 265px;
-    margin-top      : 16px;
-    box-shadow      : 0px 5px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 265px;
+    margin-top: 16px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 765px) {
     .footer-rappel_nav {
-        width : 768px;
+        width: 768px;
         height: 50px;
     }
 }
@@ -416,35 +425,35 @@ ul {
 @media (min-width: 1000px) {
     .footer-rappel_nav {
         min-width: 100%;
-        width    : 1000px;
-        height   : 50px;
+        width: 1000px;
+        height: 50px;
 
     }
 }
 
 
 .footer-information {
-    display        : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items    : center;
-    text-align     : center;
-    background     : #F1EC77;
-    border         : 3px solid #000000;
-    box-shadow     : 0px 5px 4px rgba(0, 0, 0, 0.4);
-    margin         : 15px 15px -32px 15px;
-    padding        : 15px;
+    align-items: center;
+    text-align: center;
+    background: #F1EC77;
+    border: 3px solid #000000;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+    margin: 15px 15px -32px 15px;
+    padding: 15px;
 }
 
 .footer-copyright {
-    display        : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items    : center;
-    text-align     : center;
-    margin-bottom  : 15px;
-    line-height    : 17px;
-    transform      : translateY(77px);
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 17px;
+    transform: translateY(77px);
 }
 
 .footer-small {
@@ -464,7 +473,7 @@ ul {
 @media (max-width: 599px) {
     .js .nav__list {
         max-height: 100vh;
-        overflow  : hidden;
+        overflow: hidden;
         transition: max-height 2s;
     }
 

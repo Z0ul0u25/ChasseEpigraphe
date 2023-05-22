@@ -36,7 +36,7 @@ aside {
 h1 {
 
     padding: 30px 0;
-    color  : var(--couleur-texte);
+    color: var(--couleur-texte);
 
 }
 
@@ -90,15 +90,15 @@ figure>img,
 .imgPerso {
 
     max-width: 405px;
-    width    : 100%;
+    width: 100%;
 
 }
 
 .imgPerso {
 
     background-color: var(--couleur-tertiaire);
-    border          : 4px solid var(--couleur-dominante);
-    margin          : 0;
+    border: 4px solid var(--couleur-dominante);
+    margin: 0;
 
 }
 
@@ -148,25 +148,25 @@ figcaption#transcript.figPlaque {
 
 
     background-color: var(--couleur-dominante);
-    padding         : 9px;
-    border          : 4px solid rgb(22, 22, 22);
-    border-radius   : 5px;
-    color           : white;
+    padding: 9px;
+    border: 4px solid rgb(22, 22, 22);
+    border-radius: 5px;
+    color: white;
 
 }
 
 audio#audio_url {
 
-    border       : 4px solid var(--couleur-dominante);
+    border: 4px solid var(--couleur-dominante);
     border-radius: 26px;
 
 }
 
 p#audio_transcription {
 
-    border       : 3px solid rgb(22, 22, 22);
+    border: 3px solid rgb(22, 22, 22);
     border-radius: 5px;
-    padding      : 25px 10px;
+    padding: 25px 10px;
 
 }
 
@@ -176,7 +176,7 @@ p#audio_transcription {
 
 }
 
-.ctnPlaque{
+.ctnPlaque {
 
     grid-area: ctn2;
 
@@ -191,27 +191,27 @@ p#audio_transcription {
 #icone_secteur {
 
     float: none;
-    
-    
+
+
 }
 
 @media (min-width: 600px) {
 
     #icone_secteur {
-    
+
         float: right;
-    
+
     }
-    
+
 }
 
 .wrapper1 {
 
     margin: 0 2%;
-    display              : grid;
-    grid-gap             : 20px;
+    display: grid;
+    grid-gap: 20px;
     grid-template-columns: 100%;
-    grid-template-areas  :
+    grid-template-areas:
 
         "ctn1"
         "ctn2"
@@ -222,16 +222,16 @@ p#audio_transcription {
 @media (min-width: 785px) {
 
     .wrapper1 {
-    
-    
-        display              : grid;
-        grid-gap             : 20px;
+
+
+        display: grid;
+        grid-gap: 20px;
         grid-template-columns: 49% 49%;
-        grid-template-areas  :
-    
+        grid-template-areas:
+
             "ctn1 ctn2"
             "ctn3 ctn3"
-    
+
     }
 
 }
@@ -252,7 +252,7 @@ p#audio_transcription {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-    
+
     }
 
 }
@@ -303,7 +303,7 @@ p#audio_transcription {
 
         padding-top: 50px;
         grid-area: ctn6;
-    
+
     }
 
 }
@@ -312,11 +312,11 @@ p#audio_transcription {
 
     margin: 0 2%;
     display: grid;
-    grid-gap             : 30px;
+    grid-gap: 30px;
     grid-template-columns: 100%;
-    grid-template-areas  :
+    grid-template-areas:
 
-        "ctn4" 
+        "ctn4"
         "ctn5"
         "ctn6"
 
@@ -328,14 +328,14 @@ p#audio_transcription {
     .ctnAudio {
 
         display: grid;
-        grid-gap             : 30px;
+        grid-gap: 30px;
         grid-template-columns: 49% 49%;
-        grid-template-areas  :
-    
+        grid-template-areas:
+
             "ctn4 ctn6"
             "ctn5 ctn6"
-    
-    
+
+
     }
 
 }
@@ -355,7 +355,7 @@ fieldset {
     fieldset {
 
         margin: 20px 8% 0;
-    
+
     }
 
 }
@@ -384,9 +384,10 @@ fieldset p {
 
 }
 
-ul{
+fieldset ul {
     list-style-type: none;
     padding: 20px;
+
 }
 
 .rangee li {
@@ -395,7 +396,7 @@ ul{
 
 }
 
-#zoneChasseEnCours svg{
+#zoneChasseEnCours svg {
     width: 100%;
     height: inherit;
 }
@@ -406,20 +407,20 @@ ul{
 
 #zoneChasseEnCours ul.rangee li {
     text-align: center;
-    flex      : 0 1 calc(33.333333% - 10px);
+    flex: 0 1 calc(33.333333% - 10px);
     /* flex   : 0 1 32%; */
 }
 
-#zoneChasseEnCours label span{
+#zoneChasseEnCours label span {
     display: block;
 }
 
-#btnSoumettre{
+#btnSoumettre {
     margin: 25px auto 0;
     padding: 10px 30px;
     text-align: center;
     min-height: 45px;
-    display   : block;
+    display: block;
     background-color: var(--couleur-dominante);
     border: 3px #000 solid;
     border-radius: 5px;
@@ -427,7 +428,7 @@ ul{
     font-weight: 500;
 }
 
-#btnSoumettre:hover{
+#btnSoumettre:hover {
     background-color: #FF75A5;
     color: black;
     box-shadow: 10px 5px 5px #FF75A5;
@@ -436,9 +437,9 @@ ul{
 
 
 input[type=radio]+label {
-    display   : inline-block;
+    display: inline-block;
     text-align: center;
-    border    : 2px solid transparent;
+    border: 2px solid transparent;
 }
 
 /*** Interactivité ***/
@@ -455,7 +456,7 @@ input[type=radio]+label {
     border: 5px solid #be1d55;
 }
 
-[type=radio]:disabled+label svg rect{
+[type=radio]:disabled+label svg rect {
     fill: #b9b9b9 !important;
 }
 
@@ -480,9 +481,9 @@ input[type=radio]+label {
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0;
-    
+
     }
-    
+
 
 }
 
@@ -500,7 +501,7 @@ input[type=radio]+label {
     padding: 10px 20px;
     text-align: center;
     min-height: 45px;
-    display   : block;
+    display: block;
     background-color: var(--couleur-secondaire);
     border: 3px #000 solid;
     border-radius: 5px;
@@ -516,4 +517,3 @@ input[type=radio]+label {
     box-shadow: 10px 5px 5px #C59909;
 
 }
-

@@ -7,13 +7,15 @@ Mandat B - Galerie de personnages
    ========================================================================== */
 @import url(style.css);
 
-main, aside {
+main,
+aside {
    margin: 0 3%;
 }
 
 @media (min-width: 500px) {
 
-   main, aside {
+   main,
+   aside {
 
       margin: 0 5%;
 
@@ -23,7 +25,8 @@ main, aside {
 
 @media (min-width: 1100px) {
 
-   main, aside {
+   main,
+   aside {
 
       max-width: 1000px;
       margin: 0 auto;
@@ -109,7 +112,7 @@ h2 {
 
 }
 
-.resetFiltre > img {
+.resetFiltre>img {
 
    width: 45px;
    min-width: 0;
@@ -136,7 +139,7 @@ h2 {
       margin: 0;
       padding-top: 30px;
       text-align: center;
-   
+
    }
 
 }
@@ -150,7 +153,7 @@ h2 {
       margin: 0;
       text-align: center;
       padding-top: 0;
-   
+
    }
 
 }
@@ -203,7 +206,6 @@ h2 {
 .ctnPersonnages {
 
    padding-bottom: 45px
-
 }
 
 /*.liste-personnages {
@@ -252,7 +254,8 @@ h3 {
 
    padding: 15px;
    font-size: 1.2rem;
-   font-family: 'Montserrat', sans-serif;;
+   font-family: 'Montserrat', sans-serif;
+   ;
    margin: 0;
 
 }
@@ -303,15 +306,16 @@ svg {
    min-height: 110px;
 
 }
+
 /*width="235" height="320"*/
 
 .wrapperPerso {
 
    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 47% 47%;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
-    /*grid-template-areas:
+   grid-gap: 20px;
+   grid-template-columns: 47% 47%;
+   /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+   /*grid-template-areas:
 
    "p1 p2"
    "p3 p4"
@@ -327,7 +331,7 @@ svg {
    .wrapperPerso {
 
       grid-template-columns: 1fr 1fr 1fr;
-     /*grid-template-rows: 1fr 1fr 1fr;*/
+      /*grid-template-rows: 1fr 1fr 1fr;*/
       /*grid-template-areas:
 
       "p1 p2 p3 p4"
@@ -344,7 +348,7 @@ svg {
    .wrapperPerso {
 
       grid-template-columns: 1fr 1fr 1fr 1fr;
-     /*grid-template-rows: 1fr 1fr 1fr;*/
+      /*grid-template-rows: 1fr 1fr 1fr;*/
       /*grid-template-areas:
 
       "p1 p2 p3 p4"
@@ -359,8 +363,8 @@ svg {
 .wrapperFiltre {
 
    display: grid;
-    grid-gap: 20px;
-    grid-template-rows: 1fr 1fr;
+   grid-gap: 20px;
+   grid-template-rows: 1fr 1fr;
    /* grid-template-areas:
 
     "filtre-indice filtre-activite"*/
@@ -371,13 +375,13 @@ svg {
 
    .wrapperFiltre {
 
-   display: grid;
-   grid-gap: 20px;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: none;
-   grid-template-areas:
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: none;
+      grid-template-areas:
 
-   "filtre-indice filtre-activite"
+         "filtre-indice filtre-activite"
 
    }
 }

@@ -132,7 +132,7 @@ body {
 /* modif de Lorie - J'ai mis le contour un peu plus clair */
 
 .bouton:focus {
-   border: 5px solid #c8c8c8; 
+   border: 5px solid #c8c8c8;
 }
 
 /* ajouts de Lorie - Juste pour que le lien/texte soit un peu plus visible (même si c'est juste pour le screen reader)*/
