@@ -165,6 +165,7 @@ main {
     padding: 1rem 0;
 }
 
+#boutons a, 
 #boutons button {
     min-height: 45px;
     margin: 10px auto;
@@ -174,18 +175,19 @@ main {
     border-radius: 5px;
 }
 
-#boutons button:first-of-type {
+#boutons a:first-of-type {
     background-color: var(--couleur-dominante);
     color: #fff;
 }
 
+#boutons a:hover,
 #boutons button:hover {
     background-color: #C59909;
     color: white;
     box-shadow: 10px 5px 5px #C59909;
 }
 
-#boutons button:first-of-type:hover {
+#boutons a:first-of-type:hover {
     background-color: #FF75A5;
     color: black;
     box-shadow: 10px 5px 5px #FF75A5;
@@ -193,18 +195,18 @@ main {
 }
 
 @media (min-width: 600px) {
-    #boutons button:first-of-type {
+    #boutons a:first-of-type {
         flex-basis: 100%;
         margin: auto 22.857%;
     }
 }
 
 @media (min-width: 834px) {
-    #boutons button:nth-of-type(2) {
+    #boutons a:nth-of-type(2) {
         order: -1;
     }
 
-    #boutons button:first-of-type {
+    #boutons a:first-of-type {
         flex-basis: 48.571%;
         margin: auto;
     }

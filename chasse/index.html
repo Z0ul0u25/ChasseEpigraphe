@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Chasse aux épigraphes - La chasse</title>
-    <script defer src="../assets/js/epigraphes.js""></script>
-    <script defer src="../assets/js/chasse.js""></script>
+    <script defer src="../assets/js/epigraphes.js"></script>
+    <script defer src="../assets/js/chasse.js"></script>
     <script defer src="../assets/js/menu.js"></script>
     <script defer src="../assets/js/Polyfill.js"></script>
 </head>
@@ -116,6 +116,7 @@
                 <p id="chasseEnCours" hidden>indices trouvés <span id="nbIndiceTrouve">0</span> sur 3</p>
                 <p id="retroaction" hidden></p>
             </div>
+
             <section id="indices" hidden="hidden">
                 <div id="carte-personnage" class="carte">
                     <picture id="photo-personnage">
@@ -150,15 +151,15 @@
                         <p id="retroaction-lieu">--placeholder--</p>
                     </div>
                 </div>
-                </>
-            </section>
+            </section>            
             <div id="boutons" class="rangee">
-                <button class="cols_4_de_12 cols_4_de_8"><a href="../galerie/galerie.html">Galerie des
-                        personnages</a></button>
+                <a href="../galerie/galerie.html" class="cols_4_de_12 cols_4_de_8">Galerie des
+                        personnages</a>
                 <button class="cols_3_de_12 cols_3_de_8" id="btnNouvelleChasse"><span>Piger une nouvelle
                         chasse</span></button>
-                <button class="cols_3_de_12 cols_3_de_8"><a href="../carte/index.html">Consulter la carte</a></button>
-            </div>
+                <a href="../carte/index.html" class="cols_3_de_12 cols_3_de_8">Consulter la carte</a>
+            </div>        
+        </section>
     </main>
     <footer class="footer">
         <!-- Copié depuis ../index.html le 2023-04-26 15:10 -->
