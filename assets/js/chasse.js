@@ -66,7 +66,7 @@ function rafraichirIndice() {
         Number(localStorage.lieuEstTrouve);
 
     if (refNbIndice.innerText == "3") {
-        const btnCarte = document.getElementById("boutons").lastElementChild.firstElementChild;
+        const btnCarte = document.getElementById("boutons").lastElementChild;
         btnCarte.href = "../concours/index.html";
         btnCarte.innerText = "Participer au concours!";
         refRetroaction.removeAttribute("hidden");
