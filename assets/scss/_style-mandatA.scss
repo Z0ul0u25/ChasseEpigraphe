@@ -4,24 +4,24 @@
 
 /* Style
    ========================================================================== */
-   @import url(style.css);
-   @import url(menu.css);
-   @import url(typo.css);
-   @import url(utilitaires.css);
-   
-   
+   @import url(style.min.css);
+   @import url(menu.min.css);
+   @import url(typo.min.css);
+   @import url(utilitaires.min.css);
+
+
    /* CONTENU */
-   
+
    body {
       margin-bottom: 75px;
       background-color: rgb(255, 255, 255);
    }
-   
+
    .main {
       margin-left: 20px;
       margin-right: 20px;
    }
-   
+
    @media (min-width: 1000px) {
       .main {
          display: flex;
@@ -33,14 +33,14 @@
          margin: 10px 20px 10px 20px;
       }
    }
-   
+
    @media (min-width: 1000px) {
       .main-section {
          display: flex;
          flex-direction: row-reverse;
          align-items: flex-start;
       }
-   
+
       .main-section_paragraphes {
          flex-wrap: wrap;
          padding: 10px 30px 10px 20px;
@@ -48,10 +48,10 @@
          padding-top: 40px;
       }
    }
-   
-   
-   
-   
+
+
+
+
    /* VIDEO - BORDER EST POUR QU'ON AIT UN PLACEHOLDER */
    .main-video_video {
       display: flex;
@@ -60,9 +60,9 @@
       align-items: center;
       width: 100%;
       /* margin-top: 10px; */
-   
+
    }
-   
+
    @media (min-width: 1000px) {
       .main-video_video {
          width: 1024px;
@@ -71,7 +71,7 @@
          padding-top: 20px; */
       }
    }
-   
+
    /* ÉPIGRAPHE */
    .main-section_epigraphe {
       display: flex;
@@ -81,25 +81,25 @@
       max-width: 80%;
       width: 100%;
    }
-   
+
    @media (min-width: 1000px) {
       .main-section_epigraphe {
          margin-left: 80px;
          width: 500px;
          padding-top: 40px;
-   
+
       }
    }
-   
+
    /* .main-background {
       background-color: #5B5656;
    }
     */
-   
-   
-   
+
+
+
    /* BOUTON */
-   
+
    .ctnBouton {
       display: flex;
       flex-direction: column;
@@ -107,8 +107,8 @@
       align-items: center;
       margin: 53px;
    }
-   
-   
+
+
    .bouton {
       background-color: #DC2062;
       padding: 15px;
@@ -122,27 +122,27 @@
       text-decoration: none;
       font-size: 2rem;
    }
-   
+
    .bouton:hover {
       background-color: #FF75A5;
       color: black;
       box-shadow: 10px 5px 5px #FF75A5;
    }
-   
+
    /* modif de Lorie - J'ai mis le contour un peu plus clair */
-   
+
    .bouton:focus {
       border: 5px solid #75cfdf;
    }
-   
+
    /* ajouts de Lorie - Juste pour que le lien/texte soit un peu plus visible (même si c'est juste pour le screen reader)*/
-   
+
    .lienrapide {
-   
+
       color: white;
    }
-   
+
    .lienrapide:focus {
-   
+
       padding: 5px;
    }
