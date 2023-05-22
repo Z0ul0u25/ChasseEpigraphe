@@ -2,7 +2,26 @@
  * @author Lorie-Anne Coté
  * Fiche de personnage
 */
+
+/* TABLE DES MATIÈRES */
+/**
+* Reset
+* Titres
+* Image perso
+* Plaque epigraphes
+* Grille bio, plaque, photo 
+* Localisation 
+* Audio
+* Formulaire de chasse
+* Liens en bas de page
+*/
+
+
+/* Style */ 
+
 @import url(style.css);
+
+/* Reset */
 
 main,
 aside {
@@ -32,7 +51,7 @@ aside {
 
 }
 
-
+/* Titres */
 
 h1 {
 
@@ -85,7 +104,7 @@ section {
 
 }
 
-
+/* Image perso */
 
 figure>img,
 .imgPerso {
@@ -115,6 +134,8 @@ span#credit_image {
     color: white;
 
 }
+
+/* Plaque epigraphe */
 
 img#url_plaque {
 
@@ -157,20 +178,7 @@ figcaption#transcript.figPlaque {
 
 }
 
-audio#audio_url {
-
-    border: 4px solid var(--couleur-dominante);
-    border-radius: 26px;
-
-}
-
-p#audio_transcription {
-
-    border: 3px solid rgb(22, 22, 22);
-    border-radius: 5px;
-    padding: 25px 10px;
-
-}
+/* Grille bio, plaque, photo */
 
 .ctnImg {
 
@@ -238,6 +246,7 @@ p#audio_transcription {
 
 }
 
+/* Localisation */
 
 .figureLocal {
 
@@ -259,12 +268,6 @@ p#audio_transcription {
 
 }
 
-/*img#carteZoom {
-
-    border: 4px solid var(--couleur-dominante);
-
-}*/
-
 .figLocalisation {
 
     padding-right: 3%;
@@ -279,6 +282,24 @@ p#audio_transcription {
     font-size: 2rem;
 
 }
+
+/* Audio */
+
+audio#audio_url {
+
+    border: 4px solid var(--couleur-dominante);
+    border-radius: 26px;
+
+}
+
+p#audio_transcription {
+
+    border: 3px solid rgb(22, 22, 22);
+    border-radius: 5px;
+    padding: 25px 10px;
+
+}
+
 
 .ctnCapsule {
 
