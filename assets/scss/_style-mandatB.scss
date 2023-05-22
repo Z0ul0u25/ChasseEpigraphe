@@ -3,10 +3,24 @@ Feuille de style de Lorie-Anne Côté
 Mandat B - Galerie de personnages
 */
 
+/* TABLE DES MATIÈRES */
+/**
+* Reset
+* Titres h1 h2
+* Filtres
+* Personnages 
+* Titre h3
+* Images
+* Grilles (j'ai préféré garder mes grilles dans ma feuille de style pour ne pas
+* causer des problèmes vu qu'on utilise plusieurs grilles
+*/
+
 /* Style
    ========================================================================== */
    @import url(style.css);
 
+   /* Reset */
+   
    main,
    aside {
       margin: 0 3%;
@@ -34,6 +48,8 @@ Mandat B - Galerie de personnages
       }
    
    }
+   
+   /* TITRES */
    
    h1 {
    
@@ -67,6 +83,8 @@ Mandat B - Galerie de personnages
       }
    
    }
+   
+   /* Filtre */
    
    .liste-filtre {
    
@@ -202,17 +220,12 @@ Mandat B - Galerie de personnages
    
    }
    
+   /* Personnages */
    
    .ctnPersonnages {
    
       padding-bottom: 45px
    }
-   
-   /*.liste-personnages {
-   
-      width: 100%;
-   
-   }*/
    
    .personnages {
    
@@ -249,6 +262,8 @@ Mandat B - Galerie de personnages
       text-decoration: none;
    
    }
+   
+   /* Titre h3 */
    
    h3 {
    
@@ -293,6 +308,8 @@ Mandat B - Galerie de personnages
    
    }
    
+   /* Images */
+   
    img {
    
       min-width: 110px;
@@ -307,7 +324,7 @@ Mandat B - Galerie de personnages
    
    }
    
-   /*width="235" height="320"*/
+   /* Grille Galerie */ 
    
    .wrapperPerso {
    
