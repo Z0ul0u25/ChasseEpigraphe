@@ -66,6 +66,12 @@ h2 {
 
 }
 
+.ctnPlaque h2 {
+
+    margin: 0;
+
+}
+
 h3 {
 
     font-size: 2.3rem;
@@ -111,8 +117,31 @@ span#credit_image {
 
 img#url_plaque {
 
-    padding: 40px 0 45px 0;
+    padding: 20px 0 20px 0;
+    margin: 0 1%;
 
+
+}
+
+@media (min-width: 650px) {
+
+    img#url_plaque {
+
+        margin: 0 8%;
+    
+    }
+    
+}
+
+
+@media (min-width: 1000px) {
+
+    img#url_plaque {
+
+        padding: 40px 0 45px 0;
+    
+    }
+    
 }
 
 figcaption#transcript.figPlaque {
