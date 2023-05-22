@@ -193,5 +193,5 @@ footer {
 header,
 .entete-site,
 footer {
-  background-image: url("/assets/images/_autres/texture-bricks.jpg");
+  background-image: url("../images/_autres/texture-bricks.jpg");
 }

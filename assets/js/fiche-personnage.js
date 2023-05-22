@@ -55,7 +55,6 @@ const objFichePersonnage = {
         localStorage.objVisite = JSON.stringify(objVisite);
 
         // Ajout du bon icone de domaine
-        console.log(this.objSelection.DOMAINE);
         let intTypeDomaine = 0; // Défaut sur science lettre et art
         switch (this.objSelection.DOMAINE) {
             case "Arts visuels":

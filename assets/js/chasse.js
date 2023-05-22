@@ -46,16 +46,16 @@ function rafraichirIndice() {
     document.getElementById("retroaction-lieu").innerHTML = (localStorage.lieuEstTrouve == 1) ? "Trouvé!" : "???";
     // Rafraichissement de la photo
     if (localStorage.personnageEstTrouve == 1) {
-        document.querySelector("#photo-personnage source").srcset = `/assets/images/Personnages/405x280_chasseTableX1/${localStorage.idPersonnage}_chasse_405.jpg`;
-        document.querySelector("#photo-personnage img").src = `/assets/images/Personnages/235x165_chasseTabletteMobileX1/${localStorage.idPersonnage}_chasse_235.jpg`;
+        document.querySelector("#photo-personnage source").srcset = `../assets/images/Personnages/405x280_chasseTableX1/${localStorage.idPersonnage}_chasse_405.jpg`;
+        document.querySelector("#photo-personnage img").src = `../assets/images/Personnages/235x165_chasseTabletteMobileX1/${localStorage.idPersonnage}_chasse_235.jpg`;
     }
     if (localStorage.objetEstTrouve == 1) {
-        document.querySelector("#photo-objet source").srcset = `/assets/images/Objets/405/${localStorage.idObjet}_chasse_w405.jpg`;
-        document.querySelector("#photo-objet img").src = `/assets/images/Objets/235/${localStorage.idObjet}_chasse_w235.jpg`;
+        document.querySelector("#photo-objet source").srcset = `../assets/images/Objets/405/${localStorage.idObjet}_chasse_w405.jpg`;
+        document.querySelector("#photo-objet img").src = `../assets/images/Objets/235/${localStorage.idObjet}_chasse_w235.jpg`;
     }
     if (localStorage.lieuEstTrouve == 1) {
-        document.querySelector("#photo-lieu source").srcset = `/assets/images/Lieux/405x280/${localStorage.idLieu}_lieu_405.jpg`;
-        document.querySelector("#photo-lieu img").src = `/assets/images/Lieux/235x165/${localStorage.idLieu}_lieu_235.jpg`;
+        document.querySelector("#photo-lieu source").srcset = `../assets/images/Lieux/405x280/${localStorage.idLieu}_lieu_405.jpg`;
+        document.querySelector("#photo-lieu img").src = `../assets/images/Lieux/235x165/${localStorage.idLieu}_lieu_235.jpg`;
     }
 
     const refNbIndice = document.getElementById("nbIndiceTrouve");

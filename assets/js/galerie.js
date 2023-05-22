@@ -30,7 +30,6 @@ function filtrer() {
 
     refFiches.forEach(function (fiche) {
         fiche.classList.add('selection');
-        console.log(fiche.dataset.type);
         if (fiche.dataset.type == strFiltreType) {
             fiche.classList.remove('selection');
         }

@@ -9,14 +9,14 @@
 * Titres
 * Image perso
 * Plaque epigraphes
-* Grille bio, plaque, photo 
-* Localisation 
+* Grille bio, plaque, photo
+* Localisation
 * Audio
 * Formulaire de chasse
 * Liens en bas de page
 */
 /* Style */
-@import url(style.css);
+@import url(style.min.css);
 /* Reset */
 main,
 aside {
