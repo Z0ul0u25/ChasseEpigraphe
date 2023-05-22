@@ -24,7 +24,17 @@
 </head>
 
 <body>
-    <header class="entete">
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le
+            cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les
+            épigraphes
+            historiques :
+            <a
+                href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+    <header role="banner" class="entete">
         <div class="entete-site">
             <a href="#contenu" class="lienrapide screen-reader-only focusable">Allez au contenu
             </a>
@@ -37,7 +47,7 @@
                     <div class="sous-titre">dans la ville de Québec</div>
                 </div>
             </a>
-            <nav class="navigation-principale menu-fermer">
+            <nav role="navigation" class="navigation-principale menu-fermer">
                 <ul class="navigation-principale_liste menu-fermer">
                     <li class="navigation-principale_item"><a href="./index.html"
                             class="navigation-principal_lien">Accueil</a></li>
@@ -52,7 +62,7 @@
         </div>
         <!-- HAMBURGER MENU CODE DE https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
         <!-- Navigation principale en haut -->
-        <nav class="navigation-mobile">
+        <nav role="navigation" class="navigation-mobile">
             <!-- Liens de la navigation cachées par défault) -->
             <div id="navigation-mobile_liens">
                 <a href="./index.html" class="navigation-principal_lien">Accueil</a>
@@ -84,7 +94,7 @@
                 <p>De manière ludique, venez découvrir des lieux, des hommes et des femmes d'exception. Parcourez les
                     fiches
                     de ces personnages et découvrez leur histoire, écoutez les témoignages des gens qui les ont côtoyés.
-                    Laissez-vous raconter des anecdotes savoureuses et des faits réels qui nous éclaire sur un passé pas
+                    Laissez-vous raconter des anecdotes savoureuses et des faits réels qui nous éclairent sur un passé pas
                     si
                     lointain…</p>
                 <p>Participez à la chasse aux épigraphes et courez la chance de gagner un repas pour deux à l'Auberge
@@ -99,7 +109,7 @@
             </a>
         </div>
     </main>
-    <footer class="footer">
+    <footer role="contentinfo" class="footer">
         <div class="footer-menu_sociaux">
             <ul class="menu-sociaux_liste">
                 <li class="menu-sociaux_item"><a href="https://facebook.com" class="menu-sociaux_lien">Facebook</a>
