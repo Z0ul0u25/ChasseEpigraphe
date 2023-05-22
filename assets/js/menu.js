@@ -30,3 +30,6 @@ function afficherMenu() {
 }
 
 document.querySelector(".navigation-mobile button").addEventListener("click", afficherMenu, false);
+
+//window.addEventListener('load', affichermenu)
+//html >> soit afficher par default
