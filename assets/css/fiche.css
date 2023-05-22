@@ -499,7 +499,7 @@ input[type=radio]+label {
 
     margin-top: 20px;
     margin-bottom: 35px;
-    padding: 10px 20px;
+    padding-top: 5px;
     text-align: center;
     min-height: 45px;
     display: block;
@@ -514,8 +514,19 @@ input[type=radio]+label {
 .liens-fiche li:hover {
 
     background-color: #C59909;
-    color: white;
     box-shadow: 10px 5px 5px #C59909;
+
+}
+
+.liens-fiche a {
+
+    padding: 7px 20px 12px;
+
+}
+
+.liens-fiche a:hover {
+
+    color: white;
 
 }
 
@@ -527,4 +538,16 @@ input[type=radio]+label {
 .lienrapide:focus {
 
     padding: 5px;
+}
+
+#btnSoumettre:focus {
+
+    border: 5px solid #75cfdf;
+
+}
+
+.liens-fiche a:focus {
+
+    border: 5px solid #75cfdf;
+
 }

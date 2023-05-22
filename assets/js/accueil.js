@@ -35,7 +35,7 @@ const objVisionneuse = {
         this.refSource.setAttribute('src', this.strUrlVideo);
         this.refSource.setAttribute('type', 'video/mp4');
 
-        this.refVideo.appendChild(this.refSource);
+        this.refVideo.prepend(this.refSource);
         this.refVideo.play();
     },
     /**

@@ -107,8 +107,8 @@ const objJSONepigraphes = {
           "TRANSCRIPTION": "Robert Blatter est un architecte-décorateur d'origine suisse (...)"
       },
       "IMAGE": {
-          "TITRE": "Maison Kerhulu, entre 1939 et 1945",
-          "CREDIT": "Agathe Chiasson-Leblanc"
+          "TITRE": "Robert Blatter",
+          "CREDIT": "imagespatrimoine.ville.quebec.qc.ca"
       },
       "DOMAINE": "Arts visuels",
       "CHASSE": {
