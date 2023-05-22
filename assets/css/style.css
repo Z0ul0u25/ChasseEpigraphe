@@ -20,19 +20,19 @@
  */
 /* Normalize
    ========================================================================== */
-@import "normalize.css";
+@import "normalize.min.css";
 /* Utilitaires
    ========================================================================== */
-@import "utilitaires.css";
+@import "utilitaires.min.css";
 /* Charte typographique
    ========================================================================== */
-@import "typo.css";
+@import "typo.min.css";
 /* Menu
    ========================================================================== */
-@import "menu.css";
+@import "menu.min.css";
 /* Grille
    ========================================================================== */
-@import "grille.css";
+@import "grille.min.css";
 /* Mise en page du DÉMO
    ==========================================================================
 
@@ -184,7 +184,7 @@ footer {
 }
 ===========================================================================*/
 @media (min-width: 1000px) {
-  main {
+  main#contenu {
     max-width: 1000px;
     margin: auto;
   }
@@ -194,4 +194,4 @@ header,
 .entete-site,
 footer {
   background-image: url("/assets/images/_autres/texture-bricks.jpg");
-}/*# sourceMappingURL=style.css.map */
+}

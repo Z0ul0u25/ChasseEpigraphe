@@ -1,47 +1,51 @@
+@charset "UTF-8";
 /* Variables et utilitaires
    ========================================================================== */
-
 /****** VARIABLES À ÉDITER (peuvent être utilisées dans tous les fichiers) *******/
 :root {
-    --couleur-texte: #2E2D2D;
-    --couleur-dominante: #DC2062;
-    --couleur-secondaire: #F1EC77;
-    --couleur-tertiaire: #5B5656;
-    --bg-couleur-contraste: #efefef;
-    --box-shadow: 5px 5px 5px;
+  --couleur-texte: #2E2D2D;
+  --couleur-dominante: #DC2062;
+  --couleur-secondaire: #F1EC77;
+  --couleur-tertiaire: #5B5656;
+  --bg-couleur-contraste: #efefef;
+  --box-shadow: 5px 5px 5px;
 }
 
 /*** Clearfix ***/
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*** Harmoniser le modèle de boîte avec Box-Sizing ***/
 html {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /* Images fluides */
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /*** Styles de base ***/
 abbr[title] {
-    text-decoration: none;
-    cursor: help;
+  text-decoration: none;
+  cursor: help;
 }
 
 abbr[title]:hover {
-    background-color: rgba(244, 161, 71, 0.25);
+  background-color: rgba(244, 161, 71, 0.25);
 }
 
 /** Accessibilité
@@ -49,24 +53,24 @@ abbr[title]:hover {
   * screen-reader-only ou visuallyhidden **/
 .screen-reader-only,
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .screen-reader-only.focusable:active,
 .screen-reader-only.focusable:focus,
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }

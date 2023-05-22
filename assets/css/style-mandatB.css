@@ -1,404 +1,284 @@
+@charset "UTF-8";
 /**
 Feuille de style de Lorie-Anne Côté
 Mandat B - Galerie de personnages
 */
-
 /* TABLE DES MATIÈRES */
 /**
 * Reset
 * Titres h1 h2
 * Filtres
-* Personnages 
+* Personnages
 * Titre h3
 * Images
 * Grilles (j'ai préféré garder mes grilles dans ma feuille de style pour ne pas
 * causer des problèmes vu qu'on utilise plusieurs grilles
 */
-
 /* Style
    ========================================================================== */
-@import url(style.css);
-
+@import url(style.min.css);
 /* Reset */
-
 main,
 aside {
-   margin: 0 3%;
+  margin: 0 3%;
 }
 
 @media (min-width: 500px) {
-
-   main,
-   aside {
-
-      margin: 0 5%;
-
-   }
-
+  main,
+  aside {
+    margin: 0 5%;
+  }
 }
-
 @media (min-width: 1100px) {
-
-   main,
-   aside {
-
-      max-width: 1000px;
-      margin: 0 auto;
-
-   }
-
+  main,
+  aside {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
-
 /* TITRES */
-
 h1 {
-
-   padding: 30px 0;
-   color: var(--couleur-texte);
-
+  padding: 30px 0;
+  color: var(--couleur-texte);
 }
 
 h2 {
-
-   font-size: 2.2rem;
-
+  font-size: 2.2rem;
 }
 
 @media (min-width: 500px) {
-
-   h2 {
-
-      font-size: 2.3rem;
-
-   }
-
+  h2 {
+    font-size: 2.3rem;
+  }
 }
-
 @media (min-width: 700px) {
-
-   h2 {
-
-      font-size: 2.7rem;
-
-   }
-
+  h2 {
+    font-size: 2.7rem;
+  }
 }
-
 /* Filtre */
-
 .liste-filtre {
-
-   list-style: none;
-   font-size: 1.6rem;
-
+  list-style: none;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 500px) {
-
-   .liste-filtre {
-
-      font-size: 1.8rem;
-
-   }
-
+  .liste-filtre {
+    font-size: 1.8rem;
+  }
 }
-
 .liste-filtre li {
-
-   padding-bottom: 10px;
-
+  padding-bottom: 10px;
 }
 
 .filtre-indice,
 .filtre-activite {
-
-   background-color: var(--couleur-secondaire);
-   padding: 0 0 5px 10px;
-   font-weight: 700;
-
+  background-color: var(--couleur-secondaire);
+  padding: 0 0 5px 10px;
+  font-weight: 700;
 }
 
 @media (min-width: 500px) {
-
-   .filtre-indice,
-   .filtre-activite {
-
-      padding: 0 0 15px 20px;
-      font-size: 1.8rem;
-
-   }
-
+  .filtre-indice,
+  .filtre-activite {
+    padding: 0 0 15px 20px;
+    font-size: 1.8rem;
+  }
 }
-
-.resetFiltre>img {
-
-   width: 45px;
-   min-width: 0;
-   margin: 0;
-
+.resetFiltre > img {
+  width: 45px;
+  min-width: 0;
+  margin: 0;
 }
 
 .enlever {
-
-   font-weight: 500;
-   font-size: 1.5rem;
-   margin: 0;
-   padding-top: 30px;
-   text-align: left;
-
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 30px;
+  text-align: left;
 }
 
 @media (min-width: 450px) {
-
-   .enlever {
-
-      font-weight: 500;
-      font-size: 1.5rem;
-      margin: 0;
-      padding-top: 30px;
-      text-align: center;
-
-   }
-
+  .enlever {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+  }
 }
-
 @media (min-width: 720px) {
-
-   .enlever {
-
-      font-weight: 500;
-      font-size: 2rem;
-      margin: 0;
-      text-align: center;
-      padding-top: 0;
-
-   }
-
+  .enlever {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 0;
+  }
 }
-
 .filtre_type,
 .filtre_secteur {
-
-   background-color: rgb(255, 255, 255);
-   border: none;
-   border-radius: 4px;
-   padding: 4px 5px;
-   width: 225px;
-   text-align: left;
-   font-size: 1.5rem;
-   font-weight: 500;
-   text-transform: uppercase;
-
+  background-color: rgb(255, 255, 255);
+  border: none;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  padding: 4px 5px;
+  width: 225px;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .filtre_type:hover,
 .filtre_secteur:hover {
-
-   border: 3px solid var(--couleur-dominante);
-
+  border: 3px solid var(--couleur-dominante);
 }
 
 .resetFiltre {
-
-   margin: 35px 10px;
-   background-color: rgb(255, 255, 255);
-   border: 4px solid var(--couleur-dominante);
-   border-radius: 4px;
-
+  margin: 35px 10px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid var(--couleur-dominante);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .resetFiltre:focus {
-
-   filter: brightness(1.19);
-
+  -webkit-filter: brightness(1.19);
+          filter: brightness(1.19);
 }
 
-
 .resetFiltre:hover {
-
-   background-color: rgb(245, 204, 204);
-
+  background-color: rgb(245, 204, 204);
 }
 
 /* Personnages */
-
 .ctnPersonnages {
-
-   padding-bottom: 45px
+  padding-bottom: 45px;
 }
 
 .personnages {
-
-   border: 5px solid var(--couleur-dominante);
-   list-style: none;
-   background-color: var(--couleur-tertiaire);
-
+  border: 5px solid var(--couleur-dominante);
+  list-style: none;
+  background-color: var(--couleur-tertiaire);
 }
 
 .personnages a:focus {
-
-   border: 2px white solid;
-   filter: brightness(1.19);
-
+  border: 2px white solid;
+  -webkit-filter: brightness(1.19);
+          filter: brightness(1.19);
 }
 
 .personnages:hover {
-
-   filter: brightness(1.13);
-   border: 5px solid #237BFF;
-
+  -webkit-filter: brightness(1.13);
+          filter: brightness(1.13);
+  border: 5px solid #237BFF;
 }
 
 .selection {
-
-   filter: blur(3px) grayscale(10);
-
+  -webkit-filter: blur(3px) grayscale(10);
+          filter: blur(3px) grayscale(10);
 }
 
 a {
-
-   text-align: center;
-   color: white;
-   text-decoration: none;
-
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 /* Titre h3 */
-
 h3 {
-
-   padding: 15px;
-   font-size: 1.2rem;
-   font-family: 'Montserrat', sans-serif;
-   ;
-   margin: 0;
-
+  padding: 15px;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 @media (min-width: 500px) {
-
-   h3 {
-
-      padding: 5px;
-      font-size: 1.5rem;
-
-   }
-
+  h3 {
+    padding: 5px;
+    font-size: 1.5rem;
+  }
 }
-
 @media (min-width: 800px) {
-
-   h3 {
-
-      padding: 5px;
-      font-size: 1.3rem;
-
-   }
-
+  h3 {
+    padding: 5px;
+    font-size: 1.3rem;
+  }
 }
-
 @media (min-width: 950px) {
-
-   h3 {
-
-      padding: 5px;
-      font-size: 1.7rem;
-
-   }
-
+  h3 {
+    padding: 5px;
+    font-size: 1.7rem;
+  }
 }
-
 /* Images */
-
 img {
-
-   min-width: 110px;
-   width: 100%;
-
+  min-width: 110px;
+  width: 100%;
 }
 
 svg {
-
-   min-width: 110px;
-   min-height: 110px;
-
+  min-width: 110px;
+  min-height: 110px;
 }
 
-/* Grille Galerie */ 
-
+/* Grille Galerie */
 .wrapperPerso {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 47% 47%;
+  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  /*grid-template-areas:
 
-   display: grid;
-   grid-gap: 20px;
-   grid-template-columns: 47% 47%;
-   /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;*/
-   /*grid-template-areas:
-
-   "p1 p2"
-   "p3 p4"
-   "p5 p6"
-   "p7 p8"
-   "p9 p10"
-   "p11 p12"*/
-
+  "p1 p2"
+  "p3 p4"
+  "p5 p6"
+  "p7 p8"
+  "p9 p10"
+  "p11 p12"*/
 }
 
 @media (min-width: 500px) {
+  .wrapperPerso {
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    /*grid-template-areas:
 
-   .wrapperPerso {
-
-      grid-template-columns: 1fr 1fr 1fr;
-      /*grid-template-rows: 1fr 1fr 1fr;*/
-      /*grid-template-areas:
-
-      "p1 p2 p3 p4"
-      "p5 p6 p7 p8"
-      "p9 p10 p11 p12"*/
-
-
-   }
-
+    "p1 p2 p3 p4"
+    "p5 p6 p7 p8"
+    "p9 p10 p11 p12"*/
+  }
 }
-
 @media (min-width: 800px) {
+  .wrapperPerso {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    /*grid-template-areas:
 
-   .wrapperPerso {
-
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      /*grid-template-rows: 1fr 1fr 1fr;*/
-      /*grid-template-areas:
-
-      "p1 p2 p3 p4"
-      "p5 p6 p7 p8"
-      "p9 p10 p11 p12"*/
-
-
-   }
-
+    "p1 p2 p3 p4"
+    "p5 p6 p7 p8"
+    "p9 p10 p11 p12"*/
+  }
 }
-
 .wrapperFiltre {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-areas:
 
-   display: grid;
-   grid-gap: 20px;
-   grid-template-rows: 1fr 1fr;
-   /* grid-template-areas:
-
-    "filtre-indice filtre-activite"*/
-
+   "filtre-indice filtre-activite"*/
 }
 
 @media (min-width: 800px) {
-
-   .wrapperFiltre {
-
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: none;
-      grid-template-areas:
-
-         "filtre-indice filtre-activite"
-
-   }
+  .wrapperFiltre {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    grid-template-areas: "filtre-indice filtre-activite";
+  }
 }
