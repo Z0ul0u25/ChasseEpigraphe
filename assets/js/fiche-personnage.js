@@ -96,7 +96,7 @@ const objFichePersonnage = {
         document.getElementById("notes_biographiques").innerHTML = `${this.objSelection.BIOGRAPHIE}`;
 
         // Image de Google Maps
-        document.getElementById("carteZoom").src = `../assets/images/googleMaps/${this.id}-zoom-google-maps.png`;
+        document.getElementById("carteZoom").src = `../assets/images/googleMaps/${this.id}-zoom-google-maps.jpg`;
 
         // Adresse civique
         document.getElementById("arrondissement").innerText = this.objSelection.ARRONDISSEMENT;
