@@ -199,7 +199,7 @@ footer {
 
 
 @media (min-width:1000px) {
-    main{
+    main {
         max-width: 1000px;
         margin: auto;
     }
