@@ -355,9 +355,10 @@ fieldset p {
 
 }
 
-ul{
+fieldset ul{
     list-style-type: none;
     padding: 20px;
+    
 }
 
 .rangee li {
