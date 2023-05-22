@@ -7,12 +7,15 @@
 
  main {
      padding-bottom: 100px;
+     margin-left: 20px;
+     margin-right: 20px;
  }
  
  #top__h1 {
      grid-area: h;
      text-align: center;
      color: #000;
+     padding-bottom: 20px;
  }
  
  #top__description {
@@ -102,6 +105,10 @@
  
  #indices picture img {
      height: 100%;
+     font-weight: 600;
+ }
+ #retroaction {
+    font-weight: bold;
  }
  
  .carte>div {
