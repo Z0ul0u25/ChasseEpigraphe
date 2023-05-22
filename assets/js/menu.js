@@ -16,9 +16,9 @@ function afficherMenu() {
     let refMobileLiens = document.getElementById("navigation-mobile_liens"); // chercher liens pour la navigation principale en mobile
 
     let refIconeMenu = document.getElementById('icone-menu');
-    console.log(refMobileLiens);//Chercher l'icône du menu
 
-    if (refMobileLiens.style.display === "block") {
+    // Le check avec `== ""` arrive quand la page est charger que que le JS est activé.
+    if (refMobileLiens.style.display === "block" || refMobileLiens.style.display == "") {
         refIconeMenu.classList.add("fa-bars");
         refIconeMenu.classList.remove("fa-window-close");
         refMobileLiens.style.display = "none";
@@ -31,5 +31,5 @@ function afficherMenu() {
 
 document.querySelector(".navigation-mobile button").addEventListener("click", afficherMenu, false);
 
-//window.addEventListener('load', affichermenu)
-//html >> soit afficher par default
+// Menu afficher par défaut si jamais le JS est désactivé.
+window.addEventListener('DOMContentLoaded', afficherMenu);

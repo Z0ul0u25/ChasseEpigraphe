@@ -240,7 +240,7 @@ ul {
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .navigation-mobile #navigation-mobile_liens {
-    display         : none;
+    display         : block;
     background-color: #DC2062;
     font-weight     : 600;
     text-transform  : uppercase;

@@ -1,15 +1,9 @@
 @charset "UTF-8";
-
 /* Importation des polices au tout début! */
-
 /* Titres et sous-titres*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /* Courant */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 /**
  * @author COLLECTIF - @TIMCSF
  *
@@ -24,27 +18,21 @@
  *** Architecture des CSS (liste de définitions)
  *** Pied de page
  */
-
 /* Normalize
    ========================================================================== */
-@import url(normalize.css);
-
+@import "normalize.css";
 /* Utilitaires
    ========================================================================== */
-@import url(utilitaires.css);
-
+@import "utilitaires.css";
 /* Charte typographique
    ========================================================================== */
-@import url(typo.css);
-
+@import "typo.css";
 /* Menu
    ========================================================================== */
-@import url(menu.css);
-
+@import "menu.css";
 /* Grille
    ========================================================================== */
-@import url(grille.css);
-
+@import "grille.css";
 /* Mise en page du DÉMO
    ==========================================================================
 
@@ -195,20 +183,15 @@ footer {
     text-align: center;
 }
 ===========================================================================*/
-
-
-
-@media (min-width:1000px) {
-    main {
-        max-width: 1000px;
-        margin: auto;
-    }
+@media (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
 }
-
 /* HEADER & FOOTER TEXTURE */
-
 header,
 .entete-site,
 footer {
-    background-image: url('/assets/images/_autres/texture-bricks.jpg');
-}
+  background-image: url("/assets/images/_autres/texture-bricks.jpg");
+}/*# sourceMappingURL=style.css.map */
