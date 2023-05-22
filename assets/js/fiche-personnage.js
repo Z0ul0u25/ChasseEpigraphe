@@ -90,7 +90,7 @@ const objFichePersonnage = {
         // Image du peronnage                       ../assets/images/Personnages/405x538_ficheTableX1/e0001_chasse_405.jpg
         document.getElementById("url_image").src = `../assets/images/Personnages/405x538_ficheTableX1/${this.id}_chasse_405.jpg`;
         document.getElementById("titre_image").innerText = this.objSelection.IMAGE.TITRE;
-        document.getElementById("credit_image").innerText = this.objSelection.IMAGE.CREDIT;
+        document.getElementById("credit_image").innerHTML = "&copy; " + this.objSelection.IMAGE.CREDIT;
 
         // Notes biographiques
         document.getElementById("notes_biographiques").innerHTML = `${this.objSelection.BIOGRAPHIE}`;
