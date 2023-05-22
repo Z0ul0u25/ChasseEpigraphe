@@ -1,4 +1,5 @@
 /**
+ * @author Lorie-Anne Coté
  * Fiche de personnage
 */
 @import url(style.css);
@@ -128,9 +129,9 @@ img#url_plaque {
     img#url_plaque {
 
         margin: 0 8%;
-    
+
     }
-    
+
 }
 
 
@@ -140,9 +141,9 @@ img#url_plaque {
 
         padding: 40px 0 45px 0;
         margin: 0;
-    
+
     }
-    
+
 }
 
 figcaption#transcript.figPlaque {
